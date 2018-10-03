@@ -58,8 +58,6 @@ namespace LogicOperators
             {
                 Console.WriteLine("Is not digit !!!");
             }
-
-
         }
     }
 }
