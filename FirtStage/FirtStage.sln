@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorGoodPractice", "CalculatorGoodPractice\CalculatorGoodPractice.csproj", "{AD106B61-81E5-4FCE-8949-900D07F10F9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicOperators", "LogicOperators\LogicOperators.csproj", "{40281D8C-B600-4B26-AAB3-2D14EA35B7CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AD106B61-81E5-4FCE-8949-900D07F10F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD106B61-81E5-4FCE-8949-900D07F10F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD106B61-81E5-4FCE-8949-900D07F10F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40281D8C-B600-4B26-AAB3-2D14EA35B7CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40281D8C-B600-4B26-AAB3-2D14EA35B7CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40281D8C-B600-4B26-AAB3-2D14EA35B7CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40281D8C-B600-4B26-AAB3-2D14EA35B7CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
