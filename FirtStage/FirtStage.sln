@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicOperators", "LogicOper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicOperations2", "LogicOperations2\LogicOperations2.csproj", "{A9658AFA-D9F6-4666-BAF9-E4C69E1F19AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopFor", "LoopFor\LoopFor.csproj", "{17A2873B-3F56-40ED-B33D-4F8B7B280460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{A9658AFA-D9F6-4666-BAF9-E4C69E1F19AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9658AFA-D9F6-4666-BAF9-E4C69E1F19AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9658AFA-D9F6-4666-BAF9-E4C69E1F19AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A2873B-3F56-40ED-B33D-4F8B7B280460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A2873B-3F56-40ED-B33D-4F8B7B280460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A2873B-3F56-40ED-B33D-4F8B7B280460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A2873B-3F56-40ED-B33D-4F8B7B280460}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
