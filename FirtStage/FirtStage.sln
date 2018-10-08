@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopFor", "LoopFor\LoopFor.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopWhile", "LoopWhile\LoopWhile.csproj", "{3F92A219-C116-46BC-8FB9-B88F0A19126A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimetricNumber", "SimetricNumber\SimetricNumber.csproj", "{F873C217-F6BE-48B9-864C-EF170F2B8726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{539EBE81-FCAC-446D-A3C1-D08195323119}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{3F92A219-C116-46BC-8FB9-B88F0A19126A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F92A219-C116-46BC-8FB9-B88F0A19126A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F92A219-C116-46BC-8FB9-B88F0A19126A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F873C217-F6BE-48B9-864C-EF170F2B8726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F873C217-F6BE-48B9-864C-EF170F2B8726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F873C217-F6BE-48B9-864C-EF170F2B8726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F873C217-F6BE-48B9-864C-EF170F2B8726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{539EBE81-FCAC-446D-A3C1-D08195323119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{539EBE81-FCAC-446D-A3C1-D08195323119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{539EBE81-FCAC-446D-A3C1-D08195323119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{539EBE81-FCAC-446D-A3C1-D08195323119}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

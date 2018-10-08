@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LoopWhile
 {
@@ -15,7 +11,7 @@ namespace LoopWhile
             while (number >= 0)
             {
                 number = int.Parse(Console.ReadLine());
-                Console.WriteLine("all ok");
+                Console.WriteLine("input");
             }
             Console.WriteLine("bad !!!");
             Console.ReadKey();
