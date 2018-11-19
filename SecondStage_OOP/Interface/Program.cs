@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Interface
 {
-    interface ICommunicate
+    public interface ICommunicate
     {
-        void Voice();
+                void Voice();
     }
 
-    interface ICom2
+    public interface ICom2
     {
         void Voice();
     }
-    class MyClass : ICom2, ICommunicate
+    public class MyClass : ICom2, ICommunicate
     {
         void ICom2.Voice()
         {
@@ -28,7 +28,7 @@ namespace Interface
         }
     }
 
-    class Dog : ICommunicate, IDisposable
+    public class Dog : ICommunicate, IDisposable
     {
         public void Dispose()
         {
@@ -40,7 +40,7 @@ namespace Interface
             Console.WriteLine("Haf Haf");
         }
     }
-    class Horse : ICommunicate
+    public class Horse : ICommunicate
     {
         public void Voice()
         {
