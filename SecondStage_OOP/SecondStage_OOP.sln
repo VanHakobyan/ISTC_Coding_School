@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structures", "Structures\St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{CDF3B04A-CAD3-4763-879A-9F34BAB1A058}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxingUnboxing", "BoxingUnboxing\BoxingUnboxing.csproj", "{8E33856D-CB0B-4637-9D25-97FE112726FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{CDF3B04A-CAD3-4763-879A-9F34BAB1A058}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDF3B04A-CAD3-4763-879A-9F34BAB1A058}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDF3B04A-CAD3-4763-879A-9F34BAB1A058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E33856D-CB0B-4637-9D25-97FE112726FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E33856D-CB0B-4637-9D25-97FE112726FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E33856D-CB0B-4637-9D25-97FE112726FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E33856D-CB0B-4637-9D25-97FE112726FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
