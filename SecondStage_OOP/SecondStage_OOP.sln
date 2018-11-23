@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxingUnboxing", "BoxingUnboxing\BoxingUnboxing.csproj", "{8E33856D-CB0B-4637-9D25-97FE112726FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.Thread", "ISTC.Thread\ISTC.Thread.csproj", "{61E3AE64-86E4-4C5E-B560-C1B6B79D83D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{8E33856D-CB0B-4637-9D25-97FE112726FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E33856D-CB0B-4637-9D25-97FE112726FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E33856D-CB0B-4637-9D25-97FE112726FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E3AE64-86E4-4C5E-B560-C1B6B79D83D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E3AE64-86E4-4C5E-B560-C1B6B79D83D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E3AE64-86E4-4C5E-B560-C1B6B79D83D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E3AE64-86E4-4C5E-B560-C1B6B79D83D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
