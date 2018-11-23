@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C0161C0-3B3A-46BB-BAC3-5C05C0305572}</ProjectGuid>
+    <ProjectGuid>{8E33856D-CB0B-4637-9D25-97FE112726FE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Abstraction</RootNamespace>
-    <AssemblyName>Abstraction</AssemblyName>
+    <RootNamespace>BoxingUnboxing</RootNamespace>
+    <AssemblyName>BoxingUnboxing</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractApple.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
