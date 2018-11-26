@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxingUnboxing", "BoxingUnb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.Thread", "ISTC.Thread\ISTC.Thread.csproj", "{61E3AE64-86E4-4C5E-B560-C1B6B79D83D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.Delegate", "ISTC.Delegate\ISTC.Delegate.csproj", "{3DD299F1-67C4-4F7E-86D2-3C8668B8DFAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.UsingDelegates", "ISTC.UsingDelegates\ISTC.UsingDelegates.csproj", "{51E046D7-672B-4959-97C1-272204A0327F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{61E3AE64-86E4-4C5E-B560-C1B6B79D83D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61E3AE64-86E4-4C5E-B560-C1B6B79D83D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61E3AE64-86E4-4C5E-B560-C1B6B79D83D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD299F1-67C4-4F7E-86D2-3C8668B8DFAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD299F1-67C4-4F7E-86D2-3C8668B8DFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD299F1-67C4-4F7E-86D2-3C8668B8DFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD299F1-67C4-4F7E-86D2-3C8668B8DFAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E046D7-672B-4959-97C1-272204A0327F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E046D7-672B-4959-97C1-272204A0327F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E046D7-672B-4959-97C1-272204A0327F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E046D7-672B-4959-97C1-272204A0327F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
