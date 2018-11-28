@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.Lambada", "ISTC.Lambad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.Events", "ISTC.Events\ISTC.Events.csproj", "{AE9BED33-5032-4268-9DFB-EB4324D15024}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.Event.WPF", "ISTC.Event.WPF\ISTC.Event.WPF.csproj", "{68BEF35F-C91B-4FC9-94D7-BCA91FE161AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{AE9BED33-5032-4268-9DFB-EB4324D15024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE9BED33-5032-4268-9DFB-EB4324D15024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE9BED33-5032-4268-9DFB-EB4324D15024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68BEF35F-C91B-4FC9-94D7-BCA91FE161AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BEF35F-C91B-4FC9-94D7-BCA91FE161AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BEF35F-C91B-4FC9-94D7-BCA91FE161AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BEF35F-C91B-4FC9-94D7-BCA91FE161AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

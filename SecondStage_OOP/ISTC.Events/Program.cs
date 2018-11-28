@@ -24,7 +24,7 @@ namespace ISTC.Events
     
 
     /// <summary>
-    ///  Secure variant
+    /// Secure variant
     /// </summary>
     public class ClassForEventOther
     {
@@ -45,26 +45,30 @@ namespace ISTC.Events
     class Program
     {
 
+        #region Handler
+
         public static void FirstHandler()
         {
-            Console.WriteLine("FirstHandler");
+            Console.WriteLine("First Handler");
         }
         public static void SecondHandler()
         {
-            Console.WriteLine("SecondHandler");
+            Console.WriteLine("Second Handler");
         }
         public static void ThirdHandler()
         {
-            Console.WriteLine("ThirdHandler");
-        }
+            Console.WriteLine("Third Handler");
+        } 
+
+        #endregion
 
         static void Main(string[] args)
         {
             ClassForEvent classForEvent = new ClassForEvent();
 
-            classForEvent.MyEvent += delegate { FirstHandler(); };
-            classForEvent.MyEvent += new DelegateForEvent(SecondHandler);
-            classForEvent.MyEvent += ThirdHandler;
+            classForEvent.MyEvent += delegate { FirstHandler(); };          //1 2002
+            classForEvent.MyEvent += new DelegateForEvent(SecondHandler);   //2 2007
+            classForEvent.MyEvent += ThirdHandler;                          //3 2010
 
             classForEvent.EventInvoker(); // 1 2 3 
 
