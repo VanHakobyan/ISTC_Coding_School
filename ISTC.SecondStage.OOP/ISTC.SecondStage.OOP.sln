@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Event.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.ExceptionHandling", "ISTC.SecondStage.OOP.ExceptionHandling\ISTC.SecondStage.OOP.ExceptionHandling.csproj", "{1A35B6F3-D9BD-48D2-9FE9-CFD3108DFB2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.ExceptionHandling2", "ISTC.SecondStage.OOP.ExceptionHandling2\ISTC.SecondStage.OOP.ExceptionHandling2.csproj", "{17D678AF-146C-4AE0-8F51-231DDAD7BFD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{1A35B6F3-D9BD-48D2-9FE9-CFD3108DFB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A35B6F3-D9BD-48D2-9FE9-CFD3108DFB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A35B6F3-D9BD-48D2-9FE9-CFD3108DFB2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D678AF-146C-4AE0-8F51-231DDAD7BFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D678AF-146C-4AE0-8F51-231DDAD7BFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D678AF-146C-4AE0-8F51-231DDAD7BFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D678AF-146C-4AE0-8F51-231DDAD7BFD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
