@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Events
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Event.WPF", "ISTC.SecondStage.OOP.Event.WPF\ISTC.SecondStage.OOP.Event.WPF.csproj", "{68BEF35F-C91B-4FC9-94D7-BCA91FE161AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.ExceptionHandling", "ISTC.SecondStage.OOP.ExceptionHandling\ISTC.SecondStage.OOP.ExceptionHandling.csproj", "{1A35B6F3-D9BD-48D2-9FE9-CFD3108DFB2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{68BEF35F-C91B-4FC9-94D7-BCA91FE161AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68BEF35F-C91B-4FC9-94D7-BCA91FE161AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68BEF35F-C91B-4FC9-94D7-BCA91FE161AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A35B6F3-D9BD-48D2-9FE9-CFD3108DFB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A35B6F3-D9BD-48D2-9FE9-CFD3108DFB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A35B6F3-D9BD-48D2-9FE9-CFD3108DFB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A35B6F3-D9BD-48D2-9FE9-CFD3108DFB2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
