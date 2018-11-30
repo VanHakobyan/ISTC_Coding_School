@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Except
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.ExceptionHandling3", "ISTC.SecondStage.OOP.ExceptionHandling3\ISTC.SecondStage.OOP.ExceptionHandling3.csproj", "{FF86FEAE-9A52-4C39-B2F5-235BC169C2B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.RefOut", "ISTC.SecondStage.OOP.RefOut\ISTC.SecondStage.OOP.RefOut.csproj", "{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.TryOut", "ISTC.SecondStage.OOP.TryOut\ISTC.SecondStage.OOP.TryOut.csproj", "{97809126-8E64-482F-A11F-3EA8098CA404}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{FF86FEAE-9A52-4C39-B2F5-235BC169C2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF86FEAE-9A52-4C39-B2F5-235BC169C2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF86FEAE-9A52-4C39-B2F5-235BC169C2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97809126-8E64-482F-A11F-3EA8098CA404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97809126-8E64-482F-A11F-3EA8098CA404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97809126-8E64-482F-A11F-3EA8098CA404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97809126-8E64-482F-A11F-3EA8098CA404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
