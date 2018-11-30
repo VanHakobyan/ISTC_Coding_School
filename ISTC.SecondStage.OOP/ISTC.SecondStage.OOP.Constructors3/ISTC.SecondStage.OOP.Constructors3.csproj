@@ -51,7 +51,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibraryInternal\ISTC.SecondStage.OOP.ClassLibraryInternal.csproj">
+    <ProjectReference Include="..\ISTC.SecondStage.OOP.ClassLibraryInternal\ISTC.SecondStage.OOP.ClassLibraryInternal.csproj">
       <Project>{E4F666FF-CCAA-431D-9857-A8F06728E09D}</Project>
       <Name>ISTC.SecondStage.OOP.ClassLibraryInternal</Name>
     </ProjectReference>

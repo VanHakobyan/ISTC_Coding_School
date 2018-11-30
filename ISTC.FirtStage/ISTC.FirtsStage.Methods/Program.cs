@@ -1,5 +1,4 @@
 ﻿using System;
-using Methotds2;
 
 namespace Methods
 {

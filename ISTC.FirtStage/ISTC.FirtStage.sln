@@ -3,33 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Types", "Types\ISTC.FirtsStage.Types.csproj", "{97BE2091-1B83-44F9-8511-1601B28959D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Types", "ISTC.FirtsStage.Types\ISTC.FirtsStage.Types.csproj", "{97BE2091-1B83-44F9-8511-1601B28959D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.SimpleTypes", "SimpleTypes\ISTC.FirtsStage.SimpleTypes.csproj", "{2D4AFF4B-2F69-49ED-A62F-4077DF21B1F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.SimpleTypes", "ISTC.FirtsStage.SimpleTypes\ISTC.FirtsStage.SimpleTypes.csproj", "{2D4AFF4B-2F69-49ED-A62F-4077DF21B1F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Variables", "Variables\ISTC.FirtsStage.Variables.csproj", "{35202572-95C5-487E-9592-C093479540D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Variables", "ISTC.FirtsStage.Variables\ISTC.FirtsStage.Variables.csproj", "{35202572-95C5-487E-9592-C093479540D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Calculator", "Calculator\ISTC.FirtsStage.Calculator.csproj", "{CE49A980-B224-47E7-9E41-3A724A85B285}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Calculator", "ISTC.FirtsStage.Calculator\ISTC.FirtsStage.Calculator.csproj", "{CE49A980-B224-47E7-9E41-3A724A85B285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.CalculatorGoodPractice", "CalculatorGoodPractice\ISTC.FirtsStage.CalculatorGoodPractice.csproj", "{AD106B61-81E5-4FCE-8949-900D07F10F9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.CalculatorGoodPractice", "ISTC.FirtsStage.CalculatorGoodPractice\ISTC.FirtsStage.CalculatorGoodPractice.csproj", "{AD106B61-81E5-4FCE-8949-900D07F10F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.LogicOperators", "LogicOperators\ISTC.FirtsStage.LogicOperators.csproj", "{40281D8C-B600-4B26-AAB3-2D14EA35B7CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.LogicOperators", "ISTC.FirtsStage.LogicOperators\ISTC.FirtsStage.LogicOperators.csproj", "{40281D8C-B600-4B26-AAB3-2D14EA35B7CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.LogicOperations2", "LogicOperations2\ISTC.FirtsStage.LogicOperations2.csproj", "{A9658AFA-D9F6-4666-BAF9-E4C69E1F19AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.LogicOperations2", "ISTC.FirtsStage.LogicOperations2\ISTC.FirtsStage.LogicOperations2.csproj", "{A9658AFA-D9F6-4666-BAF9-E4C69E1F19AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.LoopFor", "LoopFor\ISTC.FirtsStage.LoopFor.csproj", "{17A2873B-3F56-40ED-B33D-4F8B7B280460}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.LoopFor", "ISTC.FirtsStage.LoopFor\ISTC.FirtsStage.LoopFor.csproj", "{17A2873B-3F56-40ED-B33D-4F8B7B280460}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.LoopWhile", "LoopWhile\ISTC.FirtsStage.LoopWhile.csproj", "{3F92A219-C116-46BC-8FB9-B88F0A19126A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.LoopWhile", "ISTC.FirtsStage.LoopWhile\ISTC.FirtsStage.LoopWhile.csproj", "{3F92A219-C116-46BC-8FB9-B88F0A19126A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.SimetricNumber", "SimetricNumber\ISTC.FirtsStage.SimetricNumber.csproj", "{F873C217-F6BE-48B9-864C-EF170F2B8726}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.SimetricNumber", "ISTC.FirtsStage.SimetricNumber\ISTC.FirtsStage.SimetricNumber.csproj", "{F873C217-F6BE-48B9-864C-EF170F2B8726}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Main", "Main\ISTC.FirtsStage.Main.csproj", "{539EBE81-FCAC-446D-A3C1-D08195323119}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Main", "ISTC.FirtsStage.Main\ISTC.FirtsStage.Main.csproj", "{539EBE81-FCAC-446D-A3C1-D08195323119}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Methods", "Methods\ISTC.FirtsStage.Methods.csproj", "{424B6E2D-CA11-4E00-886C-B94111AECE96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Methods", "ISTC.FirtsStage.Methods\ISTC.FirtsStage.Methods.csproj", "{424B6E2D-CA11-4E00-886C-B94111AECE96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Methotds2", "Methotds2\ISTC.FirtsStage.Methotds2.csproj", "{609BB36C-68E4-403B-815C-92D2131BC519}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Methotds2", "ISTC.FirtsStage.Methotds2\ISTC.FirtsStage.Methotds2.csproj", "{609BB36C-68E4-403B-815C-92D2131BC519}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Recursion", "Recursion\ISTC.FirtsStage.Recursion.csproj", "{37A10F94-A951-433E-8112-CE02079B6FAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Recursion", "ISTC.FirtsStage.Recursion\ISTC.FirtsStage.Recursion.csproj", "{37A10F94-A951-433E-8112-CE02079B6FAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
