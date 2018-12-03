@@ -21,7 +21,8 @@ namespace ISTC.SecondStage.OOP.Generics03
             num *= q;
             return num;
         }
-        public static int getNum()
+
+        public static int GetNum()
         {
             return num;
         }
@@ -32,11 +33,12 @@ namespace ISTC.SecondStage.OOP.Generics03
             NumberChanger<int> nc2 = new NumberChanger<int>(MultNum);
 
             //calling the methods using the delegate objects
-            nc1(25);
-            Console.WriteLine($"Value of Num: {getNum()}");
+            nc1.Invoke(25);
+            Console.WriteLine($"Value of Num: {GetNum()}");
 
             nc2(5);
-            Console.WriteLine($"Value of Num: {getNum()}");
+            Console.WriteLine($"Value of Num: {GetNum()}");
+
             Console.ReadKey();
         }
     }

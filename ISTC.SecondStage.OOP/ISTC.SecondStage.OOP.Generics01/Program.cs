@@ -6,41 +6,42 @@ using System.Threading.Tasks;
 
 namespace ISTC.SecondStage.OOP.Generics01
 {
+
     #region MyGenericClassComp
 
 
-    //class MyGenericClass
-    //{
-    //    private int genericMemberVariable;
+    class MyGenericClass
+    {
+        private int genericMemberVariable;
 
-    //    public MyGenericClass(int value)
-    //    {
-    //        genericMemberVariable = value;
-    //    }
+        public MyGenericClass(int value)
+        {
+            genericMemberVariable = value;
+        }
 
-    //    public int GenericMethod(int genericParameter)
-    //    {
-    //        Console.WriteLine("Parameter type: {0}, value: {1}", typeof(int).ToString(), genericParameter);
-    //        Console.WriteLine("Return type: {0}, value: {1}", typeof(int).ToString(), genericMemberVariable);
+        public int GenericMethod(int genericParameter)
+        {
+            Console.WriteLine("Parameter type: {0}, value: {1}", typeof(int).ToString(), genericParameter);
+            Console.WriteLine("Return type: {0}, value: {1}", typeof(int).ToString(), genericMemberVariable);
 
-    //        return genericMemberVariable;
-    //    }
+            return genericMemberVariable;
+        }
 
-    //    public int GenericProperty { get; set; }
-    //}
+        public int GenericProperty { get; set; }
+    }
 
 
     #endregion
+
     class MyGenericClass<T>
     {
         private T genericMemberVariable;
-
         public MyGenericClass(T value)
         {
             genericMemberVariable = value;
         }
 
-        public T GenericMethod<U>(T genericParameter,U anotherType) where U:struct
+        public T GenericMethod<L>(T genericParameter, L anotherType) where L : struct // constraint
         {
             Console.WriteLine("Parameter type: {0}, value: {1}", typeof(T).ToString(), genericParameter);
             Console.WriteLine("Return type: {0}, value: {1}", typeof(T).ToString(), genericMemberVariable);
@@ -54,9 +55,13 @@ namespace ISTC.SecondStage.OOP.Generics01
     {
         static void Main(string[] args)
         {
-            MyGenericClass<int> intGenericClass = new MyGenericClass<int>(10);
+            MyGenericClass<double> intGenericClass = new MyGenericClass<double>(10);
 
-            int val = intGenericClass.GenericMethod<int>(1500,5);
+            double val = intGenericClass.GenericMethod(genericParameter: 1500.2, anotherType: 5);
+
+            MyGenericClass<string> intGenericClass2 = new MyGenericClass<string>("d");
+
+            string val2 = intGenericClass2.GenericMethod<int>(genericParameter: "a", anotherType: 5);
         }
     }
 }
