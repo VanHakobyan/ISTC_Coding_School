@@ -6,6 +6,31 @@ using System.Threading.Tasks;
 
 namespace ISTC.SecondStage.OOP.Generics01
 {
+    #region MyGenericClassComp
+
+
+    //class MyGenericClass
+    //{
+    //    private int genericMemberVariable;
+
+    //    public MyGenericClass(int value)
+    //    {
+    //        genericMemberVariable = value;
+    //    }
+
+    //    public int GenericMethod(int genericParameter)
+    //    {
+    //        Console.WriteLine("Parameter type: {0}, value: {1}", typeof(int).ToString(), genericParameter);
+    //        Console.WriteLine("Return type: {0}, value: {1}", typeof(int).ToString(), genericMemberVariable);
+
+    //        return genericMemberVariable;
+    //    }
+
+    //    public int GenericProperty { get; set; }
+    //}
+
+
+    #endregion
     class MyGenericClass<T>
     {
         private T genericMemberVariable;
@@ -15,7 +40,7 @@ namespace ISTC.SecondStage.OOP.Generics01
             genericMemberVariable = value;
         }
 
-        public T GenericMethod(T genericParameter)
+        public T GenericMethod<U>(T genericParameter,U anotherType) where U:struct
         {
             Console.WriteLine("Parameter type: {0}, value: {1}", typeof(T).ToString(), genericParameter);
             Console.WriteLine("Return type: {0}, value: {1}", typeof(T).ToString(), genericMemberVariable);
@@ -31,7 +56,7 @@ namespace ISTC.SecondStage.OOP.Generics01
         {
             MyGenericClass<int> intGenericClass = new MyGenericClass<int>(10);
 
-            int val = intGenericClass.GenericMethod(1500);
+            int val = intGenericClass.GenericMethod<int>(1500,5);
         }
     }
 }
