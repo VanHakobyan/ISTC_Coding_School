@@ -50,6 +50,7 @@ namespace ISTC.SecondStage.OOP.RefOut
             }
             return s;
         }
+
         static void Main(string[] args)
         {
             //referrence
