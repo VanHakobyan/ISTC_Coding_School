@@ -14,7 +14,6 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling3
             {
                 throw new NullReferenceException("Null exception trowed !!!");
             }
-
             catch (DivideByZeroException e)
             {
                 Console.WriteLine(e.Message);
@@ -23,7 +22,7 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling3
             {
                 Console.WriteLine(e.Message);
             }
-            catch (Exception e) when (e is AggregateException || e is ContextMarshalException)
+            catch (Exception e) when (e is AggregateException || e is ContextMarshalException) //C# 7 +
             {
                 Console.WriteLine(e.Message);
             }
@@ -39,6 +38,8 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling3
             {
                 Console.WriteLine("Finally");
             }
+
+            Console.ReadKey();
         }
     }
 }

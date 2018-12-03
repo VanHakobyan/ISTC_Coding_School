@@ -23,7 +23,12 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling
 
             if (temperature == 0)
             {
-                throw (new TempIsZeroException("Zero Temperature found"));
+                TempIsZeroException z = new TempIsZeroException("Zero Temperature found")
+                {
+                    HelpLink = "Fb.com"
+                };
+
+                throw z;
             }
             else
             {
@@ -31,12 +36,13 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling
             }
         }
     }
+
     class Program
     {
         static void Main(string[] args)
         {
-            var temp = new Temperature();
-            temp.temperature =0;
+            Temperature temp = new Temperature();
+            temp.temperature = 0;
             try
             {
                 temp.ShowTemp();

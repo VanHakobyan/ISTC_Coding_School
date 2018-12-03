@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Except
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Generics01", "ISTC.SecondStage.OOP.Generics01\ISTC.SecondStage.OOP.Generics01.csproj", "{5B6D8EA7-299A-454E-9E39-89330BF1C9EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.RefOut", "ISTC.SecondStage.OOP.RefOut\ISTC.SecondStage.OOP.RefOut.csproj", "{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.TryOut", "ISTC.SecondStage.OOP.TryOut\ISTC.SecondStage.OOP.TryOut.csproj", "{97809126-8E64-482F-A11F-3EA8098CA404}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,14 @@ Global
 		{5B6D8EA7-299A-454E-9E39-89330BF1C9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B6D8EA7-299A-454E-9E39-89330BF1C9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B6D8EA7-299A-454E-9E39-89330BF1C9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C4CEEB-2F76-4976-92BC-8133B0AC9503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97809126-8E64-482F-A11F-3EA8098CA404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97809126-8E64-482F-A11F-3EA8098CA404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97809126-8E64-482F-A11F-3EA8098CA404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97809126-8E64-482F-A11F-3EA8098CA404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
