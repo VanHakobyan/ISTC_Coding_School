@@ -67,6 +67,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Nullab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.LINQ01", "ISTC.SecondStage.OOP.LINQ01\ISTC.SecondStage.OOP.LINQ01.csproj", "{96C0630A-F493-49D9-AD1E-378746A06D5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.LINQ02", "ISTC.SecondStage.OOP.LINQ02\ISTC.SecondStage.OOP.LINQ02.csproj", "{78AA52F8-44D5-400D-BF43-FF5C9EA02FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.LINQ03", "ISTC.SecondStage.OOP.LINQ03\ISTC.SecondStage.OOP.LINQ03.csproj", "{3D07C208-F7C4-42B1-BE25-2089A7601B0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +205,14 @@ Global
 		{96C0630A-F493-49D9-AD1E-378746A06D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96C0630A-F493-49D9-AD1E-378746A06D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96C0630A-F493-49D9-AD1E-378746A06D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78AA52F8-44D5-400D-BF43-FF5C9EA02FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78AA52F8-44D5-400D-BF43-FF5C9EA02FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78AA52F8-44D5-400D-BF43-FF5C9EA02FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78AA52F8-44D5-400D-BF43-FF5C9EA02FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D07C208-F7C4-42B1-BE25-2089A7601B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D07C208-F7C4-42B1-BE25-2089A7601B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D07C208-F7C4-42B1-BE25-2089A7601B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D07C208-F7C4-42B1-BE25-2089A7601B0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
