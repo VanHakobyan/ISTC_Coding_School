@@ -40,7 +40,6 @@ namespace ISTC.SecondStage.OOP.LINQ03
 
             //Multiple Select and where Operator
             var studentNames = studentList.Where(s => s.Age > 18)
-                .Select(s => s)
                 .Where(st => st.StandardId > 0)
                 .Select(s => s.StudentName);
 
@@ -161,7 +160,7 @@ namespace ISTC.SecondStage.OOP.LINQ03
                           select std.StandardId).FirstOrDefault()
                 select s;
 
-            nestedQueries.ToList().ForEach(s => Console.WriteLine(s.StudentName));
+            foreach (var s in nestedQueries) Console.WriteLine(s.StudentName);
         }
     }
 
