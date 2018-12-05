@@ -10,8 +10,9 @@ namespace ISTC.SecondStage.OOP.LINQ01
     {
         public static void DoSomethig(dynamic myAnonymousType)
         {
-            Console.WriteLine(myAnonymousType.secondProperty);
+            Console.WriteLine(myAnonymousType.anotherAnonymousType.nestedProperty);
         }
+
         static void Main(string[] args)
         {
             var myAnonymousType = new
