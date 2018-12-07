@@ -11,24 +11,29 @@ namespace ISTC.SecondStage.OOP.Operator01
         public double X { get; set; }
         public double Y { get; set; }
 
-        public static Point operator +(Point lhs, Point rhs)
+        public static Point operator +(Point leftPoint, Point rhs)
         {
-            return new Point { X = lhs.X + rhs.X, Y = lhs.Y + rhs.Y };
+            return new Point
+            {
+                X = leftPoint.X + rhs.X,
+                Y = leftPoint.Y + rhs.Y
+            };
         }
 
-        public static Point operator +(Point lhs, double rhs)
+        public static Point operator +(Point leftPoint, double rhs)
             => new Point
             {
-                X = lhs.X + rhs,
-                Y = lhs.Y + rhs
+                X = leftPoint.X + rhs,
+                Y = leftPoint.Y + rhs
             };
 
-        public static bool operator ==(Point lhs, Point rhs) => lhs.X == rhs.X && lhs.Y == rhs.Y;
+        public static bool operator ==(Point lhs, Point rhs) 
+            => lhs.X == rhs.X && lhs.Y == rhs.Y;
+        
+        public static bool operator !=(Point lhs, Point rhs) 
+            => !(lhs == rhs);
 
-        public static bool operator !=(Point lhs, Point rhs) => !(lhs == rhs);
-
-
-        //learn and use implicit and explicit operators
+        // learn and use implicit and explicit operators
     }
 
     class Program
@@ -38,6 +43,8 @@ namespace ISTC.SecondStage.OOP.Operator01
             var point1 = new Point { X = 1, Y = 4 };
             var point2 = new Point { X = 2, Y = 3 };
 
+            var point = point1 + 5;
+
             var point3 = new Point
             {
                 X = point1.X + point2.X,
@@ -45,7 +52,15 @@ namespace ISTC.SecondStage.OOP.Operator01
             };
 
             var point4 = point1 + point2;
-            
+
+            if (point3 != point4)
+            {
+                Console.WriteLine(false);
+            }
+            else
+            {
+                Console.WriteLine(true);
+            }
         }
     }
 }
