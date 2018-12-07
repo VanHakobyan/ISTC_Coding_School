@@ -45,8 +45,7 @@ namespace ISTC.SecondStage.OOP.Operator01
             };
 
             var point4 = point1 + point2;
-            // X: 3
-            // Y: 7
+            
         }
     }
 }
