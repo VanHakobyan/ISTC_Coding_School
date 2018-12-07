@@ -73,6 +73,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.LINQ03
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Operator01", "ISTC.SecondStage.OOP.Operator01\ISTC.SecondStage.OOP.Operator01.csproj", "{C415A2E7-3A0B-4B49-A855-AD10C7B3167A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Extension01", "ISTC.SecondStage.OOP.Extension01\ISTC.SecondStage.OOP.Extension01.csproj", "{83B14440-9333-4E58-A37F-346B66F83C8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Extension02", "ISTC.SecondStage.OOP.Extension0թ\ISTC.SecondStage.OOP.Extension02.csproj", "{52CD1BAA-35D6-4B8A-9B35-9A509EB5C4FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +223,14 @@ Global
 		{C415A2E7-3A0B-4B49-A855-AD10C7B3167A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C415A2E7-3A0B-4B49-A855-AD10C7B3167A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C415A2E7-3A0B-4B49-A855-AD10C7B3167A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B14440-9333-4E58-A37F-346B66F83C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B14440-9333-4E58-A37F-346B66F83C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B14440-9333-4E58-A37F-346B66F83C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B14440-9333-4E58-A37F-346B66F83C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CD1BAA-35D6-4B8A-9B35-9A509EB5C4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CD1BAA-35D6-4B8A-9B35-9A509EB5C4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CD1BAA-35D6-4B8A-9B35-9A509EB5C4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CD1BAA-35D6-4B8A-9B35-9A509EB5C4FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
