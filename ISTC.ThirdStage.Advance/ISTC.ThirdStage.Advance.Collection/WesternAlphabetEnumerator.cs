@@ -11,7 +11,7 @@ namespace ISTC.ThirdStage.Advance.Collection
     {
 
         private IEnumerable<string> _alphabet;
-        private int _position;
+        public int _position;
         private int _max;
 
         public WesternAlphabetEnumerator(IEnumerable<string> alphabet)
@@ -27,9 +27,10 @@ namespace ISTC.ThirdStage.Advance.Collection
 
         public bool MoveNext()
         {
+            Console.WriteLine(_position);
             if (_position < _max)
             {
-                _position += 1;
+                _position ++;
                 return true;
             }
             return false;
@@ -37,9 +38,10 @@ namespace ISTC.ThirdStage.Advance.Collection
 
         void IEnumerator.Reset()
         {
-            throw new NotImplementedException();
+            _position = 6;
         }
 
+       
         public void Dispose() { }
     }
 }

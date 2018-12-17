@@ -10,12 +10,19 @@ namespace ISTC.ThirdStage.Advance.Collection
     {
         static void Main(string[] args)
         {
-            WesternAlphabet alphabetEnumerator =new WesternAlphabet();
-            
+            WesternAlphabet alphabetEnumerator = new WesternAlphabet();
+
             foreach (var item in alphabetEnumerator)
             {
                 Console.WriteLine(item);
             }
+           
+            foreach (string item in alphabetEnumerator)
+            {
+                Console.WriteLine(item);
+            }
+
+
         }
     }
 }
