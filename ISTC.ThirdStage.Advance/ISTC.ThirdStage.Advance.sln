@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.Col
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.Collection02", "ISTC.ThirdStage.Advance.Collection02\ISTC.ThirdStage.Advance.Collection02.csproj", "{012F4668-2425-42D5-827D-0D595E7A24AE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.ThirdStage.Advance.File", "ISTC.ThirdStage.Advance.File", "{1912A3E5-2935-4BE3-83B0-49E8587DD64D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.File.ReadData", "ISTC.ThirdStage.Advance.File.ReadData\ISTC.ThirdStage.Advance.File.ReadData.csproj", "{0599999A-842B-43B3-A05C-9678718334EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.File.WriteData", "ISTC.ThirdStage.Advance.File.WriteData\ISTC.ThirdStage.Advance.File.WriteData.csproj", "{2B863AFB-2A70-4FD4-BEFD-05BBD237B433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.File.Directory", "ISTC.ThirdStage.Advance.File.Directory\ISTC.ThirdStage.Advance.File.Directory.csproj", "{DB225F37-6F25-4EB4-9DE4-CDAF6D91F734}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.File.FileInfo", "ISTC.ThirdStage.Advance.File.FileInfo\ISTC.ThirdStage.Advance.File.FileInfo.csproj", "{5DB4898E-5AAB-459F-9EB6-306F1090A6C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +31,31 @@ Global
 		{012F4668-2425-42D5-827D-0D595E7A24AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{012F4668-2425-42D5-827D-0D595E7A24AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{012F4668-2425-42D5-827D-0D595E7A24AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0599999A-842B-43B3-A05C-9678718334EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0599999A-842B-43B3-A05C-9678718334EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0599999A-842B-43B3-A05C-9678718334EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0599999A-842B-43B3-A05C-9678718334EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B863AFB-2A70-4FD4-BEFD-05BBD237B433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B863AFB-2A70-4FD4-BEFD-05BBD237B433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B863AFB-2A70-4FD4-BEFD-05BBD237B433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B863AFB-2A70-4FD4-BEFD-05BBD237B433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB225F37-6F25-4EB4-9DE4-CDAF6D91F734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB225F37-6F25-4EB4-9DE4-CDAF6D91F734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB225F37-6F25-4EB4-9DE4-CDAF6D91F734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB225F37-6F25-4EB4-9DE4-CDAF6D91F734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB4898E-5AAB-459F-9EB6-306F1090A6C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB4898E-5AAB-459F-9EB6-306F1090A6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB4898E-5AAB-459F-9EB6-306F1090A6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB4898E-5AAB-459F-9EB6-306F1090A6C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0599999A-842B-43B3-A05C-9678718334EA} = {1912A3E5-2935-4BE3-83B0-49E8587DD64D}
+		{2B863AFB-2A70-4FD4-BEFD-05BBD237B433} = {1912A3E5-2935-4BE3-83B0-49E8587DD64D}
+		{DB225F37-6F25-4EB4-9DE4-CDAF6D91F734} = {1912A3E5-2935-4BE3-83B0-49E8587DD64D}
+		{5DB4898E-5AAB-459F-9EB6-306F1090A6C5} = {1912A3E5-2935-4BE3-83B0-49E8587DD64D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B220622-4D61-4EB4-8B29-0388DA6E3E90}
