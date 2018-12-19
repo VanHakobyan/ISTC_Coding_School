@@ -12,7 +12,7 @@ namespace ISTC.ThirdStage.Advance.DateTimes.DT04
         static void Main(string[] args)
         {
             // A simple example.
-            string simpleTime = "1/1/2000";
+            string simpleTime = "1/3/2000";
             DateTime time = DateTime.Parse(simpleTime);
             Console.WriteLine(time);
 
@@ -42,7 +42,7 @@ namespace ISTC.ThirdStage.Advance.DateTimes.DT04
             Console.WriteLine(time);
 
             // Taken from Windows file system Created/Modified
-            string windowsTime = "2/21/2009 10:35 PM";
+            string windowsTime = "2/1/2009 10:35 PM";
             time = DateTime.Parse(windowsTime);
             Console.WriteLine(time);
 
@@ -83,7 +83,7 @@ namespace ISTC.ThirdStage.Advance.DateTimes.DT04
             // Exception: The string was not recognized as a valid DateTime. There is an unknown word starting at index 0.  
             bool isSuccess4 = DateTime.TryParseExact(dateString, "MM/dd/yyyy", provider, DateTimeStyles.None, out var dateTime4);
 
-            dateString = "Tue Dec 30, 2015";
+            dateString = "11/22/2015";
             // Exception: String was not recognized as a valid DateTime because the day of week was incorrect.  
             bool isSuccess5 = DateTime.TryParseExact(dateString, "MM/dd/yyyy", provider, DateTimeStyles.None, out var dateTime2);
             

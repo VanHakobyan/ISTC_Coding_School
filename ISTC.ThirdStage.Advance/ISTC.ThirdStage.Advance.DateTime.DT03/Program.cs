@@ -15,8 +15,8 @@ namespace ISTC.ThirdStage.Advance.DateTime.DT03
             System.DateTime date2 = new System.DateTime(2018, 2, 20, 12, 25, 35);
 
             // Calculate the interval between the two dates.  
-            TimeSpan interval = date2 - date1;
-
+            TimeSpan interval = date1 - date2;
+           
             // Display individual properties of the resulting TimeSpan object.  
             Console.WriteLine("No of Days:", interval.Days); // 41  
             Console.WriteLine("Total No of Days:", interval.TotalDays); // 41.0451  
