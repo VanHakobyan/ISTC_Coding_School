@@ -71,10 +71,6 @@ namespace ISTC.ThirdStage.Advance.DateTimes.DT04
             bool isSuccess2 = DateTime.TryParse(dateString, out dateTime12); // 1/1/0001 12:00:00 AM  
             Console.WriteLine(dateTime12);
 
-
-
-
-
             dateString = null;
             CultureInfo provider = CultureInfo.InvariantCulture;
             bool isSuccess3 = DateTime.TryParseExact(dateString, "MM/dd/yyyy", provider, DateTimeStyles.None, out var dateTime5);
