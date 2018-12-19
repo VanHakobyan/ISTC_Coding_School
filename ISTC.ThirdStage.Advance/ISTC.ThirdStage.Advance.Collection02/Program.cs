@@ -27,7 +27,7 @@ namespace ISTC.ThirdStage.Advance.Collection02
             //string s2 = dictionary2["Zero"];
             var val = dictionary2.Values.ElementAt(0);
 
-
+            
         }
     }
 }

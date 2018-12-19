@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.DateTime.DT04", "ISTC.ThirdStage.Advance.DateTime.DT04\ISTC.ThirdStage.Advance.DateTime.DT04.csproj", "{D8BFDC8E-1B3D-4D81-B83F-E61D76A9B413}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.File.FileInFile", "ISTC.ThirdStage.Advance.File.FileInFile\ISTC.ThirdStage.Advance.File.FileInFile.csproj", "{9A1DB339-70A8-4785-AD9F-94DFDBAAEE79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{D8BFDC8E-1B3D-4D81-B83F-E61D76A9B413}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8BFDC8E-1B3D-4D81-B83F-E61D76A9B413}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8BFDC8E-1B3D-4D81-B83F-E61D76A9B413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1DB339-70A8-4785-AD9F-94DFDBAAEE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1DB339-70A8-4785-AD9F-94DFDBAAEE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1DB339-70A8-4785-AD9F-94DFDBAAEE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1DB339-70A8-4785-AD9F-94DFDBAAEE79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{8C5D494B-C896-4F15-8D05-39F8EB7A4504} = {B4B3E57E-91B5-4F43-B0BE-05068FB5DD0A}
 		{D017AF90-7A13-48A3-B0E7-AA5A43D5A4E5} = {B4B3E57E-91B5-4F43-B0BE-05068FB5DD0A}
 		{D8BFDC8E-1B3D-4D81-B83F-E61D76A9B413} = {B4B3E57E-91B5-4F43-B0BE-05068FB5DD0A}
+		{9A1DB339-70A8-4785-AD9F-94DFDBAAEE79} = {1912A3E5-2935-4BE3-83B0-49E8587DD64D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B220622-4D61-4EB4-8B29-0388DA6E3E90}

@@ -11,7 +11,7 @@ namespace ISTC.ThirdStage.Advance.File.Directory
     {
         static void Main(string[] args)
         {
-            DirectoryInfo dirinfo = new DirectoryInfo( @"C:\\Windows");
+            DirectoryInfo dirinfo = new DirectoryInfo(@"C:\\Windows");
             Console.WriteLine($"Full Name of the directory is : {dirinfo.FullName}");
             Console.WriteLine($"The directory was last accesses on: { dirinfo.LastAccessTime}");
             Console.ReadKey();

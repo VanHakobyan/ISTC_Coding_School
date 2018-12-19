@@ -11,9 +11,9 @@ namespace ISTC.ThirdStage.Advance.File.ReadData
     {
         public void ReadData()
         {
-            FileStream fs = new FileStream("E:\\data.txt", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream(@"C:\Users\vanik.hakobyan\source\message.txt", FileMode.Open, FileAccess.Read);
             StreamReader sr = new StreamReader(fs);
-            sr.BaseStream.Seek(0, SeekOrigin.Begin);
+            //sr.BaseStream.Seek(0, SeekOrigin.Begin);
             string str = sr.ReadLine();
             while (str != null)
             {
