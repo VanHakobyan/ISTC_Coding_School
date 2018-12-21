@@ -8,9 +8,31 @@ using System.Threading.Tasks;
 namespace ISTC.ThirdStage.Advance.WorkWithText.Rx02
 {
     class Program
-    {
+    {   
+        //A sentence is considered correct if:
+        //
+        //it starts with a capital letter;
+        //it ends with a full stop, question mark or exclamation point('.', '?' or '!');
+        //full stops, question marks and exclamation points don't appear anywhere else in the sentence.
+        //    Given a sentence, return true if it is correct and false otherwise.
+
+        bool isSentenceCorrect(string sentence)
+        {
+            Regex regex = new Regex("^[A-Z][^.?!]*[.?!]$");
+            return regex.IsMatch(sentence);
+        }
+        //
+        //Implement a function that replaces each digit in the given string with a '#' character.
+
+        string replaceAllDigitsRegExp(string input)
+        {
+            return Regex.Replace(input, "[0-9]", "#");
+        }
         public static void Main()
         {
+
+
+            
             string strToTest;
           
             Console.Write("Enter a string to Test for Alphabets:");

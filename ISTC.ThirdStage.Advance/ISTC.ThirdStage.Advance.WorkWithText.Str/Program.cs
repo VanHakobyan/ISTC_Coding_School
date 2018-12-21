@@ -10,13 +10,22 @@ namespace ISTC.ThirdStage.Advance.WorkWithText.Str
     {
         static void Main(string[] args)
         {
-            string data = "there is a cat";
+            string data = "there is a cat, assa adda ,daa";
             // Split string on spaces (this will separate all the words).
-            string[] words = data.Split(' ');
+            string[] words = data.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (string word in words)
             {
                 Console.WriteLine(word);
             }
+
+
+            string dog = data.Replace("cat", "dog");
+            bool endsWith = data.EndsWith("a");
+            bool contains = data.Contains("ad");
+            int indexOf = data.IndexOf("Asta");
+            string insert = data.Insert(10, "YE0");
+            string trim = data.Trim('\t');
+
         }
     }
 }
