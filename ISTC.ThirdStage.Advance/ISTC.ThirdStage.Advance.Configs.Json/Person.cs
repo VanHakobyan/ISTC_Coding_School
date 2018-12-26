@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace ISTC.ThirdStage.Advance.Configs.Json
 {
     public class Person
     {
+        public int Id { get; set; } = 5;
         public string name { get; set; }
         public int[] phoneNumbers { get; set; }
         public bool isMen { get; set; }

@@ -13,7 +13,9 @@ namespace ISTC.ThirdStage.Advance.Configs.Json
         static void Main(string[] args)
         {
             var gevorJson = File.ReadAllText(@"C:\Users\vanik.hakobyan\source\gevor.json");
-            List<Person> gevor = JsonConvert.DeserializeObject<List<Person>>(gevorJson);
+            List<Person> gevors = JsonConvert.DeserializeObject<List<Person>>(gevorJson);
+            string serializeObject = JsonConvert.SerializeObject(gevors);
+            File.WriteAllText(@"C:\Users\vanik.hakobyan\source\gevor2.json",serializeObject);
         }
     }
 }
