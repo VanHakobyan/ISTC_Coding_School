@@ -2,4 +2,5 @@
 <br> <br>
 
 * <a href='https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/FirtStage' >Stage 1</a><br>
-* <a href='https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/SecondStage_OOP' >Stage 2</a>
+* <a href='https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/SecondStage_OOP' >Stage 2 OOP</a>
+* <a href='https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance' >Stage 3 Advance</a>
