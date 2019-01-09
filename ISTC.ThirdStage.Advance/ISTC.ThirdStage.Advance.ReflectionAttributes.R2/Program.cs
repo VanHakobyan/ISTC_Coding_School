@@ -5,7 +5,7 @@ namespace ISTC.ThirdStage.Advance.ReflectionAttributes.R2
 {
     class Program
     {
-        const string path = @"D:\Source\VanHakobyan\ISTC_Coding_School\ISTC.ThirdStage.Advance\ISTC.ThirdStage.Advance.ReflectionAttributes.DLL\bin\Debug\ISTC.ThirdStage.Advance.ReflectionAttributes.DLL.dll";
+        const string path = @"C:\Users\van19\Source\Repos\VanHakobyan\ISTC_Coding_School\ISTC.ThirdStage.Advance\ISTC.ThirdStage.Advance.ReflectionAttributes.DLL\bin\Debug\ISTC.ThirdStage.Advance.ReflectionAttributes.DLL.dll";
         static void Main(string[] args)
         {
             // Using GetType to obtain type information:

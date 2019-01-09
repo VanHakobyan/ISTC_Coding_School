@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ISTC.ThirdStage.Advance.ReflectionAttributes.A2
 {
     [AttributeUsage(AttributeTargets.All)]
-    public sealed class DeveloperAttribute : Attribute
+    public class DeveloperAttribute : Attribute
     {
         // Private fields.
 

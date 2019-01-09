@@ -1,10 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace ISTC.ThirdStage.Advance.ReflectionAttributes.A1
 {
     public class Person
     {
-        [JsonProperty("Անուն")]
+        [JsonPropertyAttribute("First Name")]
         public string FirstName { get; set; }
         [JsonProperty("Ազգանուն")]
         public string LastName { get; set; }
@@ -12,5 +13,10 @@ namespace ISTC.ThirdStage.Advance.ReflectionAttributes.A1
         public int Age { get; set; }
         [JsonIgnore]
         public int PhoneNumber { get; set; }
+
+        [Required]
+        [DataType(DataType.EmailAddress)]
+        [EmailAddress]
+        public string Email { get; set; }
     }
 }
