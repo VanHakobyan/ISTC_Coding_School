@@ -23,6 +23,11 @@ namespace ISTC.ThirdStage.Advance.GC.GC01
                     Console.WriteLine($"Created {i} items");
                     Console.WriteLine(new string('-',50));
                     Console.WriteLine(string.Join("\n", testGarbageCollectors.Select(x => x.GetHashCode())));
+                    //for (int j = 0; j < testGarbageCollectors.Count-1; j++)
+                    //{
+                    //    testGarbageCollectors[j] = null;
+                    //}
+                    //System.GC.Collect();
                     break;
                 }
                 catch (Exception e)
