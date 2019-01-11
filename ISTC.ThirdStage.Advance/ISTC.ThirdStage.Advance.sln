@@ -65,13 +65,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.ThirdStage.Advance.AMM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.AMM01", "ISTC.ThirdStage.Advance.AMM01\ISTC.ThirdStage.Advance.AMM01.csproj", "{0DED8765-5952-420E-B8C3-DE5D60F31237}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.GC.GC01", "ISTC.ThirdStage.Advance.GC01\ISTC.ThirdStage.Advance.GC.GC01.csproj", "{D77329BD-C944-4D76-872B-66365467BF74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.GC.GC01", "ISTC.ThirdStage.Advance.GC.GC01\ISTC.ThirdStage.Advance.GC.GC01.csproj", "{D77329BD-C944-4D76-872B-66365467BF74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.GC.GC02", "ISTC.ThirdStage.Advance.GC02\ISTC.ThirdStage.Advance.GC.GC02.csproj", "{157C1298-1EE5-4B77-9023-7DB4C0311469}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.GC.GC02", "ISTC.ThirdStage.Advance.GC.GC02\ISTC.ThirdStage.Advance.GC.GC02.csproj", "{157C1298-1EE5-4B77-9023-7DB4C0311469}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.GC.GC03", "ISTC.ThirdStage.Advance.GC03\ISTC.ThirdStage.Advance.GC.GC03.csproj", "{4BCDF720-3C6C-407B-AAB1-DFE6344F1C01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.GC.GC03", "ISTC.ThirdStage.Advance.GC.GC03\ISTC.ThirdStage.Advance.GC.GC03.csproj", "{4BCDF720-3C6C-407B-AAB1-DFE6344F1C01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.GC.GC04", "ISTC.ThirdStage.Advance.GC04\ISTC.ThirdStage.Advance.GC.GC04.csproj", "{556CE256-A1B8-4D6B-9942-FAC1EC736306}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.GC.GC04", "ISTC.ThirdStage.Advance.GC.GC04\ISTC.ThirdStage.Advance.GC.GC04.csproj", "{556CE256-A1B8-4D6B-9942-FAC1EC736306}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
