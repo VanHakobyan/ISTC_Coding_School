@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ISTC.ThirdStage.Advance.Collection
+namespace ISTC.ThirdStage.Advance.Collection.Collection01
 {
     public class WesternAlphabet : IEnumerable<string>
     {

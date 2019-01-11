@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
-namespace ISTC.ThirdStage.Advance.AMM01
+namespace ISTC.ThirdStage.Advance.AMM.AMM01
 {
     class A
     {

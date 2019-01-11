@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0DED8765-5952-420E-B8C3-DE5D60F31237}</ProjectGuid>
+    <ProjectGuid>{3B69AF28-8218-4ED9-89CD-4A5B62DE14EE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ISTC.ThirdStage.Advance.AMM01</RootNamespace>
-    <AssemblyName>ISTC.ThirdStage.Advance.AMM01</AssemblyName>
+    <RootNamespace>ISTC.ThirdStage.Advance.Collection.Collection01</RootNamespace>
+    <AssemblyName>ISTC.ThirdStage.Advance.Collection.Collection01</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,9 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AMM.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WesternAlphabet.cs" />
+    <Compile Include="WesternAlphabetEnumerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
