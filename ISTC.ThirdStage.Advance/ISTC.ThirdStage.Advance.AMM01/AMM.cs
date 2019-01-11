@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ISTC.ThirdStage.Advance.AMM01
@@ -11,6 +12,7 @@ namespace ISTC.ThirdStage.Advance.AMM01
         ~A()
         {
             Console.WriteLine("Destruct instance of A");
+            Thread.Sleep(1000);
         }
         public void F()
         {
@@ -25,6 +27,7 @@ namespace ISTC.ThirdStage.Advance.AMM01
         {
             Console.WriteLine("Destruct instance of B");
             Ref.F();
+            Thread.Sleep(1000);
         }
     }
 }
