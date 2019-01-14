@@ -13,7 +13,7 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL01
             handler.Invoke();
 
             Console.WriteLine("Continue: Main");
-            
+
             Console.ReadLine();
         }
 

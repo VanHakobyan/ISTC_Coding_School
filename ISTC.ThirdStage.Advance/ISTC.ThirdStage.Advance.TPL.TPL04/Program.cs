@@ -29,13 +29,15 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL04
                         CustomData data = obj as CustomData;
                         if (data == null)
                             return;
-
+                        Console.WriteLine(data.Name);
                         data.ThreadNum = Thread.CurrentThread.ManagedThreadId;
                     },
                     new CustomData { Name = i, CreationTime = DateTime.Now.Ticks }
                 );
             }
+
             Task.WaitAll(taskArray);
+            Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
             foreach (var task in taskArray)
             {
                 var data = task.AsyncState as CustomData;

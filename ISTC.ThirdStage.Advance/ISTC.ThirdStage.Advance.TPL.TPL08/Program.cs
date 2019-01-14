@@ -16,7 +16,7 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL08
         {
             var tokenSource2 = new CancellationTokenSource();
             CancellationToken ct = tokenSource2.Token;
-
+           
             var task = Task.Factory.StartNew(() =>
             {
 
@@ -32,7 +32,6 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL08
                         // Clean up here, then...
                         ct.ThrowIfCancellationRequested();
                     }
-
                 }
             }, tokenSource2.Token); // Pass same token to StartNew.
 

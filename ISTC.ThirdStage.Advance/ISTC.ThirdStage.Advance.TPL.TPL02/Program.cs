@@ -6,13 +6,11 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL02
     //async
     class Program
     {
-        public delegate int DisplayHandler();
         static void Main(string[] args)
         {
             Action handler = new Action(Display);
 
             IAsyncResult resultObj = handler.BeginInvoke(null, null);
-
             Console.WriteLine("Continue: Main");
             handler.EndInvoke(resultObj);
             Console.ReadLine();

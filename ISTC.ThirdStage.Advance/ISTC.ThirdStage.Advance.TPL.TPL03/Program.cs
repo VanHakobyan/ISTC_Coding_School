@@ -17,7 +17,7 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL03
             Task taskA = new Task(() => Console.WriteLine("Hello from taskA."));
             // Start the task.
             taskA.Start();
-
+          
             // Output a message from the calling thread.
             Console.WriteLine($"Hello from thread '{Thread.CurrentThread.Name}'.");
             taskA.Wait();
