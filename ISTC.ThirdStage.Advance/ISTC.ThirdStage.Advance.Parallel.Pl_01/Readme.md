@@ -5,3 +5,7 @@ In the past, parallelization required low-level manipulation of threads and lock
 The following illustration provides a high-level overview of the parallel programming architecture in the .NET Framework:
 
 <p align='center'><img src='https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/media/tpl-architecture.png'></p>
+
+<br>
+<p align='center'><img src='https://i.gyazo.com/5de0d2e076d8643b857f0b7ba0439d08.png'></p>
+
