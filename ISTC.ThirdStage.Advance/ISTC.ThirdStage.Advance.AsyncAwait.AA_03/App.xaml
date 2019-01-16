@@ -1,0 +1,9 @@
+﻿<Application x:Class="ISTC.ThirdStage.Advance.AsyncAwait.AA_03.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ISTC.ThirdStage.Advance.AsyncAwait.AA_03"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
