@@ -16,8 +16,7 @@ namespace ISTC.ThirdStage.Advance.AsyncAwait.AA_02
 
             // Control returns here before HandleFileAsync returns.
             // ... Prompt the user.
-            Console.WriteLine("Please wait patiently " +
-                              "while I do something important.");
+            Console.WriteLine("Please wait patiently while I do something important.");
 
             // Do something at the same time as the file is being read.
             string line = Console.ReadLine();
@@ -35,7 +34,7 @@ namespace ISTC.ThirdStage.Advance.AsyncAwait.AA_02
 
         static async Task<int> HandleFileAsync()
         {
-            string file = @"C:\Logs\file.txt";
+            string file = @"E:\Logs\file.txt";
             Console.WriteLine("HandleFile enter");
             int count = 0;
 
