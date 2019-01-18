@@ -109,6 +109,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.Asy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.AsyncAwait.AA_03", "ISTC.ThirdStage.Advance.AsyncAwait.AA_03\ISTC.ThirdStage.Advance.AsyncAwait.AA_03.csproj", "{05044783-6537-407D-AB33-B9DE741C9F80}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.ThirdStage.Advance.Algorithms", "ISTC.ThirdStage.Advance.Algorithms", "{8DA59283-C9CC-435B-B77F-D8AA7CF4A708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.Algorithms.Stack", "ISTC.ThirdStage.Advance.Algorithms.Stack\ISTC.ThirdStage.Advance.Algorithms.Stack.csproj", "{9C001B1C-C445-4688-B1C6-524C00F9C4D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.Algorithms.Queue", "ISTC.ThirdStage.Advance.Algorithms.Queue\ISTC.ThirdStage.Advance.Algorithms.Queue.csproj", "{4B30614A-2442-4E75-B164-3B23549EC445}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -283,6 +289,14 @@ Global
 		{05044783-6537-407D-AB33-B9DE741C9F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05044783-6537-407D-AB33-B9DE741C9F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05044783-6537-407D-AB33-B9DE741C9F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C001B1C-C445-4688-B1C6-524C00F9C4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C001B1C-C445-4688-B1C6-524C00F9C4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C001B1C-C445-4688-B1C6-524C00F9C4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C001B1C-C445-4688-B1C6-524C00F9C4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B30614A-2442-4E75-B164-3B23549EC445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B30614A-2442-4E75-B164-3B23549EC445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B30614A-2442-4E75-B164-3B23549EC445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B30614A-2442-4E75-B164-3B23549EC445}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -330,6 +344,8 @@ Global
 		{0103DED9-B4DF-41A9-B402-AE76A29F8FEA} = {312C0DCC-7D89-4FD0-B733-15E7B51E8BFA}
 		{DE0AEEDF-6278-4396-8275-FADF690F8FCA} = {312C0DCC-7D89-4FD0-B733-15E7B51E8BFA}
 		{05044783-6537-407D-AB33-B9DE741C9F80} = {312C0DCC-7D89-4FD0-B733-15E7B51E8BFA}
+		{9C001B1C-C445-4688-B1C6-524C00F9C4D4} = {8DA59283-C9CC-435B-B77F-D8AA7CF4A708}
+		{4B30614A-2442-4E75-B164-3B23549EC445} = {8DA59283-C9CC-435B-B77F-D8AA7CF4A708}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B220622-4D61-4EB4-8B29-0388DA6E3E90}
