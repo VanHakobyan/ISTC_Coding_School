@@ -28,7 +28,8 @@ namespace ISTC.ThirdStage.Advance.Algorithms.Stack
                 Array.Resize(ref s, (s.Length + 1) * 2);
             }
 
-            s[currentStackIndex++] = x;
+            s[currentStackIndex] = x;
+            currentStackIndex++;
         }
 
         public T Pop()

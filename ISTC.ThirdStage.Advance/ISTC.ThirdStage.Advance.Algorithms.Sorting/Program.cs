@@ -10,6 +10,22 @@ namespace ISTC.ThirdStage.Advance.Algorithms.Sorting
     {
         static void Main(string[] args)
         {
+            MyMethod();
         }
+
+        private static void MyMethod()
+        {
+            int N = new Random().Next(0, int.MaxValue);
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    Console.WriteLine(j);
+                }//O(N)
+                Console.WriteLine(i); //O(1)
+                string x = $"554";
+            }//O(N)
+
+        }//O(N^2)
     }
 }
