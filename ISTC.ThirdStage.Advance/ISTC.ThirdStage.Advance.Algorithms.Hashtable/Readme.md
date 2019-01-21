@@ -1,1 +1,1 @@
-https://i2.wp.com/www.jenniferbland.com/wp-content/uploads/hash_table.png?resize=300%2C208
+https://en.wikipedia.org/wiki/Hash_table#/media/File:Hash_table_3_1_1_0_1_0_0_SP.svg
