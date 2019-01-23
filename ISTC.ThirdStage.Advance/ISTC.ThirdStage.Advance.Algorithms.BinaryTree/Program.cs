@@ -17,8 +17,9 @@ namespace ISTC.ThirdStage.Advance.Algorithms.BinaryTree
           
             binaryTree.Insert(61);
 
+            var s = binaryTree.ToString();
 
-            var isExists = binaryTree.IsExists(10);
+            var isExists = binaryTree.IsExists(11);
 
             var isEmpty = binaryTree.IsEmpty();
 

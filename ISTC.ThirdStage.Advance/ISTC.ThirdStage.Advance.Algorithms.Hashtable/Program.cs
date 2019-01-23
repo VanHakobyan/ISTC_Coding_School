@@ -10,6 +10,19 @@ namespace ISTC.ThirdStage.Advance.Algorithms.Hashtable
     {
         static void Main(string[] args)
         {
+            System.Collections.Hashtable _hashtable = new System.Collections.Hashtable();
+            _hashtable.Add(1.0d, string.Empty);
+            _hashtable.Add(1.0f,"val");
+
+
+            //----------------------------------------------------------------
+
+            Dictionary<int,string> dictionary=new Dictionary<int, string>();
+
+            dictionary.Add(1,"Hello");
+            dictionary.Add(1,"Hi");
+
+
         }
     }
 }
