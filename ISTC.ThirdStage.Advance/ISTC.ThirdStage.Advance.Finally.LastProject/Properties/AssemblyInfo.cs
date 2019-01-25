@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ISTC.ThirdStage.Advance.Finally.ClassLibrary2")]
+[assembly: AssemblyTitle("ISTC.ThirdStage.Advance.Finally.LastProject")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ISTC.ThirdStage.Advance.Finally.ClassLibrary2")]
+[assembly: AssemblyProduct("ISTC.ThirdStage.Advance.Finally.LastProject")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("dc9c733f-3cde-44e9-89bf-7b98deffbad3")]
+[assembly: Guid("c1b5a415-edda-4065-9bbd-96fe5e7d76cd")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ISTC.ThirdStage.Advance.Finally.ClassLibrary2
+namespace ISTC.ThirdStage.Advance.Finally.LastProject
 {
-    public class Class1
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }
