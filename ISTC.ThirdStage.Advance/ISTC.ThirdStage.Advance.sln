@@ -125,6 +125,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.ThirdStage.Advance.Des
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.DesignPattern.DesignPattern_1", "ISTC.ThirdStage.Advance.DesignPattern.DesignPattern_1\ISTC.ThirdStage.Advance.DesignPattern.DesignPattern_1.csproj", "{00A0108C-DA07-4C37-9AE0-271BEAEEB172}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.ThirdStage.Advance.Finally", "ISTC.ThirdStage.Advance.Finally", "{A187FD9B-4F04-48D2-930C-A059B9EEC24D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{38AA142C-6BC1-4286-9182-DF3F09783D05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -323,6 +327,10 @@ Global
 		{00A0108C-DA07-4C37-9AE0-271BEAEEB172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00A0108C-DA07-4C37-9AE0-271BEAEEB172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00A0108C-DA07-4C37-9AE0-271BEAEEB172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AA142C-6BC1-4286-9182-DF3F09783D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AA142C-6BC1-4286-9182-DF3F09783D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AA142C-6BC1-4286-9182-DF3F09783D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AA142C-6BC1-4286-9182-DF3F09783D05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -376,6 +384,7 @@ Global
 		{67E57EDB-9BCC-40D2-8A07-A5098F48FC77} = {8DA59283-C9CC-435B-B77F-D8AA7CF4A708}
 		{390FD707-FC73-4579-8C0A-325D43EE11CF} = {8DA59283-C9CC-435B-B77F-D8AA7CF4A708}
 		{00A0108C-DA07-4C37-9AE0-271BEAEEB172} = {DE3B0EDD-7C02-4463-A306-5CA9439679E9}
+		{38AA142C-6BC1-4286-9182-DF3F09783D05} = {A187FD9B-4F04-48D2-930C-A059B9EEC24D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B220622-4D61-4EB4-8B29-0388DA6E3E90}
