@@ -10,3 +10,9 @@
    * [DateTime 02](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.DateTime.DT02)
    * [DateTime 03](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.DateTime.DT03)
    * [DateTime 04](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.DateTime.DT04)
+3. ### Work with text. Regex, HTMLAgilityPack
+   * [GetContent](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.GetContent)
+   * [HTMLAgilityPack](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.HTMLAP)
+   * [Regex 01](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.Rx01)   
+   * [Regex 01](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.Rx02)
+    * [String](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.Str)
