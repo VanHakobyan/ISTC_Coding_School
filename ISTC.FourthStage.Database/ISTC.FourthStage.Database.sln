@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Getting Started With SQL", "Getting Started With SQL", "{C54A4CAF-4A7E-44B6-AD6A-242E0E1D808D}"
+	ProjectSection(SolutionItems) = preProject
+		Getting Started With SQL.DataTypes.sql = Getting Started With SQL.DataTypes.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66F13108-ED0B-4C74-90FA-17E8BC260426}
+	EndGlobalSection
+EndGlobal
