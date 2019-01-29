@@ -1,1 +1,1 @@
-<p align='center'><img href='https://cdn.journaldev.com/wp-content/uploads/2017/11/sql-data-types.png'></p>
+<p align='center'><img href='https://github.com/VanHakobyan/ISTC_Coding_School/blob/master/ISTC.FourthStage.Database/Getting%20Started%20With%20SQL.DataTypes/sql-data-types.png?raw=true'></p>
