@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Getting Started With SQL", "Getting Started With SQL", "{C54A4CAF-4A7E-44B6-AD6A-242E0E1D808D}"
-	ProjectSection(SolutionItems) = preProject
-		Getting Started With SQL.DataTypes.sql = Getting Started With SQL.DataTypes.sql
-	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Getting Started With SQL.DataTypes", "Getting Started With SQL.DataTypes\Getting Started With SQL.DataTypes.sqlproj", "{83CA909C-B96C-40A9-A971-663A50B115A3}"
 EndProject
