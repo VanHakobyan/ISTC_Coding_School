@@ -25,4 +25,12 @@
    * [DLL](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.ReflectionAttributes.DLL)
    * [Attributes 01](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.ReflectionAttributes.A1)
    * [Attributes 02](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.ReflectionAttributes.A2)
+6. ### Automatic memory management and garbage collection
+   * [Automatic memory management](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.AMM.AMM01)
+   * [GC 01](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.GC.GC01)
+   * [GC 02](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.GC.GC02)
+   * [GC 03](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.GC.GC03)
+   * [GC 04](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.GC.GC04)
+   * [GC 05](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.GC.GC05)
 
+   
