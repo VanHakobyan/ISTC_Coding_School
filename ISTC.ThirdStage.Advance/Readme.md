@@ -15,4 +15,9 @@
    * [HTMLAgilityPack](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.HTMLAP)
    * [Regex 01](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.Rx01)   
    * [Regex 01](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.Rx02)
-    * [String](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.Str)
+   * [String](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.WorkWithText.Str)   
+4. ### XML, JSON.Configuration files, Serialization
+   * [JSON](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.Configs.Json)
+   * [XML](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.Configs.XML)
+  
+
