@@ -32,5 +32,7 @@
    * [GC 03](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.GC.GC03)
    * [GC 04](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.GC.GC04)
    * [GC 05](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.GC.GC05)
+   
+ ------------------------------------------------------------------
 
    
