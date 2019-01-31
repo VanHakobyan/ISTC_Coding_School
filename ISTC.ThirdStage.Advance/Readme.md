@@ -19,5 +19,10 @@
 4. ### XML, JSON.Configuration files, Serialization
    * [JSON](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.Configs.Json)
    * [XML](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.Configs.XML)
-  
+5. ### Reflection, Attributes
+   * [Reflection 01](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.ReflectionAttributes.R1)
+   * [Reflection 02](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.ReflectionAttributes.R2)
+   * [DLL](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.ReflectionAttributes.DLL)
+   * [Attributes 01](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.ReflectionAttributes.A1)
+   * [Attributes 02](https://github.com/VanHakobyan/ISTC_Coding_School/tree/master/ISTC.ThirdStage.Advance/ISTC.ThirdStage.Advance.ReflectionAttributes.A2)
 
