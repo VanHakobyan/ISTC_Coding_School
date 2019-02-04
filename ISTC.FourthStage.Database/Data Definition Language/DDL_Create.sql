@@ -14,3 +14,4 @@ create table People
 	IsMarried bit not null
 )
 
+
