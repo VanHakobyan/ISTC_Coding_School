@@ -1,0 +1,1 @@
+delete from People where age is null
