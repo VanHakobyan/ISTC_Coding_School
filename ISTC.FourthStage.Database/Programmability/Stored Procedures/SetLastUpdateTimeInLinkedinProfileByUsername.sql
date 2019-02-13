@@ -3,7 +3,7 @@ CREATE PROCEDURE sp_SetLastUpdateTimeInLinkedinProfileByUsername(@username nvarc
 AS
 BEGIN
 	update LinkedinProfile
-	set LastUpdateTime=GETDATE()
+	set LastUpdate=GETDATE()
 	where Username=@username
 END
 GO
