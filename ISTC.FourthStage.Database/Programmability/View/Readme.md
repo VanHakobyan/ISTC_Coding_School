@@ -1,0 +1,1 @@
+In SQL, a view is a virtual table based on the result-set of an SQL statement.
