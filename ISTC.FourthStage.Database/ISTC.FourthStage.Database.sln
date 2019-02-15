@@ -7,9 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Getting Started With SQL", 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Getting Started With SQL.DataTypes", "Getting Started With SQL.DataTypes\Getting Started With SQL.DataTypes.sqlproj", "{83CA909C-B96C-40A9-A971-663A50B115A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FourthStage.Database.ADO_NET_01", "ISTC.FourthStage.Database.ADO_NET_01\ISTC.FourthStage.Database.ADO_NET_01.csproj", "{83535561-7C89-44B9-9EF6-D1249CC77AA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FourthStage.Database.ADO_NET.ADO_NET_01", "ISTC.FourthStage.Database.ADO_NET_01\ISTC.FourthStage.Database.ADO_NET.ADO_NET_01.csproj", "{83535561-7C89-44B9-9EF6-D1249CC77AA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FourthStage.Database.ADO_NET_02", "ISTC.FourthStage.Database.ADO_NET_02\ISTC.FourthStage.Database.ADO_NET_02.csproj", "{97D66517-87C3-4CA3-B836-55E8402B9D53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FourthStage.Database.ADO_NET.ADO_NET_02", "ISTC.FourthStage.Database.ADO_NET_02\ISTC.FourthStage.Database.ADO_NET.ADO_NET_02.csproj", "{97D66517-87C3-4CA3-B836-55E8402B9D53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.FourthStage.Database.ADO_NET", "ISTC.FourthStage.Database.ADO_NET", "{6CA4C579-EAA7-4735-A13F-55021FC4BE2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{83CA909C-B96C-40A9-A971-663A50B115A3} = {C54A4CAF-4A7E-44B6-AD6A-242E0E1D808D}
+		{83535561-7C89-44B9-9EF6-D1249CC77AA3} = {6CA4C579-EAA7-4735-A13F-55021FC4BE2D}
+		{97D66517-87C3-4CA3-B836-55E8402B9D53} = {6CA4C579-EAA7-4735-A13F-55021FC4BE2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {66F13108-ED0B-4C74-90FA-17E8BC260426}
