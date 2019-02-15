@@ -21,8 +21,6 @@ namespace ISTC.FourthStage.Database.ADO_NET_02
                 var path = @"..\..\StartUp.xlsx";
                 var s = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={Path.GetFullPath(path)};Extended Properties='Excel 12.0 Xml;HDR=YES;IMEX=1;MAXSCANROWS=0'";
                 OleDbConnection connect = new OleDbConnection(s);
-                //set up connection string
-                OleDbCommand command = new OleDbCommand("select * from StartUp", connect);
 
                 try
                 {
