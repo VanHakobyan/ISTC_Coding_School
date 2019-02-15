@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ISTC.FourthStage.Database.ADO_NET_01
+namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_01
 {
     class Program
     {

@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
-using System.Data.SqlClient;
-using System.Data.SqlTypes;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ISTC.FourthStage.Database.ADO_NET_02
+namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_02
 {
     public class Connector
     {
