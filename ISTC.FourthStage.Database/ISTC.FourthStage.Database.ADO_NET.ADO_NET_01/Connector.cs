@@ -19,6 +19,7 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_01
                     Console.WriteLine(connection.State);
 
                     string query = "select * from People";
+                                   
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         using (SqlDataReader sqlDataReader = command.ExecuteReader())
