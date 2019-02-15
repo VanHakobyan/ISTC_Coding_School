@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Getting Started With SQL", 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Getting Started With SQL.DataTypes", "Getting Started With SQL.DataTypes\Getting Started With SQL.DataTypes.sqlproj", "{83CA909C-B96C-40A9-A971-663A50B115A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FourthStage.Database.ADO_NET_01", "ISTC.FourthStage.Database.ADO_NET_01\ISTC.FourthStage.Database.ADO_NET_01.csproj", "{83535561-7C89-44B9-9EF6-D1249CC77AA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FourthStage.Database.ADO_NET_02", "ISTC.FourthStage.Database.ADO_NET_02\ISTC.FourthStage.Database.ADO_NET_02.csproj", "{97D66517-87C3-4CA3-B836-55E8402B9D53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{83CA909C-B96C-40A9-A971-663A50B115A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83CA909C-B96C-40A9-A971-663A50B115A3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{83CA909C-B96C-40A9-A971-663A50B115A3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{83535561-7C89-44B9-9EF6-D1249CC77AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83535561-7C89-44B9-9EF6-D1249CC77AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83535561-7C89-44B9-9EF6-D1249CC77AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83535561-7C89-44B9-9EF6-D1249CC77AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D66517-87C3-4CA3-B836-55E8402B9D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D66517-87C3-4CA3-B836-55E8402B9D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D66517-87C3-4CA3-B836-55E8402B9D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D66517-87C3-4CA3-B836-55E8402B9D53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
