@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_01
 {
@@ -6,13 +7,12 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_01
     {
         static void Main(string[] args)
         {
-            //var peoples = Connector.GetPeople();
-            var peoples = Connector.GetPeopleUsingConnectionBuilder();
+            List<People> peoples = Connector.GetPeople();
+            //var peoples = Connector.GetPeopleUsingConnectionBuilder();
             foreach (var people in peoples)
             {
                 Console.WriteLine($"{people.Id} {people.FirstName} {people.LastName} {people.Age}");
             }
-
             Console.ReadKey();
         }
     }

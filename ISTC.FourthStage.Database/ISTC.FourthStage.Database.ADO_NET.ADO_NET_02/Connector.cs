@@ -12,7 +12,7 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_02
             try
             {
                 var path = @"..\..\StartUp.xlsx";
-                var s = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={Path.GetFullPath(path)};Extended Properties='Excel 12.0 Xml;HDR=YES;IMEX=1;MAXSCANROWS=0'";
+                var s = $"Provider=Microsoft.OLEDB.16.0;Data Source={Path.GetFullPath(path)};Extended Properties='Excel 16.0 Xml;HDR=YES;IMEX=1;MAXSCANROWS=0'";
                 OleDbConnection connect = new OleDbConnection(s);
 
                 try
@@ -23,10 +23,11 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_02
                 {
                     Console.WriteLine(e.Message);
                 }
+
                 OleDbDataAdapter objDA = new OleDbDataAdapter("select * from [Peoples$]", connect);
                 DataSet excelDataSet = new DataSet();
                 objDA.Fill(excelDataSet);
-                var dataTable = excelDataSet.Tables[0];
+                DataTable dataTable = excelDataSet.Tables[0];
 
                 foreach (DataRow dataTableRow in dataTable.Rows)
                 {
