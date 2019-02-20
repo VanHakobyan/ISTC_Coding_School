@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Faculties" EntityType="Model.Store.Faculties" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Deans" EntityType="Model.Store.Deans" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Students" EntityType="Model.Store.Students" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Subjects" EntityType="Model.Store.Subjects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SubjectStudent" EntityType="Model.Store.SubjectStudent" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FacultyDean" Association="Model.Store.FacultyDean">
+      <End Role="Faculty" EntitySet="Faculties" />
+      <End Role="Dean" EntitySet="Deans" />
+    </AssociationSet>
+    <AssociationSet Name="FacultyStudent" Association="Model.Store.FacultyStudent">
+      <End Role="Faculty" EntitySet="Faculties" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubjectStudent_Subject" Association="Model.Store.FK_SubjectStudent_Subject">
+      <End Role="Subject" EntitySet="Subjects" />
+      <End Role="SubjectStudent" EntitySet="SubjectStudent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubjectStudent_Student" Association="Model.Store.FK_SubjectStudent_Student">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="SubjectStudent" EntitySet="SubjectStudent" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Faculties">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Dean_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Deans">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="About" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsCorrupted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Students">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="GPA" Type="real" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FacultyId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Subjects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Credit" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubjectStudent">
+    <Key>
+      <PropertyRef Name="Subjects_Id" />
+      <PropertyRef Name="Students_Id" />
+    </Key>
+    <Property Name="Subjects_Id" Type="int" Nullable="false" />
+    <Property Name="Students_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FacultyDean">
+    <End Role="Faculty" Type="Model.Store.Faculties" Multiplicity="*" />
+    <End Role="Dean" Type="Model.Store.Deans" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Dean">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Faculty">
+        <PropertyRef Name="Dean_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FacultyStudent">
+    <End Role="Faculty" Type="Model.Store.Faculties" Multiplicity="1" />
+    <End Role="Student" Type="Model.Store.Students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculty">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="FacultyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubjectStudent_Subject">
+    <End Role="Subject" Type="Model.Store.Subjects" Multiplicity="1" />
+    <End Role="SubjectStudent" Type="Model.Store.SubjectStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubjectStudent">
+        <PropertyRef Name="Subjects_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubjectStudent_Student">
+    <End Role="SubjectStudent" Type="Model.Store.SubjectStudent" Multiplicity="*" />
+    <End Role="Student" Type="Model.Store.Students" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubjectStudent">
+        <PropertyRef Name="Students_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Faculties" EntityType="Model.Faculty" />
+          <EntitySet Name="Deans" EntityType="Model.Dean" />
+          <EntitySet Name="Students" EntityType="Model.Student" />
+          <EntitySet Name="Subjects" EntityType="Model.Subject" />
+          <AssociationSet Name="FacultyDean" Association="Model.FacultyDean">
+            <End Role="Faculty" EntitySet="Faculties" />
+            <End Role="Dean" EntitySet="Deans" />
+          </AssociationSet>
+          <AssociationSet Name="FacultyStudent" Association="Model.FacultyStudent">
+            <End Role="Faculty" EntitySet="Faculties" />
+            <End Role="Student" EntitySet="Students" />
+          </AssociationSet>
+          <AssociationSet Name="SubjectStudent" Association="Model.SubjectStudent">
+            <End Role="Subject" EntitySet="Subjects" />
+            <End Role="Student" EntitySet="Students" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Faculty">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <NavigationProperty Name="Dean" Relationship="Model.FacultyDean" FromRole="Faculty" ToRole="Dean" />
+          <NavigationProperty Name="Students" Relationship="Model.FacultyStudent" FromRole="Faculty" ToRole="Student" />
+        </EntityType>
+        <EntityType Name="Dean">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" />
+          <Property Name="LastName" Type="String" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="About" Type="String" Nullable="false" />
+          <Property Name="IsCorrupted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Faculty" Relationship="Model.FacultyDean" FromRole="Dean" ToRole="Faculty" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" />
+          <Property Name="LastName" Type="String" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="GPA" Type="Single" Nullable="false" />
+          <Property Name="Status" Type="String" Nullable="false" />
+          <NavigationProperty Name="Faculty" Relationship="Model.FacultyStudent" FromRole="Student" ToRole="Faculty" />
+          <Property Name="FacultyId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Subjects" Relationship="Model.SubjectStudent" FromRole="Student" ToRole="Subject" />
+        </EntityType>
+        <EntityType Name="Subject">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Type" Type="String" Nullable="false" />
+          <Property Name="Credit" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Students" Relationship="Model.SubjectStudent" FromRole="Subject" ToRole="Student" />
+        </EntityType>
+        <Association Name="FacultyDean">
+          <End Type="Model.Faculty" Role="Faculty" Multiplicity="1" />
+          <End Type="Model.Dean" Role="Dean" Multiplicity="1" />
+        </Association>
+        <Association Name="FacultyStudent">
+          <End Type="Model.Faculty" Role="Faculty" Multiplicity="1" />
+          <End Type="Model.Student" Role="Student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Faculty">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Student">
+              <PropertyRef Name="FacultyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SubjectStudent">
+          <End Type="Model.Subject" Role="Subject" Multiplicity="*" />
+          <End Type="Model.Student" Role="Student" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ModelContainer">
+    <EntitySetMapping Name="Faculties">
+      <EntityTypeMapping TypeName="IsTypeOf(Model.Faculty)">
+        <MappingFragment StoreEntitySet="Faculties">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deans">
+      <EntityTypeMapping TypeName="IsTypeOf(Model.Dean)">
+        <MappingFragment StoreEntitySet="Deans">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="IsCorrupted" ColumnName="IsCorrupted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="IsTypeOf(Model.Student)">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="GPA" ColumnName="GPA" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="FacultyId" ColumnName="FacultyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="IsTypeOf(Model.Subject)">
+        <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FacultyDean" TypeName="Model.FacultyDean" StoreEntitySet="Faculties">
+      <EndProperty Name="Dean">
+        <ScalarProperty Name="Id" ColumnName="Dean_Id" />
+      </EndProperty>
+      <EndProperty Name="Faculty">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="SubjectStudent" TypeName="Model.SubjectStudent" StoreEntitySet="SubjectStudent">
+      <EndProperty Name="Subject">
+        <ScalarProperty Name="Id" ColumnName="Subjects_Id" />
+      </EndProperty>
+      <EndProperty Name="Student">
+        <ScalarProperty Name="Id" ColumnName="Students_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
