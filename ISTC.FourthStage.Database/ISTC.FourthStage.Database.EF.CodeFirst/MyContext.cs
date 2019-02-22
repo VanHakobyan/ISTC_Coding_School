@@ -1,4 +1,4 @@
-﻿using System.Data.Entity;
+﻿    using System.Data.Entity;
 
 namespace ISTC.FourthStage.Database.EF.CodeFirst
 {

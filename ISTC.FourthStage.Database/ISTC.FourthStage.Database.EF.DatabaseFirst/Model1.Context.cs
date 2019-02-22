@@ -14,19 +14,25 @@ namespace ISTC.FourthStage.Database.EF.DatabaseFirst
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.Core.Objects;
     using System.Linq;
-    
+
     public partial class MonitoringEntities : DbContext
     {
         public MonitoringEntities()
             : base("name=MonitoringEntities")
         {
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new UnintentionalCodeFirstException();
+            modelBuilder.Entity<GithubProfile>().Map(
+                x =>
+                {
+                    x.Properties(a => new { a.Id, a.Name, a.Bio });
+                    x.Requires(a => a.Bio);
+                }
+            ).ToTable("MyProfile");
         }
-    
+
         public virtual DbSet<GithubLanguage> GithubLanguages { get; set; }
         public virtual DbSet<GithubLinkedinCrossTable> GithubLinkedinCrossTables { get; set; }
         public virtual DbSet<GithubProfile> GithubProfiles { get; set; }
@@ -38,29 +44,29 @@ namespace ISTC.FourthStage.Database.EF.DatabaseFirst
         public virtual DbSet<LinkedinProfile> LinkedinProfiles { get; set; }
         public virtual DbSet<LinkedinSkill> LinkedinSkills { get; set; }
         public virtual DbSet<Proxy> Proxies { get; set; }
-    
+
         [DbFunction("MonitoringEntities", "fn_GetAllLinkedinProfileWithExperience")]
         public virtual IQueryable<fn_GetAllLinkedinProfileWithExperience_Result> fn_GetAllLinkedinProfileWithExperience()
         {
             return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<fn_GetAllLinkedinProfileWithExperience_Result>("[MonitoringEntities].[fn_GetAllLinkedinProfileWithExperience]()");
         }
-    
+
         [DbFunction("MonitoringEntities", "fn_GetLinkedinProfileAllInfoById")]
         public virtual IQueryable<fn_GetLinkedinProfileAllInfoById_Result> fn_GetLinkedinProfileAllInfoById(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
                 new ObjectParameter("Id", id) :
                 new ObjectParameter("Id", typeof(int));
-    
+
             return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<fn_GetLinkedinProfileAllInfoById_Result>("[MonitoringEntities].[fn_GetLinkedinProfileAllInfoById](@Id)", idParameter);
         }
-    
+
         public virtual int sp_SetLastUpdateTimeInLinkedinProfileByUsername(string username)
         {
             var usernameParameter = username != null ?
                 new ObjectParameter("username", username) :
                 new ObjectParameter("username", typeof(string));
-    
+
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_SetLastUpdateTimeInLinkedinProfileByUsername", usernameParameter);
         }
     }
