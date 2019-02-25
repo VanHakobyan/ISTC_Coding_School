@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,12 +11,26 @@ namespace ISTC.FourthStage.Database.LinqToEntity.LinqToEntity_01
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            GithubProfile a;
+            using (MonitoringEntities db = new MonitoringEntities())
+            {
+                db.Configuration.AutoDetectChangesEnabled = false;
+                var Lqueryable = db.GithubProfiles.Select(x => x).Where(x => x.Company.ToLower() == "betconstruct")
+                    .OrderByDescending(x => x.Name).ToList();
+                a = Lqueryable.First();
+                Console.WriteLine(db.ChangeTracker.HasChanges());
+                a.Name = "";
+                Console.WriteLine(db.ChangeTracker.HasChanges());
+                //db.Entry(a).State = EntityState.Modified;
+                Console.WriteLine(db.ChangeTracker.HasChanges());
+                //db.SaveChanges();
+            }
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            using (MonitoringEntities db = new MonitoringEntities())
+            {
+                db.Entry(a).State = EntityState.Modified;
+                db.SaveChanges();
+            }
         }
     }
 }

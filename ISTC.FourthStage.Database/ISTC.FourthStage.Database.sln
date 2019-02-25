@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.FourthStage.Database.L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FourthStage.Database.LinqToEntity.LinqToEntity_01", "ISTC.FourthStage.Database.LinqToEntity.LinqToEntity_01\ISTC.FourthStage.Database.LinqToEntity.LinqToEntity_01.csproj", "{0FA38288-8140-4E65-9A81-4D4F92FD0C0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST", "TEST\TEST.csproj", "{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{0FA38288-8140-4E65-9A81-4D4F92FD0C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FA38288-8140-4E65-9A81-4D4F92FD0C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FA38288-8140-4E65-9A81-4D4F92FD0C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

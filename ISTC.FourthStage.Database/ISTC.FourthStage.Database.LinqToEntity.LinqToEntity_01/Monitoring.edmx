@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MonitoringModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+          <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="About" Type="nvarchar(max)" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="150" />
+          <Property Name="NumberOfEmployees" Type="int" Nullable="false" />
+          <Property Name="DateOfFoundation" Type="date" />
+          <Property Name="Website" Type="varchar" MaxLength="350" />
+          <Property Name="Address" Type="nvarchar" MaxLength="350" />
+          <Property Name="Facebook" Type="varchar" MaxLength="350" />
+          <Property Name="Linkedin" Type="varchar" MaxLength="350" />
+          <Property Name="GooglePlus" Type="varchar" MaxLength="350" />
+          <Property Name="Twitter" Type="varchar" MaxLength="350" />
+          <Property Name="Phone" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="GithubLanguage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Percent" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="RepositoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GithubLinkedinCrossTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GithubUserId" Type="int" Nullable="false" />
+          <Property Name="LinkedinUserId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GithubProfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="450" Nullable="false" />
+          <Property Name="Url" Type="nvarchar(max)" />
+          <Property Name="Company" Type="nvarchar(max)" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Bio" Type="nvarchar(max)" />
+          <Property Name="Location" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="BlogOrWebsite" Type="nvarchar(max)" />
+          <Property Name="StarsCount" Type="int" Nullable="false" />
+          <Property Name="ImageUrl" Type="varchar(max)" />
+          <Property Name="LastUpdate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="GithubRepository">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Url" Type="nvarchar(max)" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="CommitCount" Type="int" Nullable="false" />
+          <Property Name="BranchCount" Type="int" Nullable="false" />
+          <Property Name="Readme" Type="nvarchar(max)" />
+          <Property Name="ProfileId" Type="int" Nullable="false" />
+          <Property Name="StarsCount" Type="int" />
+          <Property Name="ContributorsCount" Type="int" />
+          <Property Name="ForksCount" Type="int" />
+        </EntityType>
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="350" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="350" />
+          <Property Name="Deadline" Type="datetime" />
+          <Property Name="EmploymentTerm" Type="nvarchar" MaxLength="350" Nullable="false" />
+          <Property Name="TimeType" Type="nvarchar" MaxLength="350" />
+          <Property Name="Category" Type="nvarchar" MaxLength="350" Nullable="false" />
+          <Property Name="Location" Type="nvarchar" MaxLength="350" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="350" Nullable="false" />
+          <Property Name="Responsibilities" Type="nvarchar" MaxLength="350" Nullable="false" />
+          <Property Name="RequiredQualifications" Type="nvarchar" MaxLength="350" />
+          <Property Name="ProfessionalSkills" Type="nvarchar" MaxLength="350" />
+          <Property Name="AdditionalInformation" Type="nvarchar" MaxLength="350" />
+          <Property Name="SoftSkills" Type="nvarchar" MaxLength="350" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LinkedinEducation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Time" Type="nvarchar(max)" />
+          <Property Name="LinkedinProfileId" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="LinkedinExperience">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Company" Type="nvarchar(max)" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Time" Type="nvarchar(max)" />
+          <Property Name="LinkedinProfileId" Type="int" Nullable="false" />
+          <Property Name="Location" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="LinkedinInterest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="FollowersCount" Type="int" />
+          <Property Name="LinkedinProfileId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LinkedinLanguage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="LinkedinProfileId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LinkedinProfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="450" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Specialty" Type="nvarchar(max)" />
+          <Property Name="Location" Type="nvarchar(max)" />
+          <Property Name="Education" Type="nvarchar(max)" />
+          <Property Name="Company" Type="nvarchar(max)" />
+          <Property Name="ConnectionCount" Type="int" />
+          <Property Name="Website" Type="nvarchar(max)" />
+          <Property Name="Phone" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Birthday" Type="nvarchar(max)" />
+          <Property Name="Connected" Type="datetime" />
+          <Property Name="ImageUrl" Type="nvarchar(max)" />
+          <Property Name="LastUpdate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="LinkedinSkill">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="EndorsedCount" Type="int" />
+          <Property Name="LinkedinProfileId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Proxy">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Country" Type="nvarchar(max)" />
+          <Property Name="Ip" Type="nvarchar(max)" />
+          <Property Name="Port" Type="nvarchar(max)" />
+          <Property Name="Type" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK_dbo_Jobs_dbo_Companies_CompanyId">
+          <End Role="Company" Type="Self.Company" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Job" Type="Self.Job" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Job">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Languages_dbo_Repositories_RepositoryId">
+          <End Role="GithubRepository" Type="Self.GithubRepository" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GithubLanguage" Type="Self.GithubLanguage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GithubRepository">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GithubLanguage">
+              <PropertyRef Name="RepositoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Repositories_dbo_Profiles_ProfileId">
+          <End Role="GithubProfile" Type="Self.GithubProfile" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GithubRepository" Type="Self.GithubRepository" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GithubProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GithubRepository">
+              <PropertyRef Name="ProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Interest_LinkedinProfile">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinInterest" Type="Self.LinkedinInterest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinInterest">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkedinEducation_LinkedinProfile">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinEducation" Type="Self.LinkedinEducation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinEducation">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkedinLanguage_LinkedinProfile">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinLanguage" Type="Self.LinkedinLanguage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinLanguage">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkedinProfile_LinkedinExperience">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinExperience" Type="Self.LinkedinExperience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinExperience">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkedinSkill_LinkedinProfile">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinSkill" Type="Self.LinkedinSkill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinSkill">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MonitoringModelStoreContainer">
+          <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GithubLanguage" EntityType="Self.GithubLanguage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GithubLinkedinCrossTable" EntityType="Self.GithubLinkedinCrossTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GithubProfile" EntityType="Self.GithubProfile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GithubRepository" EntityType="Self.GithubRepository" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Job" EntityType="Self.Job" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LinkedinEducation" EntityType="Self.LinkedinEducation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LinkedinExperience" EntityType="Self.LinkedinExperience" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LinkedinInterest" EntityType="Self.LinkedinInterest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LinkedinLanguage" EntityType="Self.LinkedinLanguage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LinkedinProfile" EntityType="Self.LinkedinProfile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LinkedinSkill" EntityType="Self.LinkedinSkill" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Proxy" EntityType="Self.Proxy" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_dbo_Jobs_dbo_Companies_CompanyId" Association="Self.FK_dbo_Jobs_dbo_Companies_CompanyId">
+            <End Role="Company" EntitySet="Company" />
+            <End Role="Job" EntitySet="Job" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Languages_dbo_Repositories_RepositoryId" Association="Self.FK_dbo_Languages_dbo_Repositories_RepositoryId">
+            <End Role="GithubRepository" EntitySet="GithubRepository" />
+            <End Role="GithubLanguage" EntitySet="GithubLanguage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Repositories_dbo_Profiles_ProfileId" Association="Self.FK_dbo_Repositories_dbo_Profiles_ProfileId">
+            <End Role="GithubProfile" EntitySet="GithubProfile" />
+            <End Role="GithubRepository" EntitySet="GithubRepository" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Interest_LinkedinProfile" Association="Self.FK_Interest_LinkedinProfile">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfile" />
+            <End Role="LinkedinInterest" EntitySet="LinkedinInterest" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkedinEducation_LinkedinProfile" Association="Self.FK_LinkedinEducation_LinkedinProfile">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfile" />
+            <End Role="LinkedinEducation" EntitySet="LinkedinEducation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkedinLanguage_LinkedinProfile" Association="Self.FK_LinkedinLanguage_LinkedinProfile">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfile" />
+            <End Role="LinkedinLanguage" EntitySet="LinkedinLanguage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkedinProfile_LinkedinExperience" Association="Self.FK_LinkedinProfile_LinkedinExperience">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfile" />
+            <End Role="LinkedinExperience" EntitySet="LinkedinExperience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkedinSkill_LinkedinProfile" Association="Self.FK_LinkedinSkill_LinkedinProfile">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfile" />
+            <End Role="LinkedinSkill" EntitySet="LinkedinSkill" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MonitoringModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="C__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="About" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Industry" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="NumberOfEmployees" Type="Int32" Nullable="false" />
+          <Property Name="DateOfFoundation" Type="DateTime" Precision="0" />
+          <Property Name="Website" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="Facebook" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="Linkedin" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="GooglePlus" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="Twitter" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Jobs" Relationship="Self.FK_dbo_Jobs_dbo_Companies_CompanyId" FromRole="Company" ToRole="Job" />
+        </EntityType>
+        <EntityType Name="GithubLanguage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Percent" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="RepositoryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="GithubRepository" Relationship="Self.FK_dbo_Languages_dbo_Repositories_RepositoryId" FromRole="GithubLanguage" ToRole="GithubRepository" />
+        </EntityType>
+        <EntityType Name="GithubLinkedinCrossTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GithubUserId" Type="Int32" Nullable="false" />
+          <Property Name="LinkedinUserId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GithubProfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Company" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Bio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BlogOrWebsite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="StarsCount" Type="Int32" Nullable="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LastUpdate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="GithubRepositories" Relationship="Self.FK_dbo_Repositories_dbo_Profiles_ProfileId" FromRole="GithubProfile" ToRole="GithubRepository" />
+        </EntityType>
+        <EntityType Name="GithubRepository">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CommitCount" Type="Int32" Nullable="false" />
+          <Property Name="BranchCount" Type="Int32" Nullable="false" />
+          <Property Name="Readme" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ProfileId" Type="Int32" Nullable="false" />
+          <Property Name="StarsCount" Type="Int32" />
+          <Property Name="ContributorsCount" Type="Int32" />
+          <Property Name="ForksCount" Type="Int32" />
+          <NavigationProperty Name="GithubLanguages" Relationship="Self.FK_dbo_Languages_dbo_Repositories_RepositoryId" FromRole="GithubRepository" ToRole="GithubLanguage" />
+          <NavigationProperty Name="GithubProfile" Relationship="Self.FK_dbo_Repositories_dbo_Profiles_ProfileId" FromRole="GithubRepository" ToRole="GithubProfile" />
+        </EntityType>
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="Deadline" Type="DateTime" Precision="3" />
+          <Property Name="EmploymentTerm" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TimeType" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Location" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Responsibilities" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RequiredQualifications" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="ProfessionalSkills" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="AdditionalInformation" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="SoftSkills" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Company" Relationship="Self.FK_dbo_Jobs_dbo_Companies_CompanyId" FromRole="Job" ToRole="Company" />
+        </EntityType>
+        <EntityType Name="LinkedinEducation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Time" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LinkedinProfileId" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="LinkedinProfile" Relationship="Self.FK_LinkedinEducation_LinkedinProfile" FromRole="LinkedinEducation" ToRole="LinkedinProfile" />
+        </EntityType>
+        <EntityType Name="LinkedinExperience">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Company" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Time" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LinkedinProfileId" Type="Int32" Nullable="false" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="LinkedinProfile" Relationship="Self.FK_LinkedinProfile_LinkedinExperience" FromRole="LinkedinExperience" ToRole="LinkedinProfile" />
+        </EntityType>
+        <EntityType Name="LinkedinInterest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FollowersCount" Type="Int32" />
+          <Property Name="LinkedinProfileId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="LinkedinProfile" Relationship="Self.FK_Interest_LinkedinProfile" FromRole="LinkedinInterest" ToRole="LinkedinProfile" />
+        </EntityType>
+        <EntityType Name="LinkedinLanguage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LinkedinProfileId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="LinkedinProfile" Relationship="Self.FK_LinkedinLanguage_LinkedinProfile" FromRole="LinkedinLanguage" ToRole="LinkedinProfile" />
+        </EntityType>
+        <EntityType Name="LinkedinProfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Specialty" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Education" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Company" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ConnectionCount" Type="Int32" />
+          <Property Name="Website" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Birthday" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Connected" Type="DateTime" Precision="3" />
+          <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LastUpdate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="LinkedinEducations" Relationship="Self.FK_LinkedinEducation_LinkedinProfile" FromRole="LinkedinProfile" ToRole="LinkedinEducation" />
+          <NavigationProperty Name="LinkedinExperiences" Relationship="Self.FK_LinkedinProfile_LinkedinExperience" FromRole="LinkedinProfile" ToRole="LinkedinExperience" />
+          <NavigationProperty Name="LinkedinInterests" Relationship="Self.FK_Interest_LinkedinProfile" FromRole="LinkedinProfile" ToRole="LinkedinInterest" />
+          <NavigationProperty Name="LinkedinLanguages" Relationship="Self.FK_LinkedinLanguage_LinkedinProfile" FromRole="LinkedinProfile" ToRole="LinkedinLanguage" />
+          <NavigationProperty Name="LinkedinSkills" Relationship="Self.FK_LinkedinSkill_LinkedinProfile" FromRole="LinkedinProfile" ToRole="LinkedinSkill" />
+        </EntityType>
+        <EntityType Name="LinkedinSkill">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EndorsedCount" Type="Int32" />
+          <Property Name="LinkedinProfileId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="LinkedinProfile" Relationship="Self.FK_LinkedinSkill_LinkedinProfile" FromRole="LinkedinSkill" ToRole="LinkedinProfile" />
+        </EntityType>
+        <EntityType Name="Proxy">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Port" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_dbo_Jobs_dbo_Companies_CompanyId">
+          <End Role="Company" Type="Self.Company" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Job" Type="Self.Job" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Job">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Languages_dbo_Repositories_RepositoryId">
+          <End Role="GithubRepository" Type="Self.GithubRepository" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GithubLanguage" Type="Self.GithubLanguage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GithubRepository">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GithubLanguage">
+              <PropertyRef Name="RepositoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Repositories_dbo_Profiles_ProfileId">
+          <End Role="GithubProfile" Type="Self.GithubProfile" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GithubRepository" Type="Self.GithubRepository" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GithubProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GithubRepository">
+              <PropertyRef Name="ProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkedinEducation_LinkedinProfile">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinEducation" Type="Self.LinkedinEducation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinEducation">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkedinProfile_LinkedinExperience">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinExperience" Type="Self.LinkedinExperience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinExperience">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Interest_LinkedinProfile">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinInterest" Type="Self.LinkedinInterest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinInterest">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkedinLanguage_LinkedinProfile">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinLanguage" Type="Self.LinkedinLanguage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinLanguage">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LinkedinSkill_LinkedinProfile">
+          <End Role="LinkedinProfile" Type="Self.LinkedinProfile" Multiplicity="1" />
+          <End Role="LinkedinSkill" Type="Self.LinkedinSkill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LinkedinProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LinkedinSkill">
+              <PropertyRef Name="LinkedinProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MonitoringEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+          <EntitySet Name="Companies" EntityType="Self.Company" />
+          <EntitySet Name="GithubLanguages" EntityType="Self.GithubLanguage" />
+          <EntitySet Name="GithubLinkedinCrossTables" EntityType="Self.GithubLinkedinCrossTable" />
+          <EntitySet Name="GithubProfiles" EntityType="Self.GithubProfile" />
+          <EntitySet Name="GithubRepositories" EntityType="Self.GithubRepository" />
+          <EntitySet Name="Jobs" EntityType="Self.Job" />
+          <EntitySet Name="LinkedinEducations" EntityType="Self.LinkedinEducation" />
+          <EntitySet Name="LinkedinExperiences" EntityType="Self.LinkedinExperience" />
+          <EntitySet Name="LinkedinInterests" EntityType="Self.LinkedinInterest" />
+          <EntitySet Name="LinkedinLanguages" EntityType="Self.LinkedinLanguage" />
+          <EntitySet Name="LinkedinProfiles" EntityType="Self.LinkedinProfile" />
+          <EntitySet Name="LinkedinSkills" EntityType="Self.LinkedinSkill" />
+          <EntitySet Name="Proxies" EntityType="Self.Proxy" />
+          <AssociationSet Name="FK_dbo_Jobs_dbo_Companies_CompanyId" Association="Self.FK_dbo_Jobs_dbo_Companies_CompanyId">
+            <End Role="Company" EntitySet="Companies" />
+            <End Role="Job" EntitySet="Jobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Languages_dbo_Repositories_RepositoryId" Association="Self.FK_dbo_Languages_dbo_Repositories_RepositoryId">
+            <End Role="GithubRepository" EntitySet="GithubRepositories" />
+            <End Role="GithubLanguage" EntitySet="GithubLanguages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Repositories_dbo_Profiles_ProfileId" Association="Self.FK_dbo_Repositories_dbo_Profiles_ProfileId">
+            <End Role="GithubProfile" EntitySet="GithubProfiles" />
+            <End Role="GithubRepository" EntitySet="GithubRepositories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkedinEducation_LinkedinProfile" Association="Self.FK_LinkedinEducation_LinkedinProfile">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfiles" />
+            <End Role="LinkedinEducation" EntitySet="LinkedinEducations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkedinProfile_LinkedinExperience" Association="Self.FK_LinkedinProfile_LinkedinExperience">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfiles" />
+            <End Role="LinkedinExperience" EntitySet="LinkedinExperiences" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Interest_LinkedinProfile" Association="Self.FK_Interest_LinkedinProfile">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfiles" />
+            <End Role="LinkedinInterest" EntitySet="LinkedinInterests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkedinLanguage_LinkedinProfile" Association="Self.FK_LinkedinLanguage_LinkedinProfile">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfiles" />
+            <End Role="LinkedinLanguage" EntitySet="LinkedinLanguages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LinkedinSkill_LinkedinProfile" Association="Self.FK_LinkedinSkill_LinkedinProfile">
+            <End Role="LinkedinProfile" EntitySet="LinkedinProfiles" />
+            <End Role="LinkedinSkill" EntitySet="LinkedinSkills" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MonitoringModelStoreContainer" CdmEntityContainer="MonitoringEntities">
+          <EntitySetMapping Name="C__MigrationHistory">
+            <EntityTypeMapping TypeName="MonitoringModel.C__MigrationHistory">
+              <MappingFragment StoreEntitySet="__MigrationHistory">
+                <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+                <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Companies">
+            <EntityTypeMapping TypeName="MonitoringModel.Company">
+              <MappingFragment StoreEntitySet="Company">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="About" ColumnName="About" />
+                <ScalarProperty Name="Industry" ColumnName="Industry" />
+                <ScalarProperty Name="NumberOfEmployees" ColumnName="NumberOfEmployees" />
+                <ScalarProperty Name="DateOfFoundation" ColumnName="DateOfFoundation" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+                <ScalarProperty Name="Linkedin" ColumnName="Linkedin" />
+                <ScalarProperty Name="GooglePlus" ColumnName="GooglePlus" />
+                <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GithubLanguages">
+            <EntityTypeMapping TypeName="MonitoringModel.GithubLanguage">
+              <MappingFragment StoreEntitySet="GithubLanguage">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Percent" ColumnName="Percent" />
+                <ScalarProperty Name="RepositoryId" ColumnName="RepositoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GithubLinkedinCrossTables">
+            <EntityTypeMapping TypeName="MonitoringModel.GithubLinkedinCrossTable">
+              <MappingFragment StoreEntitySet="GithubLinkedinCrossTable">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="GithubUserId" ColumnName="GithubUserId" />
+                <ScalarProperty Name="LinkedinUserId" ColumnName="LinkedinUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GithubProfiles">
+            <EntityTypeMapping TypeName="MonitoringModel.GithubProfile">
+              <MappingFragment StoreEntitySet="GithubProfile">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Bio" ColumnName="Bio" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="BlogOrWebsite" ColumnName="BlogOrWebsite" />
+                <ScalarProperty Name="StarsCount" ColumnName="StarsCount" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GithubRepositories">
+            <EntityTypeMapping TypeName="MonitoringModel.GithubRepository">
+              <MappingFragment StoreEntitySet="GithubRepository">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CommitCount" ColumnName="CommitCount" />
+                <ScalarProperty Name="BranchCount" ColumnName="BranchCount" />
+                <ScalarProperty Name="Readme" ColumnName="Readme" />
+                <ScalarProperty Name="ProfileId" ColumnName="ProfileId" />
+                <ScalarProperty Name="StarsCount" ColumnName="StarsCount" />
+                <ScalarProperty Name="ContributorsCount" ColumnName="ContributorsCount" />
+                <ScalarProperty Name="ForksCount" ColumnName="ForksCount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Jobs">
+            <EntityTypeMapping TypeName="MonitoringModel.Job">
+              <MappingFragment StoreEntitySet="Job">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+                <ScalarProperty Name="EmploymentTerm" ColumnName="EmploymentTerm" />
+                <ScalarProperty Name="TimeType" ColumnName="TimeType" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Responsibilities" ColumnName="Responsibilities" />
+                <ScalarProperty Name="RequiredQualifications" ColumnName="RequiredQualifications" />
+                <ScalarProperty Name="ProfessionalSkills" ColumnName="ProfessionalSkills" />
+                <ScalarProperty Name="AdditionalInformation" ColumnName="AdditionalInformation" />
+                <ScalarProperty Name="SoftSkills" ColumnName="SoftSkills" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LinkedinEducations">
+            <EntityTypeMapping TypeName="MonitoringModel.LinkedinEducation">
+              <MappingFragment StoreEntitySet="LinkedinEducation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="LinkedinProfileId" ColumnName="LinkedinProfileId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LinkedinExperiences">
+            <EntityTypeMapping TypeName="MonitoringModel.LinkedinExperience">
+              <MappingFragment StoreEntitySet="LinkedinExperience">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="LinkedinProfileId" ColumnName="LinkedinProfileId" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LinkedinInterests">
+            <EntityTypeMapping TypeName="MonitoringModel.LinkedinInterest">
+              <MappingFragment StoreEntitySet="LinkedinInterest">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="FollowersCount" ColumnName="FollowersCount" />
+                <ScalarProperty Name="LinkedinProfileId" ColumnName="LinkedinProfileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LinkedinLanguages">
+            <EntityTypeMapping TypeName="MonitoringModel.LinkedinLanguage">
+              <MappingFragment StoreEntitySet="LinkedinLanguage">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="LinkedinProfileId" ColumnName="LinkedinProfileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LinkedinProfiles">
+            <EntityTypeMapping TypeName="MonitoringModel.LinkedinProfile">
+              <MappingFragment StoreEntitySet="LinkedinProfile">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Specialty" ColumnName="Specialty" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Education" ColumnName="Education" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="ConnectionCount" ColumnName="ConnectionCount" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+                <ScalarProperty Name="Connected" ColumnName="Connected" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LinkedinSkills">
+            <EntityTypeMapping TypeName="MonitoringModel.LinkedinSkill">
+              <MappingFragment StoreEntitySet="LinkedinSkill">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="EndorsedCount" ColumnName="EndorsedCount" />
+                <ScalarProperty Name="LinkedinProfileId" ColumnName="LinkedinProfileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Proxies">
+            <EntityTypeMapping TypeName="MonitoringModel.Proxy">
+              <MappingFragment StoreEntitySet="Proxy">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Ip" ColumnName="Ip" />
+                <ScalarProperty Name="Port" ColumnName="Port" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
