@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
@@ -17,6 +18,8 @@ namespace ISTC.FiveStage.Technology.WPFandService.Service
 #if DEBUG
             Service1 service = new Service1();
             service.TestAndStart();
+            //Process.Start("");
+
 #else
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
