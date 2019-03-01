@@ -51,34 +51,87 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Monitoring.Context.cs">
+    <Compile Include="Company.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="C__MigrationHistory.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GithubLanguage.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GithubLinkedinCrossTable.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GithubProfile.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GithubRepository.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Job.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LinkedinEducation.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LinkedinExperience.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LinkedinInterest.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LinkedinLanguage.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LinkedinProfile.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LinkedinSkill.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoring.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Monitoring.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Monitoring.Designer.cs">
+    <Compile Include="Monitoring.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoring.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Monitoring.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy.cs">
+      <DependentUpon>Monitoring.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Properties\Monitoring.edmx">
+    <EntityDeploy Include="Monitoring.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Monitoring.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="packages.config" />
-    <None Include="Properties\Monitoring.edmx.diagram">
+    <None Include="Monitoring.edmx.diagram">
       <DependentUpon>Monitoring.edmx</DependentUpon>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\Monitoring.Context.tt">
+    <Content Include="Monitoring.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Monitoring.Context.cs</LastGenOutput>
+      <DependentUpon>Monitoring.edmx</DependentUpon>
+    </Content>
+    <Content Include="Monitoring.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Monitoring.edmx</DependentUpon>
+      <LastGenOutput>Monitoring.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
