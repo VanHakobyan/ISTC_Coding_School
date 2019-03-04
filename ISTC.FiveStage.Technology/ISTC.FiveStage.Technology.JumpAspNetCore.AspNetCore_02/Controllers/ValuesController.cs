@@ -21,13 +21,14 @@ namespace ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return new Random().Next(0,id).ToString();
         }
 
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
         {
+
         }
 
         // PUT api/values/5
