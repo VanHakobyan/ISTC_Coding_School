@@ -12,6 +12,7 @@ namespace ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.ISTC = "ISTC C#";
             return View();
         }
 
@@ -24,6 +25,12 @@ namespace ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Apri()
+        {
+            ViewBag.Apri = "Apri Anin";
+            return View();
         }
     }
 }

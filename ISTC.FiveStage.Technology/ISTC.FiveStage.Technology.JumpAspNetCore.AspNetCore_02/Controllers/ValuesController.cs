@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02.Controllers
@@ -17,18 +18,25 @@ namespace ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02.Controllers
             return new string[] { "value1", "value2" };
         }
 
+
+        // GET api/values
+        [HttpGet,Route("People")]
+        public ActionResult People(string name, int age)
+        {
+            return NotFound(new People { Age = age, Name = name });
+        }
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<string> GetById(int id)
         {
-            return new Random().Next(0,id).ToString();
+            return new Random().Next(0, id).ToString();
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult Post([FromQuery]People people)
         {
-
+            return Ok(people);
         }
 
         // PUT api/values/5
