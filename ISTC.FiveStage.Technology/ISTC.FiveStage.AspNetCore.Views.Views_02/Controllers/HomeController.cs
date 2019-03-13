@@ -16,6 +16,7 @@ namespace ISTC.FiveStage.AspNetCore.Views.Views_02.Controllers
             var people = GetPeople();
             var contactViewModel = GetView();
             ViewData["ContactViewModel"] = contactViewModel;
+            ViewData["ContactViewFirstName"] = contactViewModel.FirstName;
             return View(people);
         }
 
