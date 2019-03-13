@@ -11,15 +11,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.FiveStage.Technology.JumpAspNetCore", "ISTC.FiveStage.Technology.JumpAspNetCore", "{0E0D28FE-0B7F-4880-8157-865FC5C84201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01.csproj", "{8E700674-284D-40FD-A4FB-564E1C0F4627}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01.csproj", "{8E700674-284D-40FD-A4FB-564E1C0F4627}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02.csproj", "{40557FF2-846A-427B-9993-C6A7BCEED49D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02.csproj", "{40557FF2-846A-427B-9993-C6A7BCEED49D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03.csproj", "{7F864CA6-BBAA-4601-B63D-B602C6EDF85E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03.csproj", "{7F864CA6-BBAA-4601-B63D-B602C6EDF85E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04.csproj", "{A31161A1-7448-4A88-8C7A-B516B2874972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04.csproj", "{A31161A1-7448-4A88-8C7A-B516B2874972}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05.csproj", "{0DA55246-A83B-44F3-B240-6C84712F02DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05.csproj", "{0DA55246-A83B-44F3-B240-6C84712F02DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.FiveStage.Technology.WebApi", "ISTC.FiveStage.Technology.WebApi", "{6720E8D5-22A1-40F6-B67A-EC473B577F44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
