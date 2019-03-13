@@ -1,0 +1,1271 @@
+﻿<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js_active vc_desktop vc_transform vc_transform wf-raleway-n3-active wf-raleway-n4-active wf-raleway-n5-active wf-raleway-n6-active wf-raleway-n7-active wf-raleway-n8-active wf-raleway-n9-active wf-raleway-i3-active wf-raleway-i4-active wf-raleway-i5-active wf-raleway-i6-active wf-raleway-i7-active wf-raleway-i8-active wf-raleway-n1-active wf-raleway-n2-active wf-raleway-i1-active wf-raleway-i2-active wf-active" lang="en-US" style="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C# Programming – ISTC Foundation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js" type="text/javascript" async=""></script>
+    <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Raleway:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&subset=latin']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+    </script>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//s.w.org">
+    <link rel="alternate" type="application/rss+xml" title="ISTC Foundation » Feed" href="https://istc.am/?feed=rss2">
+    <link rel="alternate" type="application/rss+xml" title="ISTC Foundation » Comments Feed" href="https://istc.am/?feed=comments-rss2">
+    <link rel="alternate" type="text/calendar" title="ISTC Foundation » iCal Feed" href="https://istc.am?post_type=tribe_events&amp;ical=1">
+    <script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/istc.am\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <script src="https://istc.am/wp-includes/js/wp-emoji-release.min.js?ver=5.0.4" type="text/javascript" defer=""></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" id="owl-carousel-style-css" href="https://istc.am/wp-content/plugins/best-logo-slider/assets/css/owl.carousel.css?ver=1.0" type="text/css" media="">
+    <link rel="stylesheet" id="main-style-css" href="https://istc.am/wp-content/plugins/best-logo-slider/assets/css/main.css?ver=1.0" type="text/css" media="">
+    <link rel="stylesheet" id="layerslider-css" href="https://istc.am/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.7.6" type="text/css" media="all">
+    <link rel="stylesheet" id="ls-google-fonts-css" href="https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900,400%7COswald:300,regular,700%7CIndie+Flower:regular%7COpen+Sans:300,400&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-block-library-css" href="https://istc.am/wp-includes/css/dist/block-library/style.min.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-components-css" href="https://istc.am/wp-includes/css/dist/components/style.min.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-editor-font-css" href="https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i&amp;ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-nux-css" href="https://istc.am/wp-includes/css/dist/nux/style.min.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-editor-css" href="https://istc.am/wp-includes/css/dist/editor/style.min.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-block-library-theme-css" href="https://istc.am/wp-includes/css/dist/block-library/theme.min.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-edit-blocks-css" href="https://istc.am/wp-includes/css/dist/block-library/editor.min.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="contact-widgets-contact-block-css" href="https://istc.am/wp-content/plugins/contact-widgets/includes/blocks/contact/css/contact-block.min.css?ver=1.0.1" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-css" href="https://istc.am/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.5.4" type="text/css" media="all">
+    <link rel="stylesheet" id="contact-widgets-social-block-css" href="https://istc.am/wp-content/plugins/contact-widgets/includes/blocks/social/css/social-block.min.css?ver=1.0.1" type="text/css" media="all">
+    <link rel="stylesheet" id="mpp_gutenberg-css" href="https://istc.am/wp-content/plugins/metronet-profile-picture/css/front-end-gutenberg.css?ver=2.1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="bootstrapstyle-css" href="https://istc.am/wp-content/plugins/bootstrap-collapse/css/bootstrap.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="contact-form-7-css" href="https://istc.am/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1" type="text/css" media="all">
+    <link rel="stylesheet" id="import-facebook-events-front-css" href="https://istc.am/wp-content/plugins/import-facebook-events/assets/css/import-facebook-events.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="owl.carousel-css" href="https://istc.am/wp-content/plugins/tc-testimonial/vendors/owl-carousel/assets/owl.carousel.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="tc-custom-style-css" href="https://istc.am/wp-content/plugins/tc-testimonial/assets/css/tc-testimonial.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="wcs-timetable-css" href="https://istc.am/wp-content/plugins/weekly-class/assets/front/css/timetable.css?ver=2.3.1" type="text/css" media="all">
+    <style id="wcs-timetable-inline-css" type="text/css">
+        .wcs-single__action .wcs-btn--action {
+            color: rgba( 255,255,255,1);
+            background-color: #BD322C
+        }
+    </style>
+    <link rel="stylesheet" id="woocommerce-layout-css" href="https://istc.am/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.5.4" type="text/css" media="all">
+    <link rel="stylesheet" id="woocommerce-smallscreen-css" href="https://istc.am/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.5.4" type="text/css" media="only screen and (max-width: 768px)">
+    <link rel="stylesheet" id="woocommerce-general-css" href="https://istc.am/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.5.4" type="text/css" media="all">
+    <style id="woocommerce-inline-inline-css" type="text/css">
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel="stylesheet" id="module-frontend-css" href="https://istc.am/wp-content/plugins/woothemes-sensei/assets/css/modules-frontend.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="woothemes-sensei-frontend-css" href="https://istc.am/wp-content/plugins/woothemes-sensei/assets/css/frontend/sensei.css?ver=1.9.18" type="text/css" media="screen">
+    <link rel="stylesheet" id="fontawesome-css-4-css" href="https://istc.am/wp-content/plugins/wp-font-awesome/font-awesome/css/font-awesome.min.css?ver=1.7.4" type="text/css" media="all">
+    <link rel="stylesheet" id="fontawesome-css-5-css" href="https://istc.am/wp-content/plugins/wp-font-awesome/font-awesome/css/fontawesome-all.min.css?ver=1.7.4" type="text/css" media="all">
+    <link rel="stylesheet" id="mega-submenu-css" href="https://istc.am/wp-content/plugins/skilled-plugin/extensions/mega-submenu/public/css/style.css?ver=1.2.5" type="text/css" media="all">
+    <link rel="stylesheet" id="mega-submenu-woocommerce-css" href="https://istc.am/wp-content/plugins/skilled-plugin/extensions/mega-submenu/public/css/woocommerce.css?ver=1.2.5" type="text/css" media="all">
+    <link rel="stylesheet" id="timetable_font_lato-css" href="//fonts.googleapis.com/css?family=Lato%3A400%2C700&amp;ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="petal-theme-icons-css" href="https://istc.am/wp-content/themes/skilled/assets/css/theme-icons.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="testimonial-rotator-style-css" href="https://istc.am/wp-content/plugins/skilled-plugin/extensions/testimonial-rotator/testimonial-rotator-style.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="socicon-css" href="https://istc.am/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/socicon.css?ver=20181009" type="text/css" media="all">
+    <link rel="stylesheet" id="genericons-css" href="https://istc.am/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericons.css?ver=20180625" type="text/css" media="all">
+    <link rel="stylesheet" id="fontawesome-css" href="https://istc.am/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome.min.css?ver=20180625" type="text/css" media="all">
+    <link rel="stylesheet" id="dashicons-css" href="https://istc.am/wp-includes/css/dashicons.min.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="js_composer_front-css" href="https://istc.am/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.5.4" type="text/css" media="all">
+    <link rel="stylesheet" id="bsf-Defaults-css" href="https://istc.am/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="bsf-iconsmind-css" href="https://istc.am/wp-content/uploads/smile_fonts/iconsmind/iconsmind.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="bsf-linear-css" href="https://istc.am/wp-content/uploads/smile_fonts/linear/linear.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="ultimate-style-css" href="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.16.25" type="text/css" media="all">
+    <link rel="stylesheet" id="ultimate-animate-css" href="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/animate.min.css?ver=3.16.25" type="text/css" media="all">
+    <link rel="stylesheet" id="ult-stats-counter-style-css" href="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/stats-counter.min.css?ver=3.16.25" type="text/css" media="all">
+    <link rel="stylesheet" id="ultimate-team-css" href="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/teams.min.css?ver=3.16.25" type="text/css" media="all">
+    <link rel="stylesheet" id="timetable_merged-css" href="https://istc.am/wp-content/plugins/skilled-plugin/public/css/extensions.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="sp-style-css" href="https://istc.am/wp-content/plugins/skilled-plugin/public/css/style.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="iconsmind-line-icons-css" href="https://istc.am/wp-content/themes/skilled/assets/css/iconsmind-line-icons.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="linear-icons-css" href="https://istc.am/wp-content/themes/skilled/assets/css/linear-icons.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="bricklayer-groundwork-css" href="https://istc.am/wp-content/themes/skilled/assets/css/groundwork-responsive.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="skilled_style-css" href="https://istc.am/wp-content/themes/skilled/style.css?ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="skilled_options_style-css" href="//istc.am/wp-content/uploads/skilled_options_style.css?ver=5.0.4" type="text/css" media="all">
+    <script type="text/javascript" src="https://istc.am/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var wheels = {"siteName":"ISTC Foundation","data":{"useScrollToTop":true,"useStickyMenu":true,"scrollToTopText":"","isAdminBarShowing":false,"initialWaypointScrollCompensation":"120"}};
+/* ]]> */
+    </script>
+    <script type="text/javascript" src="https://istc.am/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var LS_Meta = {"v":"6.7.6"};
+/* ]]> */
+    </script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/LayerSlider/static/layerslider/js/greensock.js?ver=1.19.0"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.7.6"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js?ver=6.7.6"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/bootstrap-collapse/js/bootstrap-collapse.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/bootstrap-collapse/js/bootstrap-transition.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70"></script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/istc.am\/?page_id=180","is_cart":"","cart_redirect_after_add":"yes"};
+/* ]]> */
+    </script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.5.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.5.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/extensions/mega-submenu/public/js/msm-main.min.js?ver=1.2.5"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/vc-addons/our-process/assets/js/jquery-appear.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/vc-addons/our-process/assets/js/scp-our-process.js?ver=5.0.4"></script>
+    <script src="https://istc.am/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-before.js"></script>
+    <script type="text/javascript" src="https://istc.am/wp-includes/js/underscore.min.js?ver=1.8.3"></script>
+    <script src="https://istc.am/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-after.js"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/vc-addons/countdown/assets/jquery.countdown.min.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/extensions/testimonial-rotator/js/jquery.cycletwo.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/extensions/testimonial-rotator/js/jquery.cycletwo.addons.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate-params.min.js?ver=3.16.25"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/custom.min.js?ver=3.16.25"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/jquery-appear.min.js?ver=3.16.25"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/countUp.min.js?ver=3.16.25"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/teams.min.js?ver=3.16.25"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/themes/skilled/assets/js/vendor/modernizr-2.7.0.min.js"></script>
+    <meta name="generator" content="Powered by LayerSlider 6.7.6 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress.">
+    <!-- LayerSlider updates and docs at: https://layerslider.kreaturamedia.com -->
+    <link rel="https://api.w.org/" href="https://istc.am/index.php?rest_route=/">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://istc.am/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://istc.am/wp-includes/wlwmanifest.xml">
+    <link rel="prev" title="Cyber Security" href="https://istc.am/?course=cybersecurity">
+    <link rel="next" title="JS Bootcamp" href="https://istc.am/?course=js-bootcamp">
+    <meta name="generator" content="WordPress 5.0.4">
+    <meta name="generator" content="WooCommerce 3.5.4">
+    <link rel="canonical" href="https://istc.am/?course=c-programming">
+    <link rel="shortlink" href="https://istc.am/?p=21748">
+    <link rel="alternate" type="application/json+oembed" href="https://istc.am/index.php?rest_route=%2Foembed%2F1.0%2Fembed&amp;url=https%3A%2F%2Fistc.am%2F%3Fcourse%3Dc-programming">
+    <link rel="alternate" type="text/xml+oembed" href="https://istc.am/index.php?rest_route=%2Foembed%2F1.0%2Fembed&amp;url=https%3A%2F%2Fistc.am%2F%3Fcourse%3Dc-programming&amp;format=xml">
+    <style type="text/css">
+
+        .accordion-inner {
+            border-top: 1px solid #e5e5e5;
+            padding: 9px 15px;
+        }
+
+        .accordion-toggle {
+            color: #21759B !important;
+            cursor: pointer;
+        }
+
+        .accordion-group {
+            border: 1px solid #e5e5e5;
+            border-radius: 4px 4px 4px 4px;
+            margin-bottom: 2px;
+        }
+    </style>
+    <script>
+		var skilled_plugin = skilled_plugin || {"data":{"vcWidgets":{"ourProcess":{"breakpoint":400}}}};
+    </script>
+    <style type="text/css" media="all" id="wcs_styles"></style>
+    <meta name="tec-api-version" content="v1">
+    <meta name="tec-api-origin" content="https://istc.am">
+    <link rel="https://theeventscalendar.com/" href="https://istc.am/index.php?rest_route=/tribe/events/v1/">
+    <link rel="alternate" href="https://istc.am/?course=c-programming" hreflang="en">
+    <link rel="alternate" href="https://istc.am/?course=c-%D5%AE%D6%80%D5%A1%D5%A3%D6%80%D5%A1%D5%BE%D5%B8%D6%80%D5%B8%D6%82%D5%B4&amp;lang=hy" hreflang="hy">
+    <script>
+			var msm_mega_submenu = {"data":{"submenu_items_position_relative":0,"mobile_menu_trigger_click_bellow":768}};
+    </script>
+    <style>
+        .lin-slider-button:hover {
+            border-color: #ffc50d !important;
+            color: #ffc50d !important;
+        }
+
+        .lin-slider-alt-button {
+            border-color: #ffc50d !important;
+            background-color: #ffc50d !important;
+            color: #fff !important;
+        }
+
+        @@media (max-width: 850px) {
+
+            .wh-top-bar-additional .scp-icon-bullet-text-icon {
+                font-size: 28px !important;
+            }
+        }
+    </style>
+    <script id="wh-custom-js-code">
+jQuery(document).ready(function(){
+
+});
+    </script>
+    <style>
+        .header-mobile {
+            display: none;
+        }
+
+        @@media screen and (max-width: 758px) {
+
+            .header-left {
+                padding-left: 0;
+            }
+
+            .wh-header {
+                display: none;
+            }
+
+            .header-mobile {
+                display: block;
+            }
+        }
+    </style>
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+
+    <style type="text/css" id="breadcrumb-trail-css">
+        .breadcrumbs .trail-browse, .breadcrumbs .trail-items, .breadcrumbs .trail-items li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: transparent;
+            text-indent: 0;
+        }
+
+        .breadcrumbs .trail-browse {
+            font-size: inherit;
+            font-style: inherit;
+            font-weight: inherit;
+            color: inherit;
+        }
+
+        .breadcrumbs .trail-items {
+            list-style: none;
+        }
+
+        .trail-items li::after {
+            content: "\002F";
+            padding: 0 0.5em;
+        }
+
+        .trail-items li:last-of-type::after {
+            display: none;
+        }
+    </style>
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://istc.am/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+    <link rel="icon" href="https://istc.am/wp-content/uploads/2018/06/Social_media-150x150.png" sizes="32x32">
+    <link rel="icon" href="https://istc.am/wp-content/uploads/2018/06/Social_media-300x300.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="https://istc.am/wp-content/uploads/2018/06/Social_media-300x300.png">
+    <meta name="msapplication-TileImage" content="https://istc.am/wp-content/uploads/2018/06/Social_media-300x300.png">
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1539177174728 {
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: contain !important;
+        }
+
+        .vc_custom_1539175683792 {
+            margin-bottom: 20px !important;
+        }
+
+        .vc_custom_1539176717653 {
+            margin-right: 30px !important;
+            margin-left: 30px !important;
+        }
+
+        .vc_custom_1539176862283 {
+            margin-right: 30px !important;
+            margin-left: 30px !important;
+        }
+
+        .vc_custom_1539176835654 {
+            margin-right: 30px !important;
+            margin-left: 30px !important;
+        }
+
+        .vc_custom_1539176935688 {
+            margin-right: 30px !important;
+            margin-left: 30px !important;
+        }
+
+        .vc_custom_1539177007824 {
+            margin-right: 30px !important;
+            margin-left: 30px !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&amp;subset=latin">
+    <noscript>
+        <style type="text/css">
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+    <style>
+        /** Ultimate: Media Responsive **/
+
+        @@media (max-width: 1199px) {
+        }
+
+        @@media (max-width: 991px) {
+        }
+
+        @@media (max-width: 767px) {
+        }
+
+        @@media (max-width: 479px) {
+        }
+        /** Ultimate: Media Responsive - **/
+    </style>
+    <style id="fit-vids-style">
+        .fluid-width-video-wrapper {
+            width: 100%;
+            position: relative;
+            padding: 0;
+        }
+
+            .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+    </style>
+</head>
+<body class="course-template-default single single-course postid-21748 woocommerce-js sensei tribe-js wpb-js-composer js-comp-ver-5.5.4 vc_responsive">
+    <div class="header-mobile header-mobile-default">
+        <div id="wh-mobile-menu" class="respmenu-wrap">
+            <div class="respmenu-header">
+                <a href="https://istc.am/" class="respmenu-header-logo-link">
+                    <img src="https://istc.am/wp-content/uploads/2018/09/newfavicon-e1542380962358.png" class="respmenu-header-logo" alt="logo">
+                </a>
+                <div class="respmenu-open">
+                    <hr><hr><hr>
+                </div>
+            </div>
+            <div class="menu-main-menu-container">
+                <ul id="menu-main-menu" class="respmenu">
+                    <li id="menu-item-1261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1261 msm-top-level-item"><a href="https://istc.am/">Home</a></li>
+                    <li id="menu-item-20720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20720 msm-top-level-item">
+                        <a href="#">Startups</a>
+                        <div class="respmenu-submenu-toggle cbp-respmenu-more"><i class="fa fa-angle-down"></i></div>
+
+                        <ul class="sub-menu">
+                            <li id="menu-item-21179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21179"><a href="https://istc.am/?page_id=21177">Climate Change Tech Accelerator</a></li>
+                            <li id="menu-item-20798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20798"><a href="https://istc.am/?page_id=14252">Our Startup Community</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-20879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20879 msm-top-level-item"><a href="http://coworking.istc.am">Co-working</a></li>
+                    <li id="menu-item-21350" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-21350 msm-top-level-item">
+                        <a href="#">Events</a>
+                        <div class="respmenu-submenu-toggle cbp-respmenu-more"><i class="fa fa-angle-down"></i></div>
+
+                        <ul class="sub-menu">
+                            <li id="menu-item-21882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21882"><a href="https://istc.am/?page_id=21880">Hackathon</a></li>
+                            <li id="menu-item-20872" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20872"><a href="https://istc.am/?post_type=tribe_events">Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-20719" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20719 msm-top-level-item">
+                        <a href="#">Research</a>
+                        <div class="respmenu-submenu-toggle cbp-respmenu-more"><i class="fa fa-angle-down"></i></div>
+
+                        <ul class="sub-menu">
+                            <li id="menu-item-20813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20813"><a href="https://istc.am/?page_id=20555">US-Armenia Research Collaboration Grant</a></li>
+                            <li id="menu-item-20808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20808"><a href="https://istc.am/?page_id=18534">ISTC Research Grant Program</a></li>
+                            <li id="menu-item-21779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21779"><a href="https://istc.am/?page_id=21774">Research Lab</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-808 msm-top-level-item">
+                        <a href="#">Education</a>
+                        <div class="respmenu-submenu-toggle cbp-respmenu-more"><i class="fa fa-angle-down"></i></div>
+
+                        <ul class="sub-menu">
+                            <li id="menu-item-21366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21366"><a href="https://istc.am/?page_id=415">ISTC Academy</a></li>
+                            <li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-818"><a href="https://istc.am/?page_id=175">Courses</a></li>
+                            <li id="menu-item-21331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21331"><a href="https://istc.am/?page_id=21329">Master’s Programs</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-20817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20817 msm-top-level-item"><a href="https://istc.am/?page_id=20310">About Us</a></li>
+                    <li id="menu-item-22144-en" class="lang-item lang-item-396 lang-item-en lang-item-first current-lang menu-item menu-item-type-custom menu-item-object-custom menu-item-22144-en msm-top-level-item"><a href="https://istc.am/?course=c-programming" hreflang="en-US" lang="en-US"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English" alt="English"></a></li>
+                    <li id="menu-item-22144-hy" class="lang-item lang-item-757 lang-item-hy menu-item menu-item-type-custom menu-item-object-custom menu-item-22144-hy msm-top-level-item"><a href="https://istc.am/?course=c-%D5%AE%D6%80%D5%A1%D5%A3%D6%80%D5%A1%D5%BE%D5%B8%D6%80%D5%B8%D6%82%D5%B4&amp;lang=hy" hreflang="hy" lang="hy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGDSURBVHjaYvytqsrw4QMDBPz79+/Xr39//jD8+sXw9+8/oAAYMcAYQAQQgIQxxgEABIEYUZ/O6lcZnCknxuXSdrhlEcO9k6pMmjAbMgX6C0/7Bc7eVwCxMDAxARX/f/WaAST3j+EfVBqEfv+Gavv9m+H3b0YJiT8MDAABxAJ0z/9//xkgJoERQjWIASZ//2EAMn7/BjoJIIBYRLhmNf0xefHn27+//8AqgeRfoBQyA0j+/v1X6jf3bIafAAHE8uvXH6BX/4KkQeRvFHV//wBNAauGcBkYfgAEEAs4PP7DnQ1xC9g5/8BegBgP8T8ouAACiPH7VAYWm67/X5/+///n/z+g8G8E+e/3PxDjL8M/EJeJW+bFnKUAAcTyDxhIQDmQaqCBcD2/warB3H9/GMDkv///GFgYAAKI5d8nhv+//jIwizAwAAPtDyPjHwZGqApGpr+M/8HhBgwQoOzPP/8+MAAEEOPHXgaGbwz/fjGADIKQwDCEMRgg3D+gSAZxuRgAAgwAGOaHzabOV6YAAAAASUVORK5CYII=" title="Հայերեն" alt="Հայերեն"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header class="cbp-row wh-header wh-header-inner  wh-has-embellishment wh-sticky-header-enabled">
+        <div class="cbp-row wh-top-bar-additional">
+            <div class="cbp-container">
+                <div class="wh-logo-wrap one fourth wh-padding">
+                    <div class="wh-logo align-left">
+                        <a href="https://istc.am/">
+                            <img src="https://istc.am/wp-content/uploads/2018/09/newfavicon-e1542380962358.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="three fourths wh-padding wh-top-bar-additional-text align-left">
+                    <span class="scp-icon scp-icon-background pull-right" style="margin:0 8px;text-align:center;"><a href="https://www.instagram.com/istc.armenia/?hl=en" target="_blank"><i class="fa fa-instagram" style="color:#666;font-size:20px;line-height:46px;" onmouseover="this.style.color='#666'" onmouseout="this.style.color='#666'"></i></a> </span>
+
+                    <span class="scp-icon scp-icon-background pull-right" style="margin:0 8px;text-align:center;"><a href="https://www.facebook.com/istc.ibm.eif/" target="_blank"><i class="fa fa-facebook" style="color:#666;font-size:20px;line-height:46px;" onmouseover="this.style.color='#666'" onmouseout="this.style.color='#666'"></i></a> </span>
+
+                    <span class="scp-icon scp-icon-background pull-right" style="margin:0 8px 0 25px;text-align:center;"><a href="https://twitter.com/istcarmenia?lang=en" target="_blank"><i class="fa fa-twitter" style="color:#666;font-size:20px;line-height:46px;" onmouseover="this.style.color='#666'" onmouseout="this.style.color='#666'"></i></a> </span>
+
+                    &nbsp;
+
+                    <div class="scp-shortcode scp-icon-bullet-text pull-right" style="padding:0px;margin:0px 15px 0px 0px;"><div class="align-center scp-icon-bullet-text-icon" style="color:#666;font-size:40px;"><i class="lnr lnr-calendar-full"></i></div><div class="scp-icon-bullet-text-text pad-left" style="margin:-5px 0px 0px 0px;"><p class="subtitle" style="color:#666;">Ongoing Events</p><p class="description" style="color:#666;"><a href="https://istc.am/?post_type=tribe_events">see All</a> </p></div></div>
+
+                    <div class="scp-shortcode scp-icon-bullet-text pull-right" style="padding:0px;margin:0px 15px 0px 0px;">
+                        <div class="align-center scp-icon-bullet-text-icon" style="color:#666;font-size:40px;"><i class="lnr lnr-clock"></i></div><div class="scp-icon-bullet-text-text pad-left" style="margin:-5px 0px 0px 0px;">
+                            <p class="subtitle" style="color:#666;">Sunday CLOSED</p><h6 class="title" style="color:#f6c016;">
+                                Mon - Fri 10.00 - 21.00
+
+                                <div>Sat 10.00 - 18.00</div>
+
+                            </h6><p class="description" style="color:#666;">Call us (+374)-12-219-700</p>
+                        </div>
+                    </div>
+
+                    &nbsp;
+
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <div id="sticky-wrapper" class="sticky-wrapper wh-sticky-header" style="height: 67px;">
+            <div class="sticky-bar-bg" style="width: 1265px; position: fixed; top: 0px; z-index: 99999;">
+                <div class="wh-main-menu-bar-wrapper sticky-bar">
+                    <div class="cbp-container">
+                        <div class="logo-sticky">
+                            <a href="https://istc.am/">
+                                <img src="https://istc.am/wp-content/uploads/2018/09/newfavicon-e1542380962358.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="wh-main-menu one whole wh-padding">
+
+                            <div id="cbp-menu-main">
+                                <div class="menu-main-menu-container">
+                                    <ul id="menu-main-menu-1" class="sf-menu wh-menu-main pull-left">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1261 msm-top-level-item"><a href="https://istc.am/">Home</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20720 msm-top-level-item">
+                                            <a href="#">Startups</a>
+                                            <ul class="sub-menu sf-js-enabled sf-arrows">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21179"><a href="https://istc.am/?page_id=21177">Climate Change Tech Accelerator</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20798"><a href="https://istc.am/?page_id=14252">Our Startup Community</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20879 msm-top-level-item"><a href="http://coworking.istc.am">Co-working</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-21350 msm-top-level-item">
+                                            <a href="#">Events</a>
+                                            <ul class="sub-menu sf-js-enabled sf-arrows">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21882"><a href="https://istc.am/?page_id=21880">Hackathon</a></li>
+                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20872"><a href="https://istc.am/?post_type=tribe_events">Calendar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20719 msm-top-level-item">
+                                            <a href="#">Research</a>
+                                            <ul class="sub-menu sf-js-enabled sf-arrows">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20813"><a href="https://istc.am/?page_id=20555">US-Armenia Research Collaboration Grant</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20808"><a href="https://istc.am/?page_id=18534">ISTC Research Grant Program</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21779"><a href="https://istc.am/?page_id=21774">Research Lab</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-808 msm-top-level-item">
+                                            <a href="#">Education</a>
+                                            <ul class="sub-menu sf-js-enabled sf-arrows">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21366"><a href="https://istc.am/?page_id=415">ISTC Academy</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-818"><a href="https://istc.am/?page_id=175">Courses</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21331"><a href="https://istc.am/?page_id=21329">Master’s Programs</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20817 msm-top-level-item"><a href="https://istc.am/?page_id=20310">About Us</a></li>
+                                        <li class="lang-item lang-item-396 lang-item-en lang-item-first current-lang menu-item menu-item-type-custom menu-item-object-custom menu-item-22144-en msm-top-level-item"><a href="https://istc.am/?course=c-programming" hreflang="en-US" lang="en-US"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English" alt="English"></a></li>
+                                        <li class="lang-item lang-item-757 lang-item-hy menu-item menu-item-type-custom menu-item-object-custom menu-item-22144-hy msm-top-level-item"><a href="https://istc.am/?course=c-%D5%AE%D6%80%D5%A1%D5%A3%D6%80%D5%A1%D5%BE%D5%B8%D6%80%D5%B8%D6%82%D5%B4&amp;lang=hy" hreflang="hy" lang="hy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGDSURBVHjaYvytqsrw4QMDBPz79+/Xr39//jD8+sXw9+8/oAAYMcAYQAQQgIQxxgEABIEYUZ/O6lcZnCknxuXSdrhlEcO9k6pMmjAbMgX6C0/7Bc7eVwCxMDAxARX/f/WaAST3j+EfVBqEfv+Gavv9m+H3b0YJiT8MDAABxAJ0z/9//xkgJoERQjWIASZ//2EAMn7/BjoJIIBYRLhmNf0xefHn27+//8AqgeRfoBQyA0j+/v1X6jf3bIafAAHE8uvXH6BX/4KkQeRvFHV//wBNAauGcBkYfgAEEAs4PP7DnQ1xC9g5/8BegBgP8T8ouAACiPH7VAYWm67/X5/+///n/z+g8G8E+e/3PxDjL8M/EJeJW+bFnKUAAcTyDxhIQDmQaqCBcD2/warB3H9/GMDkv///GFgYAAKI5d8nhv+//jIwizAwAAPtDyPjHwZGqApGpr+M/8HhBgwQoOzPP/8+MAAEEOPHXgaGbwz/fjGADIKQwDCEMRgg3D+gSAZxuRgAAgwAGOaHzabOV6YAAAAASUVORK5CYII=" title="Հայերեն" alt="Հայերեն"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cbp-row wh-page-title-bar">
+        <div class="cbp-container">
+            <div class="one whole wh-padding wh-page-title-wrapper">
+
+                <div class="wh-breadcrumbs align-center">
+                    <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs"><ul class="trail-items" itemscope="" itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-begin"><a href="https://istc.am" rel="home"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item"><a href="https://istc.am/?post_type=course"><span itemprop="name">Courses</span></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-end"><span itemprop="name">C# Programming</span><meta itemprop="position" content="3"></li></ul></nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cbp-row wh-sensei-single-course-header">
+        <div class="cbp-container">
+            <div class="wh-sensei-title-wrap wh-padding">
+                <h1>C# Programming</h1>
+                <hr>
+                <a href="https://istc.am/?product=c-programming" target="_blank"><span style="display:inline-block;float:none;" class="starwrapper" itemscope="" itemtype="http://schema.org/AggregateRating"><span class="star-rating-alt-text"></span></span></a>
+                <div class="course-excerpt">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wh-course-purchase-button-mobile hide-on-desktop">
+
+        <div class="sensei-single-course-header-purchase-button">
+            <section class="course-meta course-enrolment"></section>
+        </div>
+    </div>
+
+
+
+    <div class="cbp-row wh-content">
+        <div class="cbp-container">
+            <div class="three fourths wh-padding wh-content-inner">
+
+                <div class="meta-wrap">
+                    <div class="sensei-course-meta">
+                        <div class="meta-item meta-item-price">
+                            <span class="price-label">Price:</span>
+
+                            <span class="course-price">
+                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">AMD</span>40,000.00</span>
+                            </span>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                </div>
+                <div class="woocommerce-notices-wrapper"></div>    	<article class="course post post-21748 type-course status-publish has-post-thumbnail hentry course-category-coding">
+                    <section class="course-content">
+                        <div class="vc_row wpb_row vc_row-fluid">
+                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1539175683792">
+
+                                            <figure class="wpb_wrapper vc_figure">
+                                                <div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="https://istc.am/wp-content/uploads/2018/10/CSharp-Mailing-845x476.png" width="845" height="476" alt="CSharp Mailing" title="CSharp Mailing"></div>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="vc_row wpb_row vc_row-fluid">
+                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div class="wpb_wrapper">
+                                                <section class="elementor-element elementor-element-69ceb14e elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="69ceb14e" data-element_type="section">
+                                                    <div class="elementor-container elementor-column-gap-default">
+                                                        <div class="elementor-row">
+                                                            <div class="elementor-element elementor-element-62b9ffe3 elementor-column elementor-col-16 elementor-top-column" data-id="62b9ffe3" data-element_type="column">
+                                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                                    <div class="elementor-widget-wrap">
+                                                                        <section class="elementor-element elementor-element-317ffa0a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="317ffa0a" data-element_type="section">
+                                                                            <div class="elementor-container elementor-column-gap-default">
+                                                                                <div class="elementor-row">
+                                                                                    <div class="elementor-element elementor-element-4df0eeec elementor-column elementor-col-50 elementor-inner-column" data-id="4df0eeec" data-element_type="column">
+                                                                                        <div class="elementor-column-wrap elementor-element-populated">
+                                                                                            <div class="elementor-widget-wrap">
+                                                                                                <div class="elementor-element elementor-element-548ffc31 elementor-widget elementor-widget-image" data-id="548ffc31" data-element_type="image.default">
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <h6 class="elementor-image" style="text-align: center;">ISTC is happy to announce that now we are providing an educational course for&nbsp;<strong>C# Programming.</strong>&nbsp;C#—it’s not just a musical note. First introduced in 2000 alongside Microsoft ’s .Net framework, it’s been through five versions and one (now-retired) mascot named Andy. Now, it’s arguably&nbsp;<strong>one of the most valuable programming languages to learn</strong>—and here’s why.</h6>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                            </div>
+                                        </div>
+                                        <h2 style="color: #953dac;text-align: center;font-family:Raleway;font-weight:400;font-style:normal" class="vc_custom_heading">Why learn C# Programming?</h2>
+                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div class="wpb_wrapper">
+                                                <h6 style="text-align: center;">C# is very similar to other object-oriented programming languages, but it has a unique set of features that make some programmers favor it. C# is a statically-typed language, which means<strong>&nbsp;your code will be checked for errors</strong>&nbsp;before it gets built into an app. Errors will be easier to track down, and since statically-typed languages are also more strict with how you code something, the codebase, in general, will be more consistent and thus easier to maintain as it grows in size and complexity. Considering that C# is a statically-typed language it is also faster than other languages because&nbsp;<strong>things are more clearly defined.</strong></h6>
+
+                                            </div>
+                                        </div>
+                                        <h2 style="color: #953dac;text-align: center;font-family:Raleway;font-weight:400;font-style:normal" class="vc_custom_heading">How to learn C# Programming?</h2>
+                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div class="wpb_wrapper">
+                                                <h6 style="text-align: center;">ISTC is providing C# courses that we not only help you master the language fast but will also<strong>&nbsp;make the learning experience pleasant.</strong>&nbsp;The program will be held in<strong>&nbsp;5 stages.</strong>&nbsp;All the stages in sum will be taking place in&nbsp;<strong>6 months.</strong>&nbsp;For every stage of the course, you need a different type of preparation. At the end of each stage of the course, there will be an&nbsp;<strong>interactive project</strong>&nbsp;with students that will give you an opportunity to practice all the skills that you have mastered during the course.</h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="vc_row wpb_row vc_row-fluid vc_custom_1539177174728 vc_row-has-fill ult-vc-hide-row" data-rtl="false" style="position: relative;" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true">
+                            <div class="upb_row_bg vcpb-default" data-upb_br_animation="" data-parallax_sense="30" data-bg-override="0" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" style="background-size: cover; background-repeat: repeat; background-color: rgba(0, 0, 0, 0); background-image: url(&quot;https://istc.am/wp-content/uploads/2018/10/CSharp-Background-358x1024.png&quot;); background-attachment: scroll; min-width: 858px; left: 0px; width: 858px;"></div><div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                        <h1 style="color: #ffffff;text-align: center;font-family:Raleway;font-weight:600;font-style:normal" class="vc_custom_heading">COURSE SYLLABUS</h1><h1 style="color: #ffffff;text-align: center;font-family:Raleway;font-weight:600;font-style:normal" class="vc_custom_heading">Programming Basics</h1><div class="stats-block stats-top  "><div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;"></div></div></div><div class="stats-desc" id="counter-responsv-wrap-8558"><div id="counter_1669965755c88daecf2079" data-id="counter_1669965755c88daecf2079" data-ultimate-target="#counter-responsv-wrap-8558 .stats-number" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-number ult-responsive" style="font-size:28px; color:#ffffff; font-weight:bold;color:#ffffff;" data-speed="3" data-counter-value="24" data-separator="," data-decimal=".">24</div><div id="counter-responsv-wrap-8558" data-ultimate-target="#counter-responsv-wrap-8558 .stats-text" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-text ult-responsive" style="font-size:18px; color:#ffffff; font-weight:bold;">Hours</div></div></div>
+                                        <div class="wpb_text_column wpb_content_element  vc_custom_1539176717653">
+                                            <div class="wpb_wrapper">
+                                                <h6 style="text-align: center;"><span style="color: #ffffff;">The C# Programming Basics stage is unique for beginners, which will allow you to begin learning the C# programming language without having any special preliminary training. All you need in order to successfully master this stage is the basic skills of working with a personal computer. You will be able to learn modern programming language under the clear and understandable instructions of an experienced coach. After completing the stage, you will not only get basic skills but will also be able to continue evolving as a developer of the .NET platform. Over time, you can create a wide variety of applications, ranging from window applications to high-professional sites and corporate software products. If your goal is to master the profession of a programmer, this stage is the starting point.</span></h6>
+
+                                            </div>
+                                        </div>
+                                        <h1 style="color: #ffffff;text-align: center;font-family:Raleway;font-weight:600;font-style:normal" class="vc_custom_heading">Essential OOP</h1><div class="stats-block stats-top  "><div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;"></div></div></div><div class="stats-desc" id="counter-responsv-wrap-5181"><div id="counter_472575125c88daecf22c6" data-id="counter_472575125c88daecf22c6" data-ultimate-target="#counter-responsv-wrap-5181 .stats-number" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-number ult-responsive" style="font-size:28px; color:#ffffff; font-weight:bold;color:#ffffff;" data-speed="3" data-counter-value="36" data-separator="," data-decimal=".">36</div><div id="counter-responsv-wrap-5181" data-ultimate-target="#counter-responsv-wrap-5181 .stats-text" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-text ult-responsive" style="font-size:18px; color:#ffffff; font-weight:bold;">Hours</div></div></div>
+                                        <div class="wpb_text_column wpb_content_element  vc_custom_1539176862283">
+                                            <div class="wpb_wrapper">
+                                                <section class="elementor-element elementor-element-af84023 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="af84023" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+                                                    <div class="elementor-container elementor-column-gap-default">
+                                                        <div class="elementor-row">
+                                                            <div class="elementor-element elementor-element-195e7e2 elementor-column elementor-col-100 elementor-inner-column" data-id="195e7e2" data-element_type="column">
+                                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                                    <div class="elementor-widget-wrap">
+                                                                        <div class="elementor-element elementor-element-f548f11 elementor-widget elementor-widget-text-editor" data-id="f548f11" data-element_type="text-editor.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="elementor-text-editor elementor-clearfix">
+                                                                                    <h6 style="text-align: center;"><span style="color: #ffffff;">The stage is presented by 18 interconnected lessons that will allow you to fully understand the syntax of the C# language and its semantics, as well as master object-oriented programming (OOP) in C#, understand event-oriented, structural, functional and aspect-oriented approaches. The stage begins with the basic concepts and paradigms of OOP. The concepts of classes and features of the C# language will be examined. The stage ends with a review of the basic concepts of LINQ and .NET Framework technologies. At the end of the stage&nbsp;you must master the basic capabilities of the C # programming language, as well as create full-fledged sequential algorithms and this will be a good foundation for learning more complex technologies that .NET Developer should possess.</span></h6>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <div class="elementor-element elementor-element-c42f297 elementor-widget elementor-widget-spacer" data-id="c42f297" data-element_type="spacer.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="elementor-spacer"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <h1 style="color: #ffffff;text-align: center;font-family:Raleway;font-weight:600;font-style:normal" class="vc_custom_heading">Advance</h1><div class="stats-block stats-top  "><div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;"></div></div></div><div class="stats-desc" id="counter-responsv-wrap-5424"><div id="counter_4844318795c88daecf2553" data-id="counter_4844318795c88daecf2553" data-ultimate-target="#counter-responsv-wrap-5424 .stats-number" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-number ult-responsive" style="font-size:28px; color:#ffffff; font-weight:bold;color:#ffffff;" data-speed="3" data-counter-value="36" data-separator="," data-decimal=".">36</div><div id="counter-responsv-wrap-5424" data-ultimate-target="#counter-responsv-wrap-5424 .stats-text" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-text ult-responsive" style="font-size:18px; color:#ffffff; font-weight:bold;">Hours</div></div></div>
+                                        <div class="wpb_text_column wpb_content_element  vc_custom_1539176835654">
+                                            <div class="wpb_wrapper">
+                                                <section class="elementor-element elementor-element-8b30139 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="8b30139" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+                                                    <div class="elementor-container elementor-column-gap-default">
+                                                        <div class="elementor-row">
+                                                            <div class="elementor-element elementor-element-02e27bd elementor-column elementor-col-100 elementor-inner-column" data-id="02e27bd" data-element_type="column">
+                                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                                    <div class="elementor-widget-wrap">
+                                                                        <div class="elementor-element elementor-element-c24ca33 elementor-widget elementor-widget-text-editor" data-id="c24ca33" data-element_type="text-editor.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="elementor-text-editor elementor-clearfix">
+                                                                                    <h6 style="text-align: center;"><span style="color: #ffffff;">The stage C# for professionals focused on the in-depth study of the Microsoft .NET Framework and C #. In this course, you will learn what is reflection and attributes, serialization and garbage collection. In addition, this course contains many standard classes that allow you to work with the file system, with data sets, strings, XML and many others. This stage is intended for students who already have knowledge of programming in C #. At the end of the stage, you can confidently use C # and better understand the principles of the .NET platform</span></h6>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <div class="elementor-element elementor-element-8a95b7e elementor-widget elementor-widget-spacer" data-id="8a95b7e" data-element_type="spacer.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="elementor-spacer"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <h1 style="color: #ffffff;text-align: center;font-family:Raleway;font-weight:600;font-style:normal" class="vc_custom_heading">SQL EF</h1><div class="stats-block stats-top  "><div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;"></div></div></div><div class="stats-desc" id="counter-responsv-wrap-2902"><div id="counter_10323879955c88daecf2845" data-id="counter_10323879955c88daecf2845" data-ultimate-target="#counter-responsv-wrap-2902 .stats-number" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-number ult-responsive" style="font-size:28px; color:#ffffff; font-weight:bold;color:#ffffff;" data-speed="3" data-counter-value="24" data-separator="," data-decimal=".">24</div><div id="counter-responsv-wrap-2902" data-ultimate-target="#counter-responsv-wrap-2902 .stats-text" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-text ult-responsive" style="font-size:18px; color:#ffffff; font-weight:bold;">Hours</div></div></div>
+                                        <div class="wpb_text_column wpb_content_element  vc_custom_1539176935688">
+                                            <div class="wpb_wrapper">
+                                                <section class="elementor-element elementor-element-61f76dc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="61f76dc" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+                                                    <div class="elementor-container elementor-column-gap-default">
+                                                        <div class="elementor-row">
+                                                            <div class="elementor-element elementor-element-96ff764 elementor-column elementor-col-100 elementor-inner-column" data-id="96ff764" data-element_type="column">
+                                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                                    <div class="elementor-widget-wrap">
+                                                                        <div class="elementor-element elementor-element-4e36df4 elementor-widget elementor-widget-text-editor" data-id="4e36df4" data-element_type="text-editor.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="elementor-text-editor elementor-clearfix">
+                                                                                    <h6 style="text-align: center;"><span style="color: #ffffff;">In this stage, you will get acquainted with the ADO.NET, Entity Framework technology and SQL Server. Upon completion of the stage you will be able to: create databases, write queries and understand the principles of SQL Server,&nbsp; generate the Entity Data Model, use the Data Base First, Model First, Code First approaches, work with entities, change them, manipulate the data in the database with entities and LINQ, and handle errors.</span></h6>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <div class="elementor-element elementor-element-330a7cd elementor-widget elementor-widget-spacer" data-id="330a7cd" data-element_type="spacer.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h6 class="elementor-spacer" style="text-align: center;"></h6>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <h1 style="color: #ffffff;text-align: center;font-family:Raleway;font-weight:600;font-style:normal" class="vc_custom_heading">Technology</h1><div class="stats-block stats-top  "><div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;"></div></div></div><div class="stats-desc" id="counter-responsv-wrap-7180"><div id="counter_16509744215c88daecf2b29" data-id="counter_16509744215c88daecf2b29" data-ultimate-target="#counter-responsv-wrap-7180 .stats-number" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-number ult-responsive" style="font-size:28px; color:#ffffff; font-weight:bold;color:#ffffff;" data-speed="3" data-counter-value="24" data-separator="," data-decimal=".">24</div><div id="counter-responsv-wrap-7180" data-ultimate-target="#counter-responsv-wrap-7180 .stats-text" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" class="stats-text ult-responsive" style="font-size:18px; color:#ffffff; font-weight:bold;">Hours</div></div></div>
+                                        <div class="wpb_text_column wpb_content_element  vc_custom_1539177007824">
+                                            <div class="wpb_wrapper">
+                                                <section class="elementor-element elementor-element-61f76dc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="61f76dc" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+                                                    <div class="elementor-container elementor-column-gap-default">
+                                                        <div class="elementor-row">
+                                                            <div class="elementor-element elementor-element-96ff764 elementor-column elementor-col-100 elementor-inner-column" data-id="96ff764" data-element_type="column">
+                                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                                    <div class="elementor-widget-wrap">
+                                                                        <div class="elementor-element elementor-element-4e36df4 elementor-widget elementor-widget-text-editor" data-id="4e36df4" data-element_type="text-editor.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="elementor-text-editor elementor-clearfix">
+                                                                                    <section class="elementor-element elementor-element-88e3e12 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="88e3e12" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-element_type="section">
+                                                                                        <div class="elementor-container elementor-column-gap-default">
+                                                                                            <div class="elementor-row">
+                                                                                                <div class="elementor-element elementor-element-1a3b591 elementor-column elementor-col-100 elementor-inner-column" data-id="1a3b591" data-element_type="column">
+                                                                                                    <div class="elementor-column-wrap elementor-element-populated">
+                                                                                                        <div class="elementor-widget-wrap">
+                                                                                                            <div class="elementor-element elementor-element-14ff720 elementor-widget elementor-widget-text-editor" data-id="14ff720" data-element_type="text-editor.default">
+                                                                                                                <div class="elementor-widget-container">
+                                                                                                                    <div class="elementor-text-editor elementor-clearfix">
+                                                                                                                        <h6 style="text-align: center;"><span style="color: #ffffff;">This stage covers basic .NET technologies such as NT Services, WPF, .NET Core, MVC. You will learn about complex constructions such as properties, routed events, and their use when creating window applications, learn how to use layout containers, commands, resources, learn the controls that are needed to create a flexible and functional user interface. You will receive all the necessary skills to create enterprise applications. You will understand the life cycle of the page, the data binding.&nbsp;</span></h6>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </section>
+                                                                                    <div class="elementor-element elementor-element-3e9f108 elementor-widget elementor-widget-spacer" data-id="3e9f108" data-element_type="spacer.default">
+                                                                                        <div class="elementor-widget-container">
+                                                                                            <div class="elementor-spacer"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Row Backgrounds --><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row wpb_row vc_row-fluid">
+                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div class="wpb_wrapper">
+                                                <h6 style="text-align: center;">Top candidates based on their academic progress will receive respectively&nbsp;<strong>30, 50, 100 percent reimbursement</strong>&nbsp;on their tuition fee.</h6>
+                                                <h6 style="text-align: center;">&nbsp;This means that from now on you can start to learn and work at the same time! Here you can get an opportunity to get back the payment you have been&nbsp; charged for the course. So take your chance to be the top candidate of the course and attend it absolutely free.</h6>
+                                                <h6 style="text-align: center;">The tuition fee is ։</h6>
+                                                <h6 style="text-align: center;"><strong>1st Stage:</strong>&nbsp;40 000 AMD</h6>
+                                                <h6 style="text-align: center;"><strong>2nd Stage</strong>: 60 000 AMD</h6>
+                                                <h6 style="text-align: center;"><strong>3rd Stage</strong>: 60 000 AMD</h6>
+                                                <h6 style="text-align: center;"><strong>4th Stage:</strong>&nbsp;40 000 AMD</h6>
+                                                <h6 style="text-align: center;"><strong>5th Stage:</strong>&nbsp;40 000 AMD</h6>
+
+                                            </div>
+                                        </div>
+                                        <div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
+                                        <h2 style="color: #3a3a3a;text-align: center;font-family:Raleway;font-weight:400;font-style:normal" class="vc_custom_heading">TRAINERS</h2><div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="ult-team-member-wrap ult-style-3  "><div class="ult-team-member-image ultimate-heading5c88daecf3d5f" style="; background-color:inherit" data-hover_opacity="0.1"> <img class="" src="https://istc.am/wp-content/uploads/2018/09/Tigran.png" alt="null"><span class="ult-team-member-image-overlay "></span></div><div class="ult-team-member-bio-wrap style-3 ultimate-heading5c88daecf3d5f" style="text-align:center;; "><div class="ult-team-member-name-wrap"><h2 class="ult-team-member-name ult-responsive" data-ultimate-target=".ult-team-member-bio-wrap.ultimate-heading5c88daecf3d5f .ult-team-member-name" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" style="">Tigran Vardanyan</h2><div style="margin-bottom:15px"></div><div class="ult-social-buttons"><a href="https://www.linkedin.com/in/tigran-vardanyan-a9959b92/" target="_blank" rel="noopener" title="" class="ult-team ult-social-icon" style="font-size:16px ; margin-left:5px;margin-right:5px;;" data-iconcolor="inherit" data-iconhover="inherit"><i class="Defaults-linkedin-square"></i></a></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="ult-team-member-wrap ult-style-3  "><div class="ult-team-member-image ultimate-heading5c88daecf41bd" style="; background-color:inherit" data-hover_opacity="0.1"> <img class="" src="https://istc.am/wp-content/uploads/2018/09/Van.png" alt="null"><span class="ult-team-member-image-overlay "></span></div><div class="ult-team-member-bio-wrap style-3 ultimate-heading5c88daecf41bd" style="text-align:center;; "><div class="ult-team-member-name-wrap"><h2 class="ult-team-member-name ult-responsive" data-ultimate-target=".ult-team-member-bio-wrap.ultimate-heading5c88daecf41bd .ult-team-member-name" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}" style="">Vanik Hakobyan</h2><div style="margin-bottom:15px"></div><div class="ult-social-buttons"><a href="https://www.linkedin.com/in/vanikhakobyan/" target="_blank" rel="noopener" title="" class="ult-team ult-social-icon" style="font-size:16px ; margin-left:5px;margin-right:5px;;" data-iconcolor="inherit" data-iconhover="inherit"><i class="Defaults-linkedin-square"></i></a></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row wpb_row vc_row-fluid">
+                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div class="wpb_wrapper">
+                                                <h6 style="text-align: center;"><span style="color: #333333;">Spots are limited so hurry up to save yours by clicking Apply Now!</span></h6>
+
+                                            </div>
+                                        </div>
+                                        <div class="vc_btn3-container vc_btn3-center">
+                                            <a onmouseleave="this.style.borderColor='#eabf34'; this.style.backgroundColor='transparent'; this.style.color='#eabf34'" onmouseenter="this.style.borderColor='#eabf34'; this.style.backgroundColor='#eabf34'; this.style.color='#ffffff';" style="border-color:#eabf34; color:#eabf34;" class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-outline-custom" href="https://istcibm.typeform.com/to/V3DJfU" title="">Apply Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div>
+                    </section>
+                    <div class="modules-and-lessons">
+                    </div>
+                </article>
+            </div>
+            <div class="wh-sidebar one fourth wh-padding">
+                <div class="hide-on-small-tablet">
+
+                    <div class="sensei-single-course-header-purchase-button">
+                        <section class="course-meta course-enrolment"></section>
+                    </div>
+                </div>
+                <div class="wh-sensei-course-sidebar-text">
+                    <h5 class="widget-title">Details</h5>
+                    <hr class="wh-separator">
+                    <ul class="wh-icon-list">
+                        <li><i class="lnr lnr-users"></i>15 Participants</li>
+                        <li><i class="lnr lnr-clock"></i>144 Hours</li>
+                        <li><i class="lnr lnr-calendar-full"></i>6 Months</li>
+                        <li><i class="lnr lnr-checkmark-circle"></i>3 Times Weekly</li>
+                        <li><i class="lnr lnr-hourglass"></i>Deadline for Applications: Soon</li>
+                        <li><i class="lnr lnr-pushpin"></i>Start Date: Soon</li>
+                        <li><button type="submit" form="form1" value="Submit"><a href="https://education.clouds.am/cart.php?a=add&amp;pid=10&amp;carttpl=standard_cart&amp;language=english">Pay Online</a></button></li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget tag_cloud-2 widget_tag_cloud">
+                    <h5 class="widget-title">TAGS</h5><hr><div class="tagcloud">
+                        <a href="https://istc.am/?course-category=business" class="tag-cloud-link tag-link-46 tag-link-position-1" style="font-size: 19.351351351351pt;" aria-label="Business (5 items)">Business<span class="tag-link-count"> (5)</span></a>
+                        <a href="https://istc.am/?course-category=coding" class="tag-cloud-link tag-link-47 tag-link-position-2" style="font-size: 22pt;" aria-label="Coding (6 items)">Coding<span class="tag-link-count"> (6)</span></a>
+                        <a href="https://istc.am/?course-category=design" class="tag-cloud-link tag-link-26 tag-link-position-3" style="font-size: 8pt;" aria-label="Design (2 items)">Design<span class="tag-link-count"> (2)</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vc_row linp-featured-courses-carousel wh-similar-courses">
+        <div class="cbp-container">
+            <div class="cbp-strecher">
+                <div class="one third wh-padding owl-item">
+                    <div>
+                        <div class="img-container">
+                            <a href="https://istc.am/?course=3ds-modeling-texturing" title="3Ds Modeling &amp; Texturing"><img width="768" height="496" src="https://istc.am/wp-content/uploads/2018/08/3Ds-Max-768x496.png" class="featured-course-thumb wp-post-image" alt=""></a>
+                        </div>
+                        <div class="item-inner-wrap">
+                            <div class="price">
+
+                                <span class="course-price">
+                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">AMD</span>60,000.00</span>
+                                </span>
+
+                            </div>
+                            <h3 class="course-title">
+                                <a href="https://istc.am/?course=3ds-modeling-texturing" title="3Ds Modeling &amp; Texturing">3Ds Modeling &amp; Texturing</a>
+                            </h3>
+                            <a href="https://istc.am/?product=3ds-modeling-texturing" target="_blank"><span style="display:inline-block;float:none;" class="starwrapper" itemscope="" itemtype="http://schema.org/AggregateRating"><span class="star-rating-alt-text"></span></span></a>
+                        </div>
+                        <div class="cbp-row">
+                            <div class="one whole">
+                                <div class="course-lesson-count">
+                                    <!--										<i class="icon-skilledtime4"></i>-->
+                                    <!--							        	-->
+                                </div>
+                                <div class="course-lesson-count author">
+                                    <i class="icon-skilledround-account-button-with-user-inside2"></i>
+                                    ISTC Design School
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one third wh-padding owl-item">
+                    <div>
+                        <div class="img-container">
+                            <a href="https://istc.am/?course=cybersecurity" title="Cyber Security"><img width="768" height="496" src="https://istc.am/wp-content/uploads/2018/08/Cyber-Security-768x496.png" class="featured-course-thumb wp-post-image" alt=""></a>
+                        </div>
+                        <div class="item-inner-wrap">
+                            <div class="price">
+
+                                <span class="course-price">
+                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">AMD</span>50,000.00</span>
+                                </span>
+
+                            </div>
+                            <h3 class="course-title">
+                                <a href="https://istc.am/?course=cybersecurity" title="Cyber Security">Cyber Security</a>
+                            </h3>
+                            <a href="https://istc.am/?product=cyber-security" target="_blank"><span style="display:inline-block;float:none;" class="starwrapper" itemscope="" itemtype="http://schema.org/AggregateRating"><span class="star-rating-alt-text"></span></span></a>
+                        </div>
+                        <div class="cbp-row">
+                            <div class="one whole">
+                                <div class="course-lesson-count">
+                                    <!--										<i class="icon-skilledtime4"></i>-->
+                                    <!--							        	-->
+                                </div>
+                                <div class="course-lesson-count author">
+                                    <i class="icon-skilledround-account-button-with-user-inside2"></i>
+                                    ISTC Coding School
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one third wh-padding owl-item">
+                    <div>
+                        <div class="img-container">
+                            <a href="https://istc.am/?course=programming-fundamentals" title="Programming Fundamentals"><img width="768" height="496" src="https://istc.am/wp-content/uploads/2019/02/Programming-Fundamentals-01-3-768x496.png" class="featured-course-thumb wp-post-image" alt="" srcset="https://istc.am/wp-content/uploads/2019/02/Programming-Fundamentals-01-3-768x496.png 768w, https://istc.am/wp-content/uploads/2019/02/Programming-Fundamentals-01-3-848x548.png 848w" sizes="(max-width: 768px) 100vw, 768px"></a>
+                        </div>
+                        <div class="item-inner-wrap">
+                            <div class="price">
+
+                                <span class="course-price">
+                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">AMD</span>45,000.00</span>
+                                </span>
+
+                            </div>
+                            <h3 class="course-title">
+                                <a href="https://istc.am/?course=programming-fundamentals" title="Programming Fundamentals">Programming Fundamentals</a>
+                            </h3>
+                            <a href="https://istc.am/?product=programming-fundamentals" target="_blank"><span style="display:inline-block;float:none;" class="starwrapper" itemscope="" itemtype="http://schema.org/AggregateRating"><span class="star-rating-alt-text"></span></span></a>
+                        </div>
+                        <div class="cbp-row">
+                            <div class="one whole">
+                                <div class="course-lesson-count">
+                                    <!--										<i class="icon-skilledtime4"></i>-->
+                                    <!--							        	-->
+                                </div>
+                                <div class="course-lesson-count author">
+                                    <i class="icon-skilledround-account-button-with-user-inside2"></i>
+                                    ISTC Coding School
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cbp-row wh-footer">
+        <div class="cbp-row wh-footer-widgets">
+            <div class="cbp-container">
+                <div class="widget_text widget custom_html-2 widget_custom_html one fourth wh-padding">
+                    <h3 class="widget-title">FOUNDING PARTNERS</h3><div class="textwidget custom-html-widget">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-lg-3">
+
+                                    <a href="http://www.ibm.com" target="_blank"><img src="/wp-content/uploads/2018/09/logo-ibm.png"></a>
+                                    <a href="http://www.usaid.gov/armenia" target="_blank"><img src="/wp-content/uploads/2018/09/logo-usaid.png"></a>
+                                    <br>
+                                    <a href="http://www.gov.am" target="_blank"><img src="/wp-content/uploads/2018/09/gerb.png" style="margin:16px 0; "></a>
+                                    <a href="http://www.eif.am" target="_blank"><img src="/wp-content/uploads/2018/09/logo-eif.png" style="margin:16px 0;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="widget nav_menu-2 widget_nav_menu one fourth wh-padding">
+                    <div class="menu-footer-menu-container">
+                        <ul id="menu-footer-menu" class="menu">
+                            <li id="menu-item-21210" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21210 msm-top-level-item"><a href="http://new.istc.am">Home</a></li>
+                            <li id="menu-item-21203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21203 msm-top-level-item"><a href="https://istc.am/?page_id=21177">Climate Change Tech Accelerator</a></li>
+                            <li id="menu-item-21246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21246 msm-top-level-item"><a href="https://istc.am/?page_id=14252">Our Startup Community</a></li>
+                            <li id="menu-item-21204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21204 msm-top-level-item"><a href="https://istc.am/?page_id=20876">Co-Working</a></li>
+                            <li id="menu-item-21399" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21399 msm-top-level-item"><a href="http://new.istc.am/?post_type=tribe_events">Calendar</a></li>
+                            <li id="menu-item-21248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21248 msm-top-level-item"><a href="https://istc.am/?page_id=20555">US-Armenia Research Collaboration Grant</a></li>
+                            <li id="menu-item-21249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21249 msm-top-level-item"><a href="https://istc.am/?page_id=18534">ISTC Research Grant Program</a></li>
+                            <li id="menu-item-21400" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21400 msm-top-level-item"><a href="https://istc.am/?cat=53">Research Lab</a></li>
+                        </ul>
+                    </div>
+                </div><div class="widget nav_menu-3 widget_nav_menu one fourth wh-padding">
+                    <div class="menu-footer-menu-2-container">
+                        <ul id="menu-footer-menu-2" class="menu">
+                            <li id="menu-item-21401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21401 msm-top-level-item"><a href="https://istc.am/?page_id=415">ISTC Academy</a></li>
+                            <li id="menu-item-21402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21402 msm-top-level-item"><a href="https://istc.am/?page_id=1098">Courses</a></li>
+                            <li id="menu-item-21403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21403 msm-top-level-item"><a href="https://istc.am/?page_id=21329">Master’s Programs</a></li>
+                            <li id="menu-item-21405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21405 msm-top-level-item"><a href="https://clouds.am">ISTC Cloud  Services</a></li>
+                            <li id="menu-item-21406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21406 msm-top-level-item"><a href="https://clouds.am/cart.php?gid=1">Hosting Plans</a></li>
+                            <li id="menu-item-21407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21407 msm-top-level-item"><a href="https://clouds.am/cart.php?gid=2">VPS / VDS Plans</a></li>
+                            <li id="menu-item-21404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21404 msm-top-level-item"><a href="https://istc.am/?page_id=20310">About Us</a></li>
+                        </ul>
+                    </div>
+                </div><div class="widget text-2 widget_text one fourth wh-padding">
+                    <h3 class="widget-title">CONTACT US</h3>			<div class="textwidget">
+                        <p><i class="fas fa-phone-square"></i> <a href="tel:+374-12-219-700">+374 (12) 219-700</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@istc.am">info@istc.am</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i><a href="https://goo.gl/maps/enPjVYAH3uJ2">Alek&nbsp;</a><a href="https://goo.gl/maps/enPjVYAH3uJ2">Manukian St&nbsp;</a><a href="https://goo.gl/maps/enPjVYAH3uJ2">1/7</a><a href="https://goo.gl/maps/enPjVYAH3uJ2">, Yerevan 0025</a></p>
+                    </div>
+                </div><div class="widget zoom-social-icons-widget-3 zoom-social-icons-widget one fourth wh-padding">
+                    <h3 class="widget-title">Follow us</h3>
+
+                    <ul class="zoom-social-icons-list zoom-social-icons-list--with-canvas zoom-social-icons-list--rounded zoom-social-icons-list--no-labels">
+
+
+                        <li class="zoom-social_icons-list__item">
+                            <a class="zoom-social_icons-list__link" href="https://www.facebook.com/istc.ibm.eif" target="_blank">
+
+                                <span class="screen-reader-text">facebook</span>
+
+                                <span class="zoom-social_icons-list-span socicon socicon-facebook" data-hover-rule="background-color" data-hover-color="#c6c6c6" style="background-color : #5e5e5e"></span>
+
+                            </a>
+                        </li>
+
+
+                        <li class="zoom-social_icons-list__item">
+                            <a class="zoom-social_icons-list__link" href="https://twitter.com/istcarmenia" target="_blank">
+
+                                <span class="screen-reader-text">twitter</span>
+
+                                <span class="zoom-social_icons-list-span socicon socicon-twitter" data-hover-rule="background-color" data-hover-color="#c6c6c6" style="background-color : #5e5e5e"></span>
+
+                            </a>
+                        </li>
+
+
+                        <li class="zoom-social_icons-list__item">
+                            <a class="zoom-social_icons-list__link" href="https://www.instagram.com/istc_foundation/" target="_blank">
+
+                                <span class="screen-reader-text">instagram</span>
+
+                                <span class="zoom-social_icons-list-span socicon socicon-instagram" data-hover-rule="background-color" data-hover-color="#c6c6c6" style="background-color : #5e5e5e"></span>
+
+                            </a>
+                        </li>
+
+
+                        <li class="zoom-social_icons-list__item">
+                            <a class="zoom-social_icons-list__link" href="https://www.youtube.com/channel/UCNiVibL86YhQ_w8m1SAEx2w" target="_blank">
+
+                                <span class="screen-reader-text">youtube</span>
+
+                                <span class="zoom-social_icons-list-span socicon socicon-youtube" data-hover-rule="background-color" data-hover-color="#c6c6c6" style="background-color : #5e5e5e"></span>
+
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="cbp-row wh-footer-bottom">
+            <div class="cbp-container">
+                <div class="social-links five twelfths wh-padding align-right">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery('.wpb_logo_slider').owlCarousel({
+
+      autoPlay: false, //Set AutoPlay to 3 seconds
+      items : 5,
+      itemsDesktopSmall : [979,4],
+      itemsTablet : [768,3],
+      itemsMobile : [479,1],
+      paginationSpeed : 800,
+      stopOnHover : true,
+      navigation : true,
+      pagination : true,
+	  slideSpeed : 1000,
+	  navigationText : ["<",">"],
+
+  });
+});
+    </script>
+    <style media="screen">
+
+        /* Navigation */
+        .tc-testimonial-wrap .owl-theme .owl-nav [class*='owl-'] {
+            background-color: #ECF0F1;
+        }
+
+            .tc-testimonial-wrap .owl-theme .owl-nav [class*='owl-']:hover {
+                background-color: #EB6361;
+            }
+        /* Dots */
+        .tc-testimonial-wrap .owl-theme .owl-dots .owl-dot span {
+            background-color: #EB6361;
+        }
+
+        .tc-testimonial-wrap .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+            background-color: #343434;
+        }
+
+        .tc-client {
+            border-bottom: 3px solid #343434;
+        }
+
+        .tc-content p:before, .tc-content p:after {
+            color: #343434;
+        }
+
+        .tc-content p {
+            color: #fff;
+        }
+
+        .tc-testimonial-single {
+            background-color: #71BA51;
+            border: 1px solid #71BA51;
+            margin: 0 10px;
+            padding: 20px 20px;
+            -moz-box-shadow: 0 0 5px #71BA51;
+            -webkit-box-shadow: 0 0 5px #71BA51;
+            box-shadow: 0 0 5px #71BA51;
+        }
+
+        .tc-client-thumb img {
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+
+        .tc-author-details {
+            color: #fff
+        }
+    </style>
+
+    <script type="text/javascript">
+
+jQuery(document).ready(function(){
+    jQuery(".owl-carousel").owlCarousel({
+      // control
+          autoplay:true,
+          autoplayHoverPause:true,
+          autoplayTimeout:4000,
+          loop:true,
+          // Advances
+          margin:5,
+          nav:true,
+          navText:["&lt;","&gt;"],
+          autoHeight:false,
+          autoWidth:false,
+          stagePadding:false,
+          rtl:false,
+          dots:true,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+              },
+              600:{
+                  items:1,
+
+              },
+              1000:{
+                  items:1,
+
+              }
+
+          }
+
+  });
+
+});
+
+    </script>
+
+    <script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+    </script>
+    <script>/* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};var tribe_system_info = {"sysinfo_optin_nonce":"2096e2947c","clipboard_btn_text":"Copy to clipboard","clipboard_copied_text":"System info copied","clipboard_fail_text":"Press \"Cmd + C\" to copy"};/* ]]> */</script>
+    <script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+    </script>
+    <link rel="stylesheet" id="vc_google_fonts_raleway100200300regular500600700800900-css" href="https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;ver=5.0.4" type="text/css" media="all">
+    <link rel="stylesheet" id="ult-background-style-css" href="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/background-style.min.css?ver=3.16.25" type="text/css" media="all">
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/metronet-profile-picture/js/mpp-frontend.min.js?ver=2.1.2"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/best-logo-slider/assets/js/owl.carousel.min.js?ver=1.0"></script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/istc.am\/index.php?rest_route=\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+    </script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4"></script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+    </script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.5.4"></script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_e0cc75f49637ede72133097a8d0df531","fragment_name":"wc_fragments_e0cc75f49637ede72133097a8d0df531"};
+/* ]]> */
+    </script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.5.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/woothemes-sensei/assets/js/user-dashboard.min.js?ver=1.9.18"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/extensions/timetable/js/jquery.ba-bbq.min.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/extensions/timetable/js/jquery.carouFredSel-6.2.1-packed.js?ver=5.0.4"></script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var tt_config = [];
+tt_config = {"ajaxurl":"https:\/\/istc.am\/wp-admin\/admin-ajax.php"};;
+/* ]]> */
+    </script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/extensions/timetable/js/timetable.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/vc-addons/sensei-courses-carousel/assets/owl.carousel.min.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/vc-addons/sensei-courses-carousel/assets/sensei-courses-carousel.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=20170209"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/skilled-plugin/public/js/linp-main.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/themes/skilled/assets/js/plugins/fitvids.js"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/themes/skilled/assets/js/plugins/superfish.js"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/themes/skilled/assets/js/plugins/hoverintent.js"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/themes/skilled/assets/js/plugins/scrollup.js"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/themes/skilled/assets/js/plugins/jquery.sticky.js"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/themes/skilled/assets/js/plugins/natural-width-height.js"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/themes/skilled/assets/js/wheels-main.min.js"></script>
+    <script type="text/javascript" src="https://istc.am/wp-includes/js/wp-embed.min.js?ver=5.0.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.5.4"></script>
+    <script type="text/javascript" src="https://istc.am/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js?ver=5.0.4"></script>
+
+
+
+    <script>
+        jQuery(function ($) {
+            $('.sensei-single-course-header-purchase-button .single_add_to_cart_button').each(function () {
+                $(this).html('Take this course');
+            });
+            $('.sensei-single-course-header-purchase-button input.course-start').each(function () {
+                $(this).val('Take this course');
+            });
+            $('.sensei-single-course-header-purchase-button .register a').each(function () {
+                $(this).html('Take this course');
+            });
+        });
+    </script>
+
+    <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"></a>
+</body>
+</html>

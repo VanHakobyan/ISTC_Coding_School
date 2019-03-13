@@ -23,6 +23,16 @@ namespace ISTC.FiveStage.AspNetCore.Views.Views_01.Controllers
             return View(info);
         }
 
-        
+        public IActionResult Course()
+        {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            var ids = Enumerable.Range(0, 10).ToList();
+            ViewData["ids"] = ids;
+            return View();
+        }
     }
 }
