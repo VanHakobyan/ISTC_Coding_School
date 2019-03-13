@@ -11,15 +11,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.FiveStage.Technology.JumpAspNetCore", "ISTC.FiveStage.Technology.JumpAspNetCore", "{0E0D28FE-0B7F-4880-8157-865FC5C84201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01.csproj", "{8E700674-284D-40FD-A4FB-564E1C0F4627}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01.csproj", "{8E700674-284D-40FD-A4FB-564E1C0F4627}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02.csproj", "{40557FF2-846A-427B-9993-C6A7BCEED49D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02.csproj", "{40557FF2-846A-427B-9993-C6A7BCEED49D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03.csproj", "{7F864CA6-BBAA-4601-B63D-B602C6EDF85E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_03.csproj", "{7F864CA6-BBAA-4601-B63D-B602C6EDF85E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04.csproj", "{A31161A1-7448-4A88-8C7A-B516B2874972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_04.csproj", "{A31161A1-7448-4A88-8C7A-B516B2874972}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05.csproj", "{0DA55246-A83B-44F3-B240-6C84712F02DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05", "ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05\ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_05.csproj", "{0DA55246-A83B-44F3-B240-6C84712F02DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.FiveStage.Technology.AspNetCore.Views", "ISTC.FiveStage.Technology.AspNetCore.Views", "{C25DAC97-986A-4408-9640-B3A17E8DC732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.AspNetCore.Views.Views_01", "ISTC.FiveStage.AspNetCore.Views.Views_01\ISTC.FiveStage.AspNetCore.Views.Views_01.csproj", "{98036AB4-B0BF-401F-A0B4-2F343407CA86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,10 @@ Global
 		{0DA55246-A83B-44F3-B240-6C84712F02DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DA55246-A83B-44F3-B240-6C84712F02DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DA55246-A83B-44F3-B240-6C84712F02DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98036AB4-B0BF-401F-A0B4-2F343407CA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98036AB4-B0BF-401F-A0B4-2F343407CA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98036AB4-B0BF-401F-A0B4-2F343407CA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98036AB4-B0BF-401F-A0B4-2F343407CA86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +75,7 @@ Global
 		{7F864CA6-BBAA-4601-B63D-B602C6EDF85E} = {0E0D28FE-0B7F-4880-8157-865FC5C84201}
 		{A31161A1-7448-4A88-8C7A-B516B2874972} = {0E0D28FE-0B7F-4880-8157-865FC5C84201}
 		{0DA55246-A83B-44F3-B240-6C84712F02DC} = {0E0D28FE-0B7F-4880-8157-865FC5C84201}
+		{98036AB4-B0BF-401F-A0B4-2F343407CA86} = {C25DAC97-986A-4408-9640-B3A17E8DC732}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C1DE84E0-1012-4B1B-BF37-394BC0C95866}
