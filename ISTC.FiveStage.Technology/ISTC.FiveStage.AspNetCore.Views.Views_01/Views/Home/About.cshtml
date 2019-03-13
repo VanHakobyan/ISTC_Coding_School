@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+@{
+    var isd = ViewData["ids"] as List<int>;
+}
+<html>
+<head>
+    <title>ISTC C#</title>
+</head>
+<body>
+    <div>
+        <ul>
+
+            @foreach (var id in isd)
+            {
+                <li >@id</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
