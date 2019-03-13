@@ -1,0 +1,19 @@
+﻿@using ISTC.FiveStage.AspNetCore.Views.Views_02.Models
+@model ISTC.FiveStage.AspNetCore.Views.Views_02.Models.People
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+    var contactViewModel = ViewData["ContactViewModel"] as ContactViewModel;
+}
+
+<br/>
+<div>
+    <ul style="background: azure">
+        <p>@contactViewModel.FirstName</p> 
+        <p>@contactViewModel.LastName</p> 
+        <p><a href="@contactViewModel.Github">Github</a></p>
+        <p><a href="@contactViewModel.Linkedin">Linkedin</a></p>
+    </ul>
+</div>
+@await Html.PartialAsync("PartialHome",Model)

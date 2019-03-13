@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="@Url.Action("Index","Home")" class="active">Home</a></li>
+        @*<li>@Html.ActionLink("Home", "Index", "Home", new { @class = "active" })</li>*@
+        <li><a href="https://istc.am/?page_id=175" target="_blank">Courses</a></li>
+        <li>@Html.ActionLink("Contact","Contact","Home")</li>
+        <li><a href="https://istc.am/?page_id=20310" target="_blank">About</a></li>
+    </ul>
+
+@RenderBody()
+</body>
+</html>
