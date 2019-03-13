@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 @{
-    var isd = ViewData["ids"] as List<int>;
+    List<int> ids = (List<int>)ViewData["ids"];
 }
 <html>
 <head>
@@ -9,10 +9,11 @@
 <body>
     <div>
         <ul>
-
-            @foreach (var id in isd)
+          
+            @foreach (var id in ids)
             {
-                <li >@id</li>
+                @:barev
+                <li>@id</li>
             }
         </ul>
     </div>

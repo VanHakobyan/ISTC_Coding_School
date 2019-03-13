@@ -12,12 +12,12 @@ namespace ISTC.FiveStage.AspNetCore.Views.Views_01.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.Title="ISTC C# Template";
+            ViewBag.Title = "ISTC C# Template !!!";
             ViewData["Cover"] = "ISTC C# course schedule";
             var info = new ISTC_info
             {
                 Day = $"{(DateTime.Parse("2019-04-01") - DateTime.Now).Days} days left",
-                Name ="ISTC",
+                Name = "ISTC",
                 Url = @"http://istc.am"
             };
             return View(info);
@@ -32,6 +32,11 @@ namespace ISTC.FiveStage.AspNetCore.Views.Views_01.Controllers
         {
             var ids = Enumerable.Range(0, 10).ToList();
             ViewData["ids"] = ids;
+            return View();
+        }
+
+        public IActionResult NewV()
+        {
             return View();
         }
     }
