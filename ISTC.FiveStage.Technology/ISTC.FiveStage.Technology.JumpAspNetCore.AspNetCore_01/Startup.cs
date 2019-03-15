@@ -23,12 +23,19 @@ namespace ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_01
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
 
-            app.Run(async (context) =>
+                app.Run(async (context) =>
+                {
+                    await context.Response.WriteAsync("Hello World!");
+                });
+            }
+            else
             {
-                await context.Response.WriteAsync("Hello World!");
-            });
+                app.Run(async (context) =>
+                {
+                    await context.Response.WriteAsync("Kes");
+                });
+            }
         }
     }
 }
