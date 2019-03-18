@@ -10,7 +10,7 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_01.Services
         public string Welcome { get; set; }
         public FirstService()
         {
-            Welcome = "Welcome ISTC .Net Core students!!!"; 
+            Welcome = $"Welcome ISTC .Net Core students!!! {DateTime.Now}"; 
         }
         public string WelcomeISTC()
         {

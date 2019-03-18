@@ -27,7 +27,7 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_01.Controllers
         [Route("GetUserDetails")]
         public IActionResult GetUserDetails()
         {
-            var details = _configuration.GetSection("UserDetails").GetChildren().Select(x => x.Value);
+            var details = _configuration.GetSection("UserDetails").GetChildren().Select(x => new { x.Key, x.Value });
             return Ok(details);
         }
     }

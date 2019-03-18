@@ -18,8 +18,8 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_01.Controllers
             _iFirstService = firstService;
         }
 
-        [HttpGet,Route("SayHello")]
-        public IActionResult SayHello()
+        [Route("SayHello/{id}")]
+        public IActionResult SayHello(int id,string name,string age,string k)
         {
             var welcomeIstc = _iFirstService.WelcomeISTC();
             return Ok(welcomeIstc);

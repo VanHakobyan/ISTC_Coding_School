@@ -42,7 +42,7 @@ namespace ISTC.FiveStage.AspNetCore.Views.Views_01
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Hello}/{action=SayHello}/{id?}");
             });
         }
     }

@@ -16,13 +16,6 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_01
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
-
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IFirstService, FirstService>();
@@ -41,7 +34,12 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_01
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Hello}/{action=PostSayHello}/{id?}");
+            });
         }
     }
 }

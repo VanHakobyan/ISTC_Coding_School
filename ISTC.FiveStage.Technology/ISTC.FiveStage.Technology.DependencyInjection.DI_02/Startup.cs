@@ -17,19 +17,19 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_02
 {
     public class Startup
     {
-        public void ConfigureServices(IServiceCollection services)
-        {
+        //public void ConfigureServices(IServiceCollection services)
+        //{
 
-            services.AddTransient<IMyService, MyService>();
+        //    services.AddTransient<IMyService, MyService>();
 
-            var serviceProvider = services.BuildServiceProvider();
+        //    var serviceProvider = services.BuildServiceProvider();
 
-            var instanceOne = serviceProvider.GetService<IMyService>();
-            var instanceTwo = serviceProvider.GetService<IMyService>();
+        //    var instanceOne = serviceProvider.GetService<IMyService>();
+        //    var instanceTwo = serviceProvider.GetService<IMyService>();
 
-            Console.Write(instanceOne != instanceTwo);
+        //    Console.Write(instanceOne != instanceTwo);
 
-        }
+        //}
 
         //public void ConfigureServices(IServiceCollection services)
         //{
@@ -57,30 +57,35 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_02
         //    Console.Write(singletonTwo.MyTransientService != singletonTwo.MyTransientService);
         //}
 
-        //public void ConfigureServices(IServiceCollection services)
-        //{
-        //    services.AddScoped<IMyScopedService, MyScopedService>();
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddScoped<IMyScopedService, MyScopedService>();
 
-        //    var serviceProvider = services.BuildServiceProvider();
+            var serviceProvider = services.BuildServiceProvider();
 
-        //    var serviceScopeFactory = serviceProvider.GetRequiredService<IServiceScopeFactory>();
+            var serviceScopeFactory = serviceProvider.GetRequiredService<IServiceScopeFactory>();
 
-        //    IMyScopedService scopedOne;
-        //    IMyScopedService scopedTwo;
+            IMyScopedService scopedOne;
+            IMyScopedService scopedTwo;
+            IMyScopedService scoped3;
+            IMyScopedService scoped4;
 
-        //    using (var scope = serviceScopeFactory.CreateScope())
-        //    {
-        //        scopedOne = scope.ServiceProvider.GetService<IMyScopedService>();
-        //    }
+            using (var scope = serviceScopeFactory.CreateScope())
+            {
+                scopedOne = scope.ServiceProvider.GetService<IMyScopedService>();
+                scopedTwo = scope.ServiceProvider.GetService<IMyScopedService>();
+            }
 
-        //    using (var scope = serviceScopeFactory.CreateScope())
-        //    {
-        //        scopedTwo = scope.ServiceProvider.GetService<IMyScopedService>();
-        //    }
+            using (var scope = serviceScopeFactory.CreateScope())
+            {
+                scoped3 = scope.ServiceProvider.GetService<IMyScopedService>();
+                scoped4 = scope.ServiceProvider.GetService<IMyScopedService>();
+            }
 
 
-        //    Console.Write(scopedOne != scopedTwo);
-        //}
+            Console.Write(scopedOne == scopedTwo);
+            Console.Write(scoped3 == scopedTwo);
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
