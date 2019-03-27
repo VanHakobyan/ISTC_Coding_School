@@ -39,5 +39,10 @@ namespace ISTC.FiveStage.AspNetCore.Views.Views_01.Controllers
         {
             return View();
         }
+
+        public IActionResult Custom()
+        {
+            return View();
+        }
     }
 }
