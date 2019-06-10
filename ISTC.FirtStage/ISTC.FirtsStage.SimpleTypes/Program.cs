@@ -10,30 +10,27 @@ namespace SimpleTypes
     {
         static void Main(string[] args)
         {
-            //bool flag;
-            //flag = true;
-            ////Console.WriteLine(flag);
-            //string readLine = Console.ReadLine();
-            //flag = Convert.ToBoolean(int.Parse(readLine));
-
-            //if (flag)
-            //{
-            //    Console.WriteLine("true");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("false");
-            //}
-
-            byte b = 0;
-            byte y = 5;
-            ++b;
+            byte b = 255;
             b += 5;
             Console.WriteLine(b);
 
+            byte maxValue = byte.MaxValue;
+            byte minValue = byte.MinValue;
+
+            byte y = 5;
+            ++b;
+            Console.WriteLine(b);//b=1
+            int result = b + 1;//result=2 
+
+            b += 5;
+
+
+            Console.WriteLine(b);//
+
             short sh = 5;
             short sh2 = 50;
-
+            int r = sh2 / sh;
+            
             int number = 587;
             int number2 = 158;
             int resInt = number2 + number;
@@ -55,11 +52,11 @@ namespace SimpleTypes
 
             double dRes = d1 + d2;
 
-            decimal dec1 = 564564.345m;
+            decimal dec1 = 564564.34654646468468468465m;
             decimal dec2 = decimal.MinValue;
 
             decimal decRes = dec1 + dec2;
-            
+
         }
     }
 }

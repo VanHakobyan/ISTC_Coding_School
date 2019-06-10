@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Methotds2",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Recursion", "ISTC.FirtsStage.Recursion\ISTC.FirtsStage.Recursion.csproj", "{37A10F94-A951-433E-8112-CE02079B6FAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.Ex01", "ISTC.FirstStage.Ex01\ISTC.FirstStage.Ex01.csproj", "{F0965492-EB37-4301-94F4-C0B67FD466CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{37A10F94-A951-433E-8112-CE02079B6FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37A10F94-A951-433E-8112-CE02079B6FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37A10F94-A951-433E-8112-CE02079B6FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0965492-EB37-4301-94F4-C0B67FD466CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0965492-EB37-4301-94F4-C0B67FD466CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0965492-EB37-4301-94F4-C0B67FD466CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0965492-EB37-4301-94F4-C0B67FD466CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

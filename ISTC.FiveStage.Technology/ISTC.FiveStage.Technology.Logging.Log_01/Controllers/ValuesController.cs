@@ -13,7 +13,7 @@ namespace ISTC.FiveStage.Technology.Logging.Log_01.Controllers
     public class ValuesController : ControllerBase
     {
         private readonly ILogger _logger;
-        public ValuesController(ILogger<ValuesController> logger)
+        public ValuesController(ILogger logger)
         {
             _logger = logger;
         }
