@@ -19,10 +19,41 @@ namespace ISTC.FirstStage.Operation
     {
         static void Main(string[] args)
         {
-           
+            //7. String Format
+            Console.WriteLine("Barev es {0} em {1} tarekan", "Van", 30);
+            Console.ReadKey();
+            //6. Concotenation
+            string firstName = "Robert";
+            string lastName = "Kocharyan";
+            string whiteSpace = " ";
+            string n = "\n";
+            string name = firstName + n + lastName + "\n" + "azatutyun naxagahiun"; //Concotenation
+            Console.WriteLine(name);
+
+            Console.ReadKey();
+            //5. Checket
+            byte by = 255;
+
+            checked
+            {
+                unchecked
+                {
+                    by += 1;
+                }
+            }
+            Console.WriteLine(by);
+            Console.ReadKey();
+
+            //4. Comparison
+            int n1 = 26;
+            int n2 = 26;
+            bool b = n1 != n2;
+            Console.WriteLine(b);
+            Console.ReadKey();
+
             //3. Math
             double pi = Math.PI;
-            double pow = Math.Floor(1.53468464); 
+            double pow = Math.Floor(1.53468464);
             Console.WriteLine(pow);
             Console.ReadKey();
             //2.  Local Global
@@ -35,7 +66,7 @@ namespace ISTC.FirstStage.Operation
             {
                 int x = 6;
             }
-            
+
             //1.++,--
             int number = 5;
 
