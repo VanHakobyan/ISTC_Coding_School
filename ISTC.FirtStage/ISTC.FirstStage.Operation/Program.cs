@@ -17,7 +17,7 @@ namespace ISTC.FirstStage.Operation
     //9. Var
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //7. String Format
             Console.WriteLine("Barev es {0} em {1} tarekan", "Van", 30);
