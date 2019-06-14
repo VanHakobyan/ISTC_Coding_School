@@ -8,8 +8,6 @@ namespace TEST
 {
     interface IA
     {
-
-
         void M();
     }
 

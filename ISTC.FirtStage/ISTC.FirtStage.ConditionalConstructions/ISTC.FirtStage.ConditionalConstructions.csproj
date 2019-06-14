@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}</ProjectGuid>
+    <ProjectGuid>{FA9C1564-FC49-4F66-8241-592444937B2F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TEST</RootNamespace>
-    <AssemblyName>TEST</AssemblyName>
+    <RootNamespace>ISTC.FirtStage.ConditionalConstructions</RootNamespace>
+    <AssemblyName>ISTC.FirtStage.ConditionalConstructions</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

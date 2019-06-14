@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2019
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Types", "ISTC.FirtsStage.Types\ISTC.FirtsStage.Types.csproj", "{97BE2091-1B83-44F9-8511-1601B28959D7}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.Ex01", "ISTC.FirstStage.Ex01\ISTC.FirstStage.Ex01.csproj", "{F0965492-EB37-4301-94F4-C0B67FD466CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.Operation", "ISTC.FirstStage.Operation\ISTC.FirstStage.Operation.csproj", "{28E9E65C-2E06-4824-B2BA-F40E5C2F597B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtStage.ConditionalConstructions", "ISTC.FirtStage.ConditionalConstructions\ISTC.FirtStage.ConditionalConstructions.csproj", "{FA9C1564-FC49-4F66-8241-592444937B2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{28E9E65C-2E06-4824-B2BA-F40E5C2F597B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28E9E65C-2E06-4824-B2BA-F40E5C2F597B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28E9E65C-2E06-4824-B2BA-F40E5C2F597B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9C1564-FC49-4F66-8241-592444937B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9C1564-FC49-4F66-8241-592444937B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9C1564-FC49-4F66-8241-592444937B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9C1564-FC49-4F66-8241-592444937B2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
