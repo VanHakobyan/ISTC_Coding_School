@@ -10,13 +10,18 @@ namespace LogicOperators
     {
         static void Main(string[] args)
         {
+            var bin = 0b110_0000_0001_1001;
+            var s = bin.ToString();
+            Console.WriteLine(s);
+            Console.ReadKey();
+
             uint x = 7;
             uint y = (x << 31);
             uint z = y >> 31;
-            //Console.WriteLine(x);
-            //Console.WriteLine(y);
-            //Console.WriteLine(z);
-            //Console.ReadKey();
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z);
             //--------------------------
 
             //1-7 , 2 6,7
