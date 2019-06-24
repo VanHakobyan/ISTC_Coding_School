@@ -11,9 +11,10 @@ namespace ISTC.FirstStage.Ex04
         static void Main(string[] args)
         {
             string n = Console.ReadLine();
-            int result;
-            bool tryParse = TryParse(n, out result);
 
+            bool tryParse = TryParse(n, out int result);
+            result = 10;
+            Console.WriteLine(result);
             Console.ReadKey();
         }
 
@@ -105,7 +106,5 @@ namespace ISTC.FirstStage.Ex04
                 return false;
             }
         }
-
-
     }
 }
