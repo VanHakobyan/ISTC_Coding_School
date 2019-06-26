@@ -33,6 +33,9 @@ namespace Recursion
 
         static void Main(string[] args)
         {
+            int number = Number(2,2);
+            Console.WriteLine(number);
+            Console.ReadKey();
             while (true)
             {
                 Stopwatch stopwatchR = new Stopwatch();
@@ -91,6 +94,16 @@ namespace Recursion
                 number /= 10;
             }
             return sum;
+        }
+
+        //254
+
+        static int Number(int n, int i)
+        {
+            if (i == 1) return 1;
+
+            if (n % i == 0) return i + Number(n, --i);
+            return Number(n, --i);
         }
     }
 }
