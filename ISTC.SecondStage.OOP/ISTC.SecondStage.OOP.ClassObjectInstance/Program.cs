@@ -18,10 +18,12 @@ namespace ClassObjectInstance
         private int _qash;
         private string anun;
         public int tariq;
+
         public void SayNameAndAge()
         {
             Console.WriteLine($"Es {anun}-n em {tariq} tarekan  !!!");
         }
+
         public void Method(string newName)
         {
             anun = newName;
@@ -31,7 +33,6 @@ namespace ClassObjectInstance
         {
             return _qash;
         }
-
     }
 
     class Program
@@ -39,7 +40,9 @@ namespace ClassObjectInstance
         static void Main(string[] args)
         {
             Mard mard1 = new Mard("John", 45, 451);
+
             Mard mard2 = new Mard("Karen", 32, 78);
+
             mard1.Method("new name");
 
             Console.WriteLine(mard1.tariq);
@@ -51,6 +54,8 @@ namespace ClassObjectInstance
             mard1.SayNameAndAge();
             mard2.SayNameAndAge();
         }
+
+       
 
     }
 }
