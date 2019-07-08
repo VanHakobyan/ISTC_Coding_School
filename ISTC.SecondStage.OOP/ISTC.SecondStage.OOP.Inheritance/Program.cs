@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ISTC.SecondStage.OOP.Inheritance.Example;
 
 namespace Inheritance
 {
-    public class Human
+    public class Actor
     {
+        public int SingleCount = 52;
+    }
+    public class Human//base
+    {
+        protected string gender;
+
         public Human(string firstName)
         {
             FirstName = firstName;
@@ -16,12 +23,10 @@ namespace Inheritance
         {
             Age = age;
         }
-        public Human()
-        {
+        public Human() { }
 
-        }
         public string FirstName { get; set; }
-        public string LastName { get; set; }
+        protected string LastName { get; set; }
         public int Age { get; set; }
         public void Say()
         {
@@ -29,6 +34,7 @@ namespace Inheritance
         }
     }
 
+    //der
     public class Student : Human
     {
         public Student(int gpa, int age) : base(age)
@@ -46,6 +52,11 @@ namespace Inheritance
         {
             Console.WriteLine("I can learn !!!");
         }
+
+        private void SetGender()
+        {
+            gender = "Male";
+        }
     }
 
     public class RomanoStudent : Student
@@ -58,12 +69,29 @@ namespace Inheritance
         public RomanoStudent(int gpa, int age) : base(gpa, age)
         {
         }
+
+        public string GetLastName()
+        {
+            return LastName;
+        }
+
+        public string GetGender()
+        {
+            return gender;
+        }
     }
 
     class Program
     {
         static void Main(string[] args)
         {
+
+            Rectangle rectangle = new Rectangle(10, 15);
+            var area = rectangle.GetArea();
+
+            Square square = new Square(96);
+            var littleR = square.GetLittleR();
+
             Human human = new Human();
             human.Say();
 
@@ -75,6 +103,7 @@ namespace Inheritance
             romanoStudent.Say();
             romanoStudent.Learn();
             romanoStudent.Talk();
+            romanoStudent.GetGender();
 
             Console.WriteLine(student.Age);
             Console.ReadKey();

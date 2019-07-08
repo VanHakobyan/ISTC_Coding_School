@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Indexe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Indexer02", "ISTC.SecondStage.OOP.Indexer02\ISTC.SecondStage.OOP.Indexer02.csproj", "{471F011B-D585-4D78-8755-A3CB295333CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Inheritance.Example", "ISTC.SecondStage.OOP.Inheritance.Example\ISTC.SecondStage.OOP.Inheritance.Example.csproj", "{59A428DD-E91D-4C61-BED8-714C62BE2037}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{471F011B-D585-4D78-8755-A3CB295333CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{471F011B-D585-4D78-8755-A3CB295333CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{471F011B-D585-4D78-8755-A3CB295333CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A428DD-E91D-4C61-BED8-714C62BE2037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A428DD-E91D-4C61-BED8-714C62BE2037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A428DD-E91D-4C61-BED8-714C62BE2037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A428DD-E91D-4C61-BED8-714C62BE2037}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
