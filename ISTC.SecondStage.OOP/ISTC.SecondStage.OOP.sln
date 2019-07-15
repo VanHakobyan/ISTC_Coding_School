@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2048
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.ClassObjectInstance", "ISTC.SecondStage.OOP.ClassObjectInstance\ISTC.SecondStage.OOP.ClassObjectInstance.csproj", "{563AFF12-BBCA-4DC8-92B1-72A830DC7F0B}"
 EndProject
@@ -82,6 +82,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Indexer02", "ISTC.SecondStage.OOP.Indexer02\ISTC.SecondStage.OOP.Indexer02.csproj", "{471F011B-D585-4D78-8755-A3CB295333CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Inheritance.Example", "ISTC.SecondStage.OOP.Inheritance.Example\ISTC.SecondStage.OOP.Inheritance.Example.csproj", "{59A428DD-E91D-4C61-BED8-714C62BE2037}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vb.lib", "Vb.lib\Vb.lib.vbproj", "{897FFBF1-1DC0-424F-B15C-D5E08189E5F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -249,6 +251,10 @@ Global
 		{59A428DD-E91D-4C61-BED8-714C62BE2037}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59A428DD-E91D-4C61-BED8-714C62BE2037}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59A428DD-E91D-4C61-BED8-714C62BE2037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897FFBF1-1DC0-424F-B15C-D5E08189E5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897FFBF1-1DC0-424F-B15C-D5E08189E5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897FFBF1-1DC0-424F-B15C-D5E08189E5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897FFBF1-1DC0-424F-B15C-D5E08189E5F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

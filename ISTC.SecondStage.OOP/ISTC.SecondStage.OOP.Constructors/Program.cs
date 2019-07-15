@@ -10,7 +10,7 @@ namespace Constructors
     public class MyClass
     {
         public static string type;//type => ?
-        private int age;
+        private int age = 5;
         private string gender;
 
         public const float pi = 3.14f;
@@ -51,8 +51,10 @@ namespace Constructors
     }
     class Program
     {
-        static void Main(string[] args)
+      static void Main(string[] args)
         {
+            var sum = CS.lib.Math.Sum(5, 5);
+
             MyClass myClass2 = new MyClass("Robert", 61);
 
             Console.WriteLine(myClass2.Name);
