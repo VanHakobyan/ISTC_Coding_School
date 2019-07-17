@@ -50,6 +50,7 @@ namespace Abstraction
             return "";
         }
     }
+
     public abstract class AbstractApple
     {
         private string type;
