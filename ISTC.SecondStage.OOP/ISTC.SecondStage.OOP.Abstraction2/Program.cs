@@ -56,7 +56,7 @@ namespace ISTC.SecondStage.OOP.Abstraction2
         {
             Action(new Cat());
             Action(new Dog());
-            Int32
+
             Console.ReadKey();
         }
     }
