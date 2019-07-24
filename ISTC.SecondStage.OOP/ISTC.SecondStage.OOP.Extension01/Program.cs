@@ -12,13 +12,30 @@ namespace ISTC.SecondStage.OOP.Extension01
         {
             return i > value;
         }
+
+        public static bool IsOnlyLowerCharacters(this string s)
+        {
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] < 'a' || s[i] > 'z') return false;
+            }
+
+            return true;
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            int element = 5;
-            var isGreaterThan = element.IsGreaterThan(100);
+            while (true)
+            {
+                var s = Console.ReadLine();
+                bool isOnlyLowerCharacters = s.IsOnlyLowerCharacters();
+                Console.WriteLine(isOnlyLowerCharacters);
+            }
+
+            int e = 5;
+            var isGreaterThan = e.IsGreaterThan(100);
             Console.WriteLine($"isGreaterThan? - {isGreaterThan}");
         }
     }

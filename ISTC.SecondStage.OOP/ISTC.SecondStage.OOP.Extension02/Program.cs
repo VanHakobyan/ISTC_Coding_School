@@ -24,6 +24,7 @@ namespace ISTC.SecondStage.OOP.Extension02
             return result.ToString();
         }
     }
+    
     class Program
     {
         static void Main(string[] args)

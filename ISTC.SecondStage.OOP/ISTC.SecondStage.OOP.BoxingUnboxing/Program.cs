@@ -37,6 +37,7 @@ namespace BoxingUnboxing
         {
             communicate.Voice();
         }
+
         static void Main(string[] args)
         {
             //List<int> list = new List<int>();
@@ -49,7 +50,8 @@ namespace BoxingUnboxing
             Horse horse = new Horse();
 
             Cat cat = new Cat();
-            ICommunicate iCat = cat as ICommunicate;  //explicit boxing
+
+            ICommunicate iCat = cat as ICommunicate;  
             Say(iCat);
 
             ICommunicate iDog = dog as ICommunicate;  //explicit boxing
