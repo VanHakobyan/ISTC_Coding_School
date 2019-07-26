@@ -6,13 +6,27 @@ using System.Threading.Tasks;
 
 namespace ISTC.SecondStage.OOP.ExceptionHandling3
 {
+
     class Program
     {
+        public static string Method(string s)
+        {
+            if (!string.IsNullOrEmpty(s))
+            {
+                return s.Replace("k", "m");
+            }
+            else
+            {
+                throw new NullReferenceException("s is null");
+            }
+        }
         static void Main(string[] args)
         {
+            int x;
             try
             {
-                throw new NullReferenceException("Null exception trowed !!!");
+                x = 5;
+                Method(null);
             }
             catch (DivideByZeroException e)
             {
@@ -28,18 +42,20 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling3
             }
             catch (NullReferenceException e)
             {
+                x = -1;
                 Console.WriteLine(e.Message);
             }
             catch (Exception e)
             {
+
                 Console.WriteLine(e.Message);
             }
             finally
             {
                 Console.WriteLine("Finally");
             }
-
             Console.ReadKey();
+            
         }
     }
 }
