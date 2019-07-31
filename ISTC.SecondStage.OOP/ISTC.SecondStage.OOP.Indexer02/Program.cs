@@ -49,12 +49,12 @@ namespace ISTC.SecondStage.OOP.Indexer02
     {
         static void Main(string[] args)
         {
-            var stringCollection = new SampleCollection<string>();
+            SampleCollection<string> stringCollection = new SampleCollection<string>();
 
-            //stringCollection[25] = "Hello, World";
-            //stringCollection[26] = "Hello, World";
-            //stringCollection[27] = "Hello, World";
-            //stringCollection[28] = "Hello, World";
+            stringCollection[25] = "Hello, World";
+            stringCollection[26] = "Hello, World";
+            stringCollection[27] = "Hello, World";
+            stringCollection[28] = "Hello, World";
 
             stringCollection.Add("World");
 
@@ -63,4 +63,5 @@ namespace ISTC.SecondStage.OOP.Indexer02
             Console.WriteLine(stringCollection[1]);//
         }
     }
+    
 }
