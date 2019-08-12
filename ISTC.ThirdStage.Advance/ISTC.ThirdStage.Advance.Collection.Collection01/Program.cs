@@ -10,12 +10,13 @@ namespace ISTC.ThirdStage.Advance.Collection.Collection01
 
             foreach (var item in alphabetEnumerator)
             {
-                Console.WriteLine(item);
+                Console.Write($"{item},");
             }
-           
+
+            Console.WriteLine();
             foreach (string item in alphabetEnumerator)
             {
-                Console.WriteLine(item);
+                Console.Write($"{item},");
             }
 
 

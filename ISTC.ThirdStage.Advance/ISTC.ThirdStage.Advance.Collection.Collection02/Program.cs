@@ -10,8 +10,9 @@ namespace ISTC.ThirdStage.Advance.Collection.Collection02
         {
 
 
-            List<string> s = new List<string>();
+            List<string> s = new List<string>() { "12", "12", "12", "12", "12", "12", "12", };
 
+            s.Insert(5, "a");
 
             Dictionary<int, string> dictionary = new Dictionary<int, string>();
             dictionary.Add(0, "Zero");
@@ -22,10 +23,10 @@ namespace ISTC.ThirdStage.Advance.Collection.Collection02
 
             Dictionary<string, string> dictionary2 = new Dictionary<string, string>();
             dictionary2.Add("0", "Zero");
-            //string s2 = dictionary2["Zero"];
-            var val = dictionary2.Values.ElementAt(0);
+            string s2 = dictionary2["Zero"];
+            var val = dictionary2.Keys.ElementAt(0);
 
-            
+
         }
     }
 }

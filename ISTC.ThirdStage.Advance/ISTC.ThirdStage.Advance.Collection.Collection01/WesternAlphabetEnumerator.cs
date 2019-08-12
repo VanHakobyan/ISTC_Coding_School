@@ -25,21 +25,24 @@ namespace ISTC.ThirdStage.Advance.Collection.Collection01
 
         public bool MoveNext()
         {
-            Console.WriteLine(_position);
+            //Console.WriteLine(_position);
             if (_position < _max)
             {
-                _position ++;
+                _position++;
                 return true;
             }
-            return false;
+            else
+            {
+                return false;
+            }
         }
 
         void IEnumerator.Reset()
         {
             _position = 6;
         }
+     
 
-       
         public void Dispose() { }
     }
 }
