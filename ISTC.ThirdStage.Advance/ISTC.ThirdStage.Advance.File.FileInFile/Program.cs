@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 namespace ISTC.ThirdStage.Advance.File.FileInFile
 {
@@ -10,7 +6,16 @@ namespace ISTC.ThirdStage.Advance.File.FileInFile
     {
         static void Main(string[] args)
         {
-            System.IO.File.AppendAllLines(@"C:\Users\vanik.hakobyan\source\Text.txt", Enumerable.Range(0, 100).Select(x => x.ToString()));
+            if (!System.IO.File.Exists(@"E:\Soursetest\Text.txt"))
+            {
+                System.IO.File.Create(@"E:\Soursetest\Text.txt");
+            }
+
+
+            System.IO.File.WriteAllLines(@"E:\Soursetest\Text.txt", Enumerable.Range(0, 100).Select(x => x.ToString()));
+
+            string text = System.IO.File.ReadAllText(@"E:\Soursetest\Text.txt");
+
         }
     }
 }

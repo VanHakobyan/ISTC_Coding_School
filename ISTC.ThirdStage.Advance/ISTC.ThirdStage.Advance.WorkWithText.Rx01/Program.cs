@@ -13,6 +13,9 @@ namespace ISTC.ThirdStage.Advance.WorkWithText.Rx01
         {
             string value = "4 AND 5";
 
+            //var matches = Regex.Matches(value, @"\d").Cast<Match>().Select(x=>x.Groups[0].Value).ToList();
+            
+
             // Get first match.
             Match match = Regex.Match(value, @"\d");
             if (match.Success)

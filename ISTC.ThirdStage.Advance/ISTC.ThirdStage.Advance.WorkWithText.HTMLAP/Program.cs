@@ -13,7 +13,7 @@ namespace ISTC.ThirdStage.Advance.WorkWithText.HTMLAP
         static void Main(string[] args)
         {
             HtmlDocument document = new HtmlDocument();
-            string text = File.ReadAllText(@"E:\ISTC_Coding_School.html");
+            string text = File.ReadAllText(@"E:\content.html");
             //Console.WriteLine(text);
             document.LoadHtml(text);
 

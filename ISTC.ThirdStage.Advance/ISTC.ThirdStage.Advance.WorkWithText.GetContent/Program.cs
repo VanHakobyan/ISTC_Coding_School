@@ -12,9 +12,9 @@ namespace ISTC.ThirdStage.Advance.WorkWithText.GetContent
     {
         static void Main(string[] args)
         {
-            WebClient client=new WebClient();
+            WebClient client = new WebClient();
             string content = client.DownloadString(@"https://github.com/vanhakobyan");
-            File.AppendAllText(@"E:\content.html",content);
+            File.AppendAllText(@"E:\content.html", content);
         }
     }
 }

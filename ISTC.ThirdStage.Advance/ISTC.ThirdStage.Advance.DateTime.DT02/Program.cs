@@ -14,7 +14,7 @@ namespace ISTC.ThirdStage.Advance.DateTime.DT02
         {
             // Current culture name  
             string currentCulture = Thread.CurrentThread.CurrentCulture.DisplayName;
-
+            var invariantCulture = CultureInfo.InvariantCulture;
             System.DateTime currentTime = System.DateTime.Now; //"1/9/2016 10:22:45 AM"  
             //// Getting DateTime based on culture.  
             string dateInUSA = currentTime.ToString("D", new CultureInfo("en-US")); // USA - Saturday, January 09, 2016  
