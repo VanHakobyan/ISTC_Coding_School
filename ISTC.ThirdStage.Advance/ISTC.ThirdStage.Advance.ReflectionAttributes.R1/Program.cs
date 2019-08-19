@@ -39,7 +39,7 @@ namespace ISTC.ThirdStage.Advance.ReflectionAttributes.R1
     {
         static void Main(string[] args)
         {
-            //ReflectionTest.Height = 100;    // Set value
+            ReflectionTest.Height = 100;   // Set value
             ReflectionTest.Width = 50;      // Set value
             ReflectionTest.Weight = 300;    // Set value
             ReflectionTest.Name = "Perl";   // Set value

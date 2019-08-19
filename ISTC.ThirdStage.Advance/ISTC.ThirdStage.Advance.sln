@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.ThirdStage.Advance.File", "ISTC.ThirdStage.Advance.File", "{1912A3E5-2935-4BE3-83B0-49E8587DD64D}"
 EndProject
@@ -141,7 +141,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.Hom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.HomeWork.HW03", "ISTC.ThirdStage.Advance.HomeWork.HW03\ISTC.ThirdStage.Advance.HomeWork.HW03.csproj", "{C3B5966D-8396-4E84-9558-660BF1839C33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.Configs.JsonWeb", "ISTC.ThirdStage.Advance.Configs.JsonWeb\ISTC.ThirdStage.Advance.Configs.JsonWeb.csproj", "{5E9A8882-D9DD-4DB6-B7E8-DDAE614285FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.ThirdStage.Advance.Configs.JsonWeb", "ISTC.ThirdStage.Advance.Configs.JsonWeb\ISTC.ThirdStage.Advance.Configs.JsonWeb.csproj", "{5E9A8882-D9DD-4DB6-B7E8-DDAE614285FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.ReflectionAttributes.R3", "ISTC.ThirdStage.Advance.ReflectionAttributes.R3\ISTC.ThirdStage.Advance.ReflectionAttributes.R3.csproj", "{20D62C5D-708C-44BF-BE65-E61959319209}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -369,6 +371,10 @@ Global
 		{5E9A8882-D9DD-4DB6-B7E8-DDAE614285FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E9A8882-D9DD-4DB6-B7E8-DDAE614285FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E9A8882-D9DD-4DB6-B7E8-DDAE614285FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D62C5D-708C-44BF-BE65-E61959319209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D62C5D-708C-44BF-BE65-E61959319209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D62C5D-708C-44BF-BE65-E61959319209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D62C5D-708C-44BF-BE65-E61959319209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -429,6 +435,7 @@ Global
 		{447BA083-9C9C-48F8-8E59-71B46FD19D1A} = {C95BB547-98B4-421A-BC14-61F3491A3113}
 		{C3B5966D-8396-4E84-9558-660BF1839C33} = {C95BB547-98B4-421A-BC14-61F3491A3113}
 		{5E9A8882-D9DD-4DB6-B7E8-DDAE614285FB} = {0EC0ED85-3338-4DEC-BF15-E9D6F07CD2F1}
+		{20D62C5D-708C-44BF-BE65-E61959319209} = {982B1852-8E27-483E-BAC7-F21DBFC08A1D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B220622-4D61-4EB4-8B29-0388DA6E3E90}
