@@ -14,7 +14,7 @@ namespace ISTC.ThirdStage.Advance.GC.GC05
             List<string> list1 = new List<string>();
             for (int i = 0; i < 1000000; i++)
             {
-                list1.Add($"456");
+                list1.Add($"{i}");
             }
 
             var totalMemory1 = System.GC.GetTotalMemory(false);
@@ -22,10 +22,11 @@ namespace ISTC.ThirdStage.Advance.GC.GC05
             List<string> list2 = new List<string>();
             for (int i = 0; i < 1000000; i++)
             {
-                list2.Add($"456789");
+                list2.Add($"{i*-1}" + $"{int.MaxValue-i}");
             }
 
-            var totalMemory2 = System.GC.GetTotalMemory(false) - totalMemory1;
+            var totalMemory2 = System.GC.GetTotalMemory(false);
+            var total = totalMemory2 - totalMemory1;
         }
     }
 }

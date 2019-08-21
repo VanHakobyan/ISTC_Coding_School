@@ -145,6 +145,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.ThirdStage.Advance.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.ReflectionAttributes.R3", "ISTC.ThirdStage.Advance.ReflectionAttributes.R3\ISTC.ThirdStage.Advance.ReflectionAttributes.R3.csproj", "{20D62C5D-708C-44BF-BE65-E61959319209}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.ThirdStage.Advance.Collection.Yield", "ISTC.ThirdStage.Advance.Collection.Yield\ISTC.ThirdStage.Advance.Collection.Yield.csproj", "{77D8296D-E6C5-412D-93F2-0A64A4911AAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -375,6 +377,10 @@ Global
 		{20D62C5D-708C-44BF-BE65-E61959319209}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20D62C5D-708C-44BF-BE65-E61959319209}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20D62C5D-708C-44BF-BE65-E61959319209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D8296D-E6C5-412D-93F2-0A64A4911AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D8296D-E6C5-412D-93F2-0A64A4911AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D8296D-E6C5-412D-93F2-0A64A4911AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D8296D-E6C5-412D-93F2-0A64A4911AAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -436,6 +442,7 @@ Global
 		{C3B5966D-8396-4E84-9558-660BF1839C33} = {C95BB547-98B4-421A-BC14-61F3491A3113}
 		{5E9A8882-D9DD-4DB6-B7E8-DDAE614285FB} = {0EC0ED85-3338-4DEC-BF15-E9D6F07CD2F1}
 		{20D62C5D-708C-44BF-BE65-E61959319209} = {982B1852-8E27-483E-BAC7-F21DBFC08A1D}
+		{77D8296D-E6C5-412D-93F2-0A64A4911AAC} = {983EF666-622F-4918-B5F4-4CF27B062495}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B220622-4D61-4EB4-8B29-0388DA6E3E90}

@@ -6,7 +6,7 @@ namespace ISTC.ThirdStage.Advance.GC.GC01
 {
     public class TestGarbageCollector
     {
-        private long[] array = new long[1024 * 1024 * 5];
+        private long[] array = new long[1024 * 1024 * 5];//40kb
 
         public string GetArrayInfo()
         {
