@@ -12,18 +12,26 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL03
         static void Main(string[] args)
         {
             Thread.CurrentThread.Name = "Main";
-
+         
             // Create a task and supply a user delegate by using a lambda expression. 
-            Task taskA = new Task(() => Console.WriteLine("Hello from taskA."));
+            Task taskA = new Task(Write);
             // Start the task.
             taskA.Start();
           
             // Output a message from the calling thread.
-            Console.WriteLine($"Hello from thread '{Thread.CurrentThread.Name}'.");
+            Console.WriteLine($"Hello from thread '{Thread.CurrentThread.ManagedThreadId}'.");
+            Console.WriteLine($"Pool '{Thread.CurrentThread.IsThreadPoolThread}'.");
             taskA.Wait();
-
+            
             Console.ReadLine();
 
+        }
+
+        public static void Write()
+        {
+            Thread.Sleep(5000);
+            var currentThreadManagedThreadId = Thread.CurrentThread.ManagedThreadId;
+            Console.WriteLine("Hello from taskA. "+currentThreadManagedThreadId);
         }
     }
 }

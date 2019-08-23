@@ -22,18 +22,8 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL04
             Task[] taskArray = new Task[10];
             for (int i = 0; i < taskArray.Length; i++)
             {
-                taskArray[i] = Task.Factory.StartNew
-                (
-                    obj =>
-                    {
-                        CustomData data = obj as CustomData;
-                        if (data == null)
-                            return;
-                        Console.WriteLine(data.Name);
-                        data.ThreadNum = Thread.CurrentThread.ManagedThreadId;
-                    },
-                    new CustomData { Name = i, CreationTime = DateTime.Now.Ticks }
-                );
+                var res = new CustomData { Name = i, CreationTime = DateTime.Now.Ticks };
+                taskArray[i] = Task.Factory.StartNew(Action, res);
             }
 
             Task.WaitAll(taskArray);
@@ -45,6 +35,16 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL04
             }
 
             Console.ReadKey();
+        }
+
+
+        public static void Action(object obj)
+        {
+            CustomData data = obj as CustomData;
+            if (data == null)
+                return;
+            Console.WriteLine(data.Name);
+            data.ThreadNum = Thread.CurrentThread.ManagedThreadId;
         }
     }
 }

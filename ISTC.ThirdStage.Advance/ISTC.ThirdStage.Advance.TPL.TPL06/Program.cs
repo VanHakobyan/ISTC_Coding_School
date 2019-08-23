@@ -36,6 +36,7 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL06
                 ContinueWith((x) => $"N={x.Result.Item1:N0}, Total = {x.Result.Item2:N0}, Mean = {x.Result.Item3:N2}");
             Console.WriteLine(displayData.Result);
             Console.ReadKey();
+            
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -15,12 +16,14 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL07
             {
                 Task.Factory.StartNew(() => MethodA()),
                 Task.Factory.StartNew(MethodB),
-                Task.Factory.StartNew(() => MethodC())
+                Task.Factory.StartNew(new Action(MethodC))
             };
 
             //Block until all tasks complete.
             Console.WriteLine("Main: Block");
+            Stopwatch stopwatch=Stopwatch.StartNew();
             Task.WaitAll(tasks);
+            Console.WriteLine(stopwatch.Elapsed.TotalSeconds);
             Console.WriteLine("Main: Continue");
 
             Console.ReadKey();
