@@ -35,15 +35,18 @@ namespace ISTC.ThirdStage.Advance.Parallel.Pl_01
             Console.WriteLine("foreach loop execution time = {0} seconds\n", sw.Elapsed.TotalSeconds);
 
             #endregion           
+
             #region Parallel
             Console.WriteLine("Using Parallel.ForEach");
             //start the stopwatch for "Parallel.ForEach"
+
             sw = Stopwatch.StartNew();
-            System.Threading.Tasks.Parallel.ForEach(colors, new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount /4 }, color =>
-                  {
-                      Console.WriteLine("{0}, Thread Id= {1}", color, Thread.CurrentThread.ManagedThreadId);
-                      Thread.Sleep(10);
-                  }
+            System.Threading.Tasks.Parallel.ForEach(colors, new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount * 2 },
+                color =>
+                   {
+                       Console.WriteLine("{0}, Thread Id= {1}", color, Thread.CurrentThread.ManagedThreadId);
+                       Thread.Sleep(10);
+                   }
             );
             Console.WriteLine("Parallel.ForEach() execution time = {0} seconds", sw.Elapsed.TotalSeconds);
 

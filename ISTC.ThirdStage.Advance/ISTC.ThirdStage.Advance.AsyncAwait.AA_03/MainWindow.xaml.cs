@@ -27,23 +27,23 @@ namespace ISTC.ThirdStage.Advance.AsyncAwait.AA_03
             InitializeComponent();
         }
 
-        //private async void ButtonBase_OnClick(object sender, RoutedEventArgs e)
-        //{
-        //    HttpClient client = new HttpClient();
-        //    Task<string> getStringTask = client.GetStringAsync("https://istc.am/");
-        //    await Task.Delay(5000);
-        //    string urlContents = await getStringTask;
-        //    ContentBox.Text = urlContents;
-        //}
-
-
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        private async void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
             HttpClient client = new HttpClient();
             Task<string> getStringTask = client.GetStringAsync("https://istc.am/");
-            Task.Delay(5000).GetAwaiter().GetResult();
-            string urlContents = getStringTask.Result;
+            await Task.Delay(5000);
+            string urlContents = await getStringTask;
             ContentBox.Text = urlContents;
         }
+
+
+        //private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        //{
+        //    HttpClient client = new HttpClient();
+        //    Task<string> getStringTask = client.GetStringAsync("https://istc.am/");
+        //    Task.Delay(5000).GetAwaiter().GetResult();
+        //    string urlContents = getStringTask.Result;
+        //    ContentBox.Text = urlContents;
+        //}
     }
 }
