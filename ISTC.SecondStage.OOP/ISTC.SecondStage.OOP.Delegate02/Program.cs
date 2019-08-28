@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ISTC.SecondStage.OOP.Delegate_02
+namespace ISTC.SecondStage.OOP.Delegate02
 {
     class Program
     {
-
         public delegate void Print(int value);
 
         static void Main(string[] args)
         {
-            Print printDel = PrintNumber;
+            Print printDel =  new Print(PrintNumber);
             printDel += PrintHexadecimal;
             printDel += PrintMoney;
 

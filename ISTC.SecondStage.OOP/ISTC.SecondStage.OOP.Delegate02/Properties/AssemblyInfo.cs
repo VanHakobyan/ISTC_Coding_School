@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ISTC.SecondStage.OOP.Delegate_02")]
+[assembly: AssemblyTitle("ISTC.SecondStage.OOP.Delegate02")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ISTC.SecondStage.OOP.Delegate_02")]
+[assembly: AssemblyProduct("ISTC.SecondStage.OOP.Delegate02")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
