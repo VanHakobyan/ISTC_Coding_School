@@ -50,5 +50,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISTC.SecondStage.OOP.Inheritance.Example\ISTC.SecondStage.OOP.Inheritance.Example.csproj">
+      <Project>{59a428dd-e91d-4c61-bed8-714c62be2037}</Project>
+      <Name>ISTC.SecondStage.OOP.Inheritance.Example</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

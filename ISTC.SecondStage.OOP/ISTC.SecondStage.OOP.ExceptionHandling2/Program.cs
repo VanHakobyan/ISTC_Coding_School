@@ -22,15 +22,67 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling2
 
     class Program
     {
+        static void M1()
+        {
+            try
+            {
+                M2();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+        static void M2()
+        {
+            try
+            {
+                M3();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        static void M3()
+        {
+            try
+            {
+                var res = 10 / int.Parse(Console.ReadLine());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
+        }
         static void Main(string[] args)
         {
+            M1();
             string[] array = new string[4];// 0 1 2 3 indexs
             try
             {
-
                 array[1] = "array[1]";
-                array[4] = "array[4]";//exception
+                array[int.Parse(Console.ReadLine())] = "array[4]"; //exception
+
                 array[3] = "array[3]";
+                var item = 1 / int.Parse(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e);
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine(e);
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e);
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
             }
             catch (Exception e)
             {
@@ -43,6 +95,7 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling2
                     Console.WriteLine(array[i]);
                 }
             }
+
         }
     }
 }

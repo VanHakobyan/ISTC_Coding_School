@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -17,11 +14,11 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL08
             var tokenSource2 = new CancellationTokenSource();
             CancellationToken ct = tokenSource2.Token;
            
-            var task = Task.Factory.StartNew(() =>
+            Task task = Task.Factory.StartNew(() =>
             {
 
                 // Were we already canceled?
-                ct.ThrowIfCancellationRequested();
+                //ct.ThrowIfCancellationRequested();
 
                 while (true)
                 {
@@ -35,7 +32,7 @@ namespace ISTC.ThirdStage.Advance.TPL.TPL08
                 }
             }, tokenSource2.Token); // Pass same token to StartNew.
 
-            tokenSource2.Cancel();
+            //tokenSource2.Cancel();
 
             // Just continue on this thread, or Wait/WaitAll with try-catch:
             try

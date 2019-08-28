@@ -6,14 +6,30 @@ namespace LoopWhile
     {
         static void Main(string[] args)
         {
-            int number = 0;
+            //do
+            //{
+            //    Console.WriteLine("Learn programming");  
+            //} while (true);
 
-            while (number >= 0)
+            Console.ReadKey();
+            int number = int.Parse(Console.ReadLine());
+            int sum = 0;
+            while (number != 0)
             {
-                number = int.Parse(Console.ReadLine());
-                Console.WriteLine("input");
+                if (number % 10 == 9)
+                {
+                    number /= 10;
+                    continue;
+                }
+
+                sum += number % 10;
+                number /= 10;
+
+                //if (number % 10 == 1) break;
             }
-            Console.WriteLine("bad !!!");
+
+
+            Console.WriteLine(sum);
             Console.ReadKey();
         }
     }

@@ -7,14 +7,33 @@ using System.Threading.Tasks;
 
 namespace Constructors
 {
+    class Stat
+    {
+        public static int x;//1
+        static Stat()//2
+        {
+            Console.WriteLine(x / 2);
+        }
+
+        public string s;
+        public int y;//3
+        public Stat(int n)//4
+        {
+            y = 5;
+        }
+    }
     public class MyClass
     {
         public static string type;//type => ?
-        private string name;
-        private int age;
+        private int age = 5;
         private string gender;
 
-        //string MyClass()
+        public const float pi = 3.14f;
+
+        public string Name { get; set; }
+        //public string Name { get; private set; }
+
+        //static MyClass()
         //{
 
         //}
@@ -22,17 +41,14 @@ namespace Constructors
         static MyClass()
         {
             type = "Human";
+            Console.WriteLine(type);
         }
 
         public MyClass(string name)
         {
-            this.name = name;
+            this.Name = name;
         }
-        //public MyClass(string name,int age)
-        //{
-        //    this.name = name;
-        //    this.age = age;
-        //}
+
         public MyClass(string name, int age) : this(name)
         {
             this.age = age;
@@ -42,6 +58,7 @@ namespace Constructors
         {
             this.gender = gender;
         }
+
         public MyClass(string name, string gender, int age) : this(age: age, name: name)
         {
             this.gender = gender;
@@ -51,12 +68,17 @@ namespace Constructors
     {
         static void Main(string[] args)
         {
-            MyClass.type = "Kapik";
-            MyClass myClass = new MyClass("z");
+            var sum = CS.lib.Math.Sum(5, 5);
 
-            MyClass myClass2 = new MyClass("a");
-            Console.WriteLine(MyClass.type);
+            MyClass myClass2 = new MyClass("Robert", 61);
 
+            Console.WriteLine(myClass2.Name);
+
+            myClass2.Name = "New Rob";
+
+            MyClass myClass3 = new MyClass("Robert", "M", 61);
+
+            Console.ReadKey();
         }
     }
 }

@@ -22,8 +22,8 @@ namespace ISTC.ThirdStage.Advance.WorkWithText.Str
             string dog = data.Replace("cat", "dog");
             bool endsWith = data.EndsWith("a");
             bool contains = data.Contains("ad");
-            int indexOf = data.IndexOf("Asta");
-            string insert = data.Insert(10, "YE0");
+            int indexOf = data.IndexOf("assa");
+            string insert = data.Insert(indexOf, "YE0");
             string trim = data.Trim('\t');
 
         }

@@ -11,15 +11,14 @@ namespace ISTC.ThirdStage.Advance.File.WriteData
     {
         public void WriteData()
         {
-            FileStream fs = new FileStream("E://data.txt", FileMode.Append, FileAccess.Write);
-            StreamWriter w = new StreamWriter(fs);
-            Console.WriteLine("Enter the string");
-        
-            string str = Console.ReadLine();
-            w.Write(str);
-            w.Flush();
-            fs.Close();
+            using (FileStream fs = new FileStream("E://data.txt", FileMode.Append, FileAccess.Write))
+            using (StreamWriter w = new StreamWriter(fs))
+            {
+                Console.WriteLine("Enter the string");
 
+                string str = Console.ReadLine();
+                w.Write(str);
+            }
         }
         static void Main(string[] args)
         {

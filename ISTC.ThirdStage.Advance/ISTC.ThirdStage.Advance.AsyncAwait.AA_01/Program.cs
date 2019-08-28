@@ -35,7 +35,8 @@ namespace ISTC.ThirdStage.Advance.AsyncAwait.AA_01
         }
         static void Main(string[] args)
         {
-            var content = AccessTheWebAsync().Result;
+            Task<string> task = AccessTheWebAsync();
+            string content = task.Result;
             Console.WriteLine(content);
             Console.ReadKey();
         }

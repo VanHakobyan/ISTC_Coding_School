@@ -8,7 +8,7 @@ namespace ISTC.ThirdStage.Advance.Configs.Xml
     {
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(ConfigurationManager.AppSettings["path"]);
+            string text = ConfigurationManager.AppSettings["Text"];
             Console.WriteLine(text);
             Console.ReadKey();
 

@@ -21,11 +21,11 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling
         public void ShowTemp()
         {
 
-            if (temperature == 0)
+            if (temperature <= 0)
             {
                 TempIsZeroException z = new TempIsZeroException("Zero Temperature found")
                 {
-                    HelpLink = "Fb.com"
+                    HelpLink = "https://istc.am"
                 };
 
                 throw z;
@@ -41,16 +41,32 @@ namespace ISTC.SecondStage.OOP.ExceptionHandling
     {
         static void Main(string[] args)
         {
+            //using ()
+            {
+                //logic
+            }//dispose
+
+            try
+            {
+                //logic
+            }
+            finally
+            {
+                //dispose
+            }
+
+
             Temperature temp = new Temperature();
             temp.temperature = 0;
             try
             {
                 temp.ShowTemp();
             }
-            catch (TempIsZeroException e)
+            catch (Exception e) when (e is TempIsZeroException)
             {
                 Console.WriteLine($"TempIsZeroException: {e.Message}");
             }
+
             Console.ReadKey();
         }
     }

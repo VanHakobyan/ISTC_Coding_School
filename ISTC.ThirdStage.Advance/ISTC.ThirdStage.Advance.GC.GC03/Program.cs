@@ -11,14 +11,18 @@ namespace ISTC.ThirdStage.Advance.GC.GC03
 
         #endregion
         static void Main(string[] args)
-        { 
+        {
+            MyClass @class=new MyClass();
+            @class.C();
+
+
             // This loop does a lot of allocations!
             for (int i = 0; i < 100; i++)
             {
                 for (int a = 0; a < 1000; a++)
                 {
-                    System.IO.Path.GetRandomFileName();
-                    System.IO.Path.GetRandomFileName();
+                    var x = System.IO.Path.GetRandomFileName();
+                    var y = System.IO.Path.GetRandomFileName();
                 }
                 System.Threading.Thread.Sleep(1);
             }
@@ -34,6 +38,34 @@ namespace ISTC.ThirdStage.Advance.GC.GC03
 
 
             Console.ReadKey();
+        }
+
+        public void M()
+        {
+            System.GC.SuppressFinalize(this);
+        }
+
+        class MyClass:IDisposable
+        {
+            ~MyClass()
+            {
+                ReleaseUnmanagedResources();
+            }
+
+            private void ReleaseUnmanagedResources()
+            {
+                // TODO release unmanaged resources here
+            }
+
+            public void C()
+            {
+                System.GC.Collect();
+            }
+            public void Dispose()
+            {
+                ReleaseUnmanagedResources();
+                System.GC.SuppressFinalize(this);
+            }
         }
     }
 }

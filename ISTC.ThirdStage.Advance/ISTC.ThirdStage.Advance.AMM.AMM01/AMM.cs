@@ -3,6 +3,24 @@ using System.Threading;
 
 namespace ISTC.ThirdStage.Advance.AMM.AMM01
 {
+    class My:IDisposable
+    {
+        ~My()
+        {
+            ReleaseUnmanagedResources();
+        }
+
+        private void ReleaseUnmanagedResources()
+        {
+            // TODO release unmanaged resources here
+        }
+
+        public void Dispose()
+        {
+            ReleaseUnmanagedResources();
+            GC.SuppressFinalize(this);
+        }
+    }
     class A
     {
         ~A()

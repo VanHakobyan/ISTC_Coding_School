@@ -9,46 +9,62 @@ namespace ISTC.SecondStage.OOP.Indexer01
     class StringDataStore
     {
 
-        private string[] strArr = new string[10]; // internal data storage
+        private readonly string[] _array; // internal data storage
+        public StringDataStore(int count)
+        {
+            _array = new string[count];
+        }
 
         public string this[int index]
         {
             get
             {
-                if (index < 0 || index >= strArr.Length)
+                if (index < 0 || index >= _array.Length)
                     throw new IndexOutOfRangeException("Cannot store more than 10 objects");
 
-                return strArr[index];
+                return _array[index];
             }
 
             set
             {
-                if (index < 0 || index >= strArr.Length)
+                if (index < 0 || index >= _array.Length)
                     throw new IndexOutOfRangeException("Cannot store more than 10 objects");
 
-                strArr[index] = value;
+                _array[index] = value;
+            }
+        }
+
+        public string this[string index]
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(index))
+                    throw new IndexOutOfRangeException("Cannot store more than 10 objects");
+
+                return _array[int.Parse(index)];
+            }
+
+            set
+            {
+                if (string.IsNullOrEmpty(index))
+                    throw new IndexOutOfRangeException("Cannot store more than 10 objects");
+
+                _array[int.Parse(index)] = value;
             }
         }
 
 
 
-        
     }
     class Program
     {
         static void Main(string[] args)
         {
-            StringDataStore strStore = new StringDataStore();
-            try
-            {
-                strStore[13] = "Thirteen";//exception 
-            }
-            catch (Exception)
-            {
-                
-            }
+            StringDataStore strStore = new StringDataStore(150);
 
+            strStore["0"] = "Zero";
             strStore[0] = "One";
+
             strStore[1] = "Two";
             strStore[2] = "Three";
             strStore[3] = "Four";
