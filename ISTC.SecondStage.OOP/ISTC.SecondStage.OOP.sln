@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2048
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.ClassObjectInstance", "ISTC.SecondStage.OOP.ClassObjectInstance\ISTC.SecondStage.OOP.ClassObjectInstance.csproj", "{563AFF12-BBCA-4DC8-92B1-72A830DC7F0B}"
 EndProject
@@ -80,6 +80,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Indexer01", "ISTC.SecondStage.OOP.Indexer01\ISTC.SecondStage.OOP.Indexer01.csproj", "{50A3ED68-B9E7-415B-ACA0-229BD7A6F3B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Indexer02", "ISTC.SecondStage.OOP.Indexer02\ISTC.SecondStage.OOP.Indexer02.csproj", "{471F011B-D585-4D78-8755-A3CB295333CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Delegate_02", "ISTC.SecondStage.OOP.Delegate_02\ISTC.SecondStage.OOP.Delegate_02.csproj", "{2DBE6A3F-4629-4991-B4F2-2D2CF1D34405}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,6 +245,10 @@ Global
 		{471F011B-D585-4D78-8755-A3CB295333CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{471F011B-D585-4D78-8755-A3CB295333CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{471F011B-D585-4D78-8755-A3CB295333CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DBE6A3F-4629-4991-B4F2-2D2CF1D34405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBE6A3F-4629-4991-B4F2-2D2CF1D34405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBE6A3F-4629-4991-B4F2-2D2CF1D34405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBE6A3F-4629-4991-B4F2-2D2CF1D34405}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

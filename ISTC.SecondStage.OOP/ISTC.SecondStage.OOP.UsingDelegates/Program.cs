@@ -5,8 +5,8 @@ namespace ISTC.UsingDelegates
 {
     class PrintStringClass
     {
-        static FileStream fs; 
-        static StreamWriter sw; 
+        private static FileStream _fs;
+        private static StreamWriter _sw;
 
         public delegate void PrintString(string s);
 
@@ -19,42 +19,38 @@ namespace ISTC.UsingDelegates
 
         public static void WriteToFile(string s)
         {
-            fs = new FileStream(@"C:\Users\vanik.hakobyan\source\message&amp;.txt", FileMode.Append, FileAccess.Write);
-            sw = new StreamWriter(fs);
-            sw.WriteLine(s);
-            sw.Flush();
-            sw.Close();
-            fs.Close();
+            _fs = new FileStream(@"C:\Users\vanik.hakobyan\source\message.txt", FileMode.Append, FileAccess.Write);
+            _sw = new StreamWriter(_fs);
+            _sw.WriteLine(s);
+            _sw.Flush();
+            _sw.Close();
+            _fs.Close();
         }
 
 
-        public static bool sendString(PrintString ps)
+        public static bool SendString(PrintString ps)
         {
             ps.Invoke("Hello World");
             return true;
         }
 
+    }
 
-        class Program
+    class Program
+    {
+        static void Main(string[] args)
         {
-            unsafe static void FastCopy(byte[] src, byte[] dst, int count)
-            {
-                
-            }
-            static void Main(string[] args)
-            {
-               
 
 
-                PrintString ps1 = new PrintString(WriteToScreen);
-                PrintString ps2 = new PrintString(WriteToFile);
-                //ps1+=WriteToFile;
 
-                bool flag1 = sendString(ps1);
-                bool flag2 = sendString(ps2);
+            PrintStringClass.PrintString ps1 = new PrintStringClass.PrintString(PrintStringClass.WriteToScreen);
+            PrintStringClass.PrintString ps2 = new PrintStringClass.PrintString(PrintStringClass.WriteToFile);
+            //ps1+=WriteToFile;
 
-                Console.ReadKey();
-            }
+            bool flag1 = PrintStringClass.SendString(ps1);
+            bool flag2 = PrintStringClass.SendString(ps2);
+
+            Console.ReadKey();
         }
     }
 }
