@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ISTC.Event.WPF
 {
@@ -25,15 +15,21 @@ namespace ISTC.Event.WPF
             InitializeComponent();
         }
 
-        private void Lutvik(object sender, EventArgs e)
+        private async void Lutvik(object sender, EventArgs e)
         {
             Text.Text = "Hello";
             MessageBox.Show("Hi all");
+            await Task.Delay(1);
         }
 
-        private void Button_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private async void Button_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("MouseDoubleClick");
+            if (e.ClickCount < 2)
+            {
+                MessageBox.Show("1");
+            }
+            else MessageBox.Show("MouseDoubleClick");
+            await Task.Delay(1);
         }
     }
 }

@@ -8,7 +8,6 @@ namespace ISTC.Events
 {
     public delegate void DelegateForEvent();  //Created delegate 
 
-
     /// <summary>
     /// Event class
     /// </summary>
@@ -21,15 +20,20 @@ namespace ISTC.Events
             if (MyEvent != null) MyEvent.Invoke(); //Invoking my event  
         }
     }
-    
+
 
     /// <summary>
     /// Secure variant
     /// </summary>
     public class ClassForEventOther
     {
-        public bool flag { get; set; }
+        public bool flag
+        {
+            get;
+            set;
+        }
         private DelegateForEvent _delegateForEvent;
+
         public event DelegateForEvent MyEventSecure
         {
             add { if (_delegateForEvent != null) _delegateForEvent += value; }
@@ -58,7 +62,7 @@ namespace ISTC.Events
         public static void ThirdHandler()
         {
             Console.WriteLine("Third Handler");
-        } 
+        }
 
         #endregion
 

@@ -27,7 +27,6 @@ namespace ISTC.UsingDelegates
             _fs.Close();
         }
 
-
         public static bool SendString(PrintString ps)
         {
             ps.Invoke("Hello World");

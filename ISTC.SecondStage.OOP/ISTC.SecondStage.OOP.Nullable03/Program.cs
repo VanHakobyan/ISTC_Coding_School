@@ -10,12 +10,14 @@ namespace ISTC.SecondStage.OOP.Nullable03
     {
         static void Main(string[] args)
         {
-            string s = null;
+            string s = Console.ReadLine();
+            s = s == "1" ? null : "hi";
+
             string result = s ?? string.Empty;//"" or null
 
             int? k = null;
             double? d = null;
-            k = 5;
+            //k = 5;
             //int k = 2;
             //decimal d = .25m;
 
@@ -27,7 +29,6 @@ namespace ISTC.SecondStage.OOP.Nullable03
             {
                 Console.WriteLine("else");
             }
-
         }
     }
 }

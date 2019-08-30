@@ -20,7 +20,7 @@ namespace ISTC.SecondStage.OOP.Nullable02
             {
                 int x = arr[2].Length;
             }
-            int? y = arr?[2]?.Length.ToString()?.Length.ToString()?.Length;
+            int? y = arr[2]?.Length.ToString()?.Length.ToString()?.Length;
         }
     }
 }

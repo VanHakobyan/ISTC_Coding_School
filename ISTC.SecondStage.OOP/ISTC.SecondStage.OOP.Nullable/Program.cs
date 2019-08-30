@@ -10,7 +10,7 @@ namespace ISTC.SecondStage.OOP.Nullable
     {
         static void Main(string[] args)
         {
-            Nullable<int> x = null;// T?=Nullable<T> 
+            int? x = null;// T?=Nullable<T> 
             Nullable<int> y = 5;
 
             if (x.HasValue)

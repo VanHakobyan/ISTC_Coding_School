@@ -95,6 +95,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Except
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Delegate02", "ISTC.SecondStage.OOP.Delegate02\ISTC.SecondStage.OOP.Delegate02.csproj", "{2DBE6A3F-4629-4991-B4F2-2D2CF1D34405}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.SecondStage.OOP.Anonymous", "ISTC.SecondStage.OOP.Anonymous\ISTC.SecondStage.OOP.Anonymous.csproj", "{53201507-CB35-4099-88FF-27561245993F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -285,6 +287,10 @@ Global
 		{2DBE6A3F-4629-4991-B4F2-2D2CF1D34405}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DBE6A3F-4629-4991-B4F2-2D2CF1D34405}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DBE6A3F-4629-4991-B4F2-2D2CF1D34405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53201507-CB35-4099-88FF-27561245993F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53201507-CB35-4099-88FF-27561245993F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53201507-CB35-4099-88FF-27561245993F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53201507-CB35-4099-88FF-27561245993F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
