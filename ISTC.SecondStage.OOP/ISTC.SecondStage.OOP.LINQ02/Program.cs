@@ -25,12 +25,14 @@ namespace ISTC.SecondStage.OOP.LINQ02
                 new Student { StudentId = 5, StudentName = "Ron" , Age = 21 }
             };
 
-            var studentNames =
-                (studentList.Select(s => new
-                {
-                    StudentID = s.StudentId,
-                    StudentName = s.StudentName
-                })).ToList();
+            var studentNames = (studentList.Select(s => new
+            {
+                StudentID = s.StudentId,
+                s.StudentName
+            })).ToList();
+
+
+
 
             for (int i = 0; i < studentNames.Count; i++)
             {

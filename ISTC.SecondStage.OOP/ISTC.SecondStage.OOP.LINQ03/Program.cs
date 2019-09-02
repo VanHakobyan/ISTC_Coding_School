@@ -26,14 +26,14 @@ namespace ISTC.SecondStage.OOP.LINQ03
         {
 
 
-           Student[] studentList = new Student[] {
+            Student[] studentList = new Student[] {
                 new Student { StudentId = 1, StudentName = "John", Age = 18,  StandardId= 1 } ,
                 new Student { StudentId = 1, StudentName = "Steve",  Age = 21, StandardId = 1 } ,
                 new Student { StudentId = 0, StudentName = "Bill",  Age = 18, StandardId = 2 } ,
                 new Student { StudentId = 54, StudentName = "Ram" , Age = 20, StandardId = 2 } ,
                 new Student { StudentId = 5, StudentName = "Ron" , Age = 21 }
             };
-            
+
             Standard[] standardList = new Standard[] {
                 new Standard { StandardId = 1, StandardName = "Standard 1" },
                 new Standard { StandardId = 2, StandardName = "Standard 2" },
@@ -41,18 +41,17 @@ namespace ISTC.SecondStage.OOP.LINQ03
             };
 
 
-
-
             //Multiple Select and where Operator
             var studentNames = studentList
                 .Where(s => s.Age > 18 && s.StandardId > 0)
-                .Select(s => s.StudentName).ToList();
+                .Select(s => s.StudentName).ToArray();
 
 
             //LINQ Query returns Collection of Anonymous Objects
             var teenStudentsName = from s in studentList
                                    where s.Age > 12 && s.Age < 20
                                    select new { StudentName = s.StudentName };
+
 
             teenStudentsName.ToList().ForEach(s => Console.WriteLine(s.StudentName));
 
@@ -66,13 +65,13 @@ namespace ISTC.SecondStage.OOP.LINQ03
             var studentsGroupByStandard = studentList
                 .GroupBy(s => s.StandardId)
                 .OrderBy(sg => sg.Key)
-                .Select(sg => new { sg.Key, sg });
+                .Select(sg => new { Key = sg.Key, Count = sg.Count() });
 
             foreach (var group in studentsGroupByStandard)
             {
                 Console.WriteLine("StandardId {0}:", group.Key);
 
-                group.sg.ToList().ForEach(st => Console.WriteLine(st.StudentName));
+                //group.sg.ToList().ForEach(st => Console.WriteLine(st.StudentName));
             }
 
 
@@ -93,17 +92,19 @@ namespace ISTC.SecondStage.OOP.LINQ03
 
 
             //LINQ Left Outer Join - C#
-            var studentsGroup = standardList.GroupJoin(studentList, stad => stad.StandardId, s => s.StandardId,
-                (stad, sg) => new { StandardName = stad.StandardName, Students = sg });
-            //var studentsGroup = from stad in standardList
-            //    join s in studentList
-            //        on stad.StandardId equals s.StandardId
-            //        into sg
-            //    select new
-            //    {
-            //        StandardName = stad.StandardName,
-            //        Students = sg
-            //    };
+            //var studentsGroup = standardList.GroupJoin(studentList, 
+            //    stad => stad.StandardId, 
+            //    s => s.StandardId,
+            //    (stad, sg) => new { StandardName = stad.StandardName, Students = sg });
+            var studentsGroup = from stad in standardList
+                                join s in studentList
+                                    on stad.StandardId equals s.StandardId
+                                    into sg
+                                select new
+                                {
+                                    StandardName = stad.StandardName,
+                                    Students = sg
+                                };
 
             foreach (var group in studentsGroup)
             {
@@ -137,7 +138,7 @@ namespace ISTC.SecondStage.OOP.LINQ03
 
             //Sorting
             var sortedStudents = from s in studentList
-                                 orderby s.StandardId, s.Age
+                                 orderby  s.StandardId, s.Age descending 
                                  select new
                                  {
                                      StudentName = s.StudentName,
@@ -166,12 +167,24 @@ namespace ISTC.SecondStage.OOP.LINQ03
             //Nested Query
             var nestedQueries = studentList
                 .Where(
-                 s => s.Age > 18 && s.StandardId ==(standardList.Where(std => std.StandardName == "Standard 1")
+                 s => s.Age > 18 && s.StandardId == (
+                          standardList.Where(std => std.StandardName == "Standard 1")
                 .Select(std => std.StandardId)).FirstOrDefault()
-                         );
+                      );
 
             foreach (var s in nestedQueries) Console.WriteLine(s.StudentName);
+            var studentIds = studentList.Select(x => x.StudentId);
+            var standardIds = standardList.Select(x => x.StandardId);
+            var allIds = standardIds.Concat(studentIds);
+            var skipWhile = allIds.SkipWhile(i => i != 54);
+            Console.WriteLine(allIds.Count());
         }
     }
 
+    internal class MyClass
+    {
+        public int Key { get; set; }
+        public int Count { get; set; }
+
+    }
 }

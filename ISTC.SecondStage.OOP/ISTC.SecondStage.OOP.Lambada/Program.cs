@@ -1,7 +1,10 @@
-﻿namespace ISTC.Lambada
+﻿using System;
+
+namespace ISTC.Lambada
 {
     public delegate double Calculate(float num);
     public delegate void Print();
+
 
     class Program
     {
@@ -20,14 +23,16 @@
 
         static void Main(string[] args)
         {
+            //Calculate calculate= new Calculate(Method);
+
             Calculate calculate0 = Method; // Method explicit 
 
             // Lambada
-            Calculate calculate1 = delegate (float n) { return n * n; }; // Method
-            Calculate calculate2 = (n) => { return n * n; };             // Operator
-            Calculate calculate3 = (n) => n * n;                         // Expression
+            Calculate calculate1 = delegate (float n) { return n * n; };            // Method
+            Calculate calculate2 = (n) => { Console.WriteLine(); return n * n; };   // Operator
+            Calculate calculate3 = (n) => n * n;                                    // Expression
 
-            Print p = () => System.Console.WriteLine();
+            Print p = () => Console.WriteLine();
             //calculate1=calculate1=calculate1 
         }
     }
