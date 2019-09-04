@@ -43,7 +43,7 @@ namespace ISTC.SecondStage.OOP.Generics01
 
         public T GenericMethod<L>(T genericParameter, L anotherType) where L : struct // constraint
         {
-            Console.WriteLine("Parameter type: {0}, value: {1}", typeof(T).ToString(), genericParameter);
+            Console.WriteLine("Parameter type: {0}, value: {1}", typeof(L).ToString(), genericParameter);
             Console.WriteLine("Return type: {0}, value: {1}", typeof(T).ToString(), genericMemberVariable);
 
             return genericMemberVariable;
@@ -51,13 +51,14 @@ namespace ISTC.SecondStage.OOP.Generics01
 
         public T GenericProperty { get; set; }
     }
+
     class Program
     {
         static void Main(string[] args)
         {
-            MyGenericClass<double> intGenericClass = new MyGenericClass<double>(10);
+            MyGenericClass<int> intGenericClass = new MyGenericClass<int>(10);
 
-            double val = intGenericClass.GenericMethod(genericParameter: 1500.2, anotherType: 5);
+            double val = intGenericClass.GenericMethod<char>(genericParameter: 1500, anotherType: '5');
 
             MyGenericClass<string> intGenericClass2 = new MyGenericClass<string>("d");
 

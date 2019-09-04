@@ -1,14 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 delegate T NumberChanger<T>(T n);
+public delegate TResult FuncCustom<in T, out TResult>(T arg);
+
 namespace ISTC.SecondStage.OOP.Generics03
 {
+    static class My
+    {
+
+    }
     class Program
     {
+        public static TR GenericMethod<T, TR>(T r) where TR : class
+        {
+            return null;
+        }
         static int num = 10;
 
         public static int AddNum(int p)
@@ -22,10 +28,12 @@ namespace ISTC.SecondStage.OOP.Generics03
             return num;
         }
 
+
         public static int GetNum()
         {
             return num;
         }
+
         static void Main(string[] args)
         {
             //create delegate instances
