@@ -6,7 +6,7 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_02
     {
         static void Main(string[] args)
         {
-            Connector.GetStartups();
+            Connector.GetStartUps();
             Console.ReadKey();
         }
     }

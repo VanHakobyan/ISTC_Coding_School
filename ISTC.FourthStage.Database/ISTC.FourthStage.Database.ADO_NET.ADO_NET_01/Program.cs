@@ -7,11 +7,11 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_01
     {
         static void Main(string[] args)
         {
-            List<People> peoples = Connector.GetPeople();
+            List<Employee> employees = Connector.GetEmployees();
             //var peoples = Connector.GetPeopleUsingConnectionBuilder();
-            foreach (var people in peoples)
+            foreach (var employee in employees)
             {
-                Console.WriteLine($"{people.Id} {people.FirstName} {people.LastName} {people.Age}");
+                Console.WriteLine($"{employee.Id} {employee.NameOfTheTraiteur} {employee.Dirigeant} {employee.Adress}");
             }
             Console.ReadKey();
         }

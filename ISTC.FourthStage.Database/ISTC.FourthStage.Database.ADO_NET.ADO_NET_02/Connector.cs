@@ -7,12 +7,13 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_02
 {
     public class Connector
     {
-        public static void GetStartups()
+        public static void GetStartUps()
         {
             try
             {
                 var path = @"..\..\StartUp.xlsx";
                 var s = $"Provider=Microsoft.OLEDB.16.0;Data Source={Path.GetFullPath(path)};Extended Properties='Excel 16.0 Xml;HDR=YES;IMEX=1;MAXSCANROWS=0'";
+                //E:\Source\repos\VanHakobyan\ISTC_Coding_School\ISTC.FourthStage.Database\ISTC.FourthStage.Database.ADO_NET.ADO_NET_02\StartUp.xlsx
                 OleDbConnection connect = new OleDbConnection(s);
 
                 try

@@ -7,10 +7,10 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_01
 {
     public class Connector
     {
-        public static List<People> GetPeople()
+        public static List<Employee> GetEmployees()
         {
-            var peoples = new List<People>();
-            string connStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=MyFirstDataBase;Integrated Security=True;";
+            var peoples = new List<Employee>();
+            string connStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=MyDb;Integrated Security=True;";
             try
             {
                 using (SqlConnection connection = new SqlConnection(connStr))
@@ -18,28 +18,28 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_01
                     connection.Open();
                     Console.WriteLine(connection.State);
 
-                    string query = "select * from People";
-                                   
+                    string query = "select * from data";
+
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         using (SqlDataReader sqlDataReader = command.ExecuteReader())
                         {
                             while (sqlDataReader.Read())
                             {
-                                int id = sqlDataReader.GetInt32(0);
-                                string firstName = sqlDataReader.GetString(1);
-                                string lastName = sqlDataReader.GetString(2);
-                                SqlInt32 age = sqlDataReader.GetSqlInt32(3);
-
+                                var order = sqlDataReader.GetOrdinal("id");
                                 peoples.Add(
-                                    new People
-                                    {
-                                        Id = id,
-                                        FirstName = firstName,
-                                        LastName = lastName,
-                                        Age = age.IsNull ? default(int?) : age.Value
-                                    }
-                               );
+                                   new Employee
+                                   {
+                                       Id = sqlDataReader.GetSqlInt32(order).IsNull ? -1 : sqlDataReader.GetSqlInt32(order).Value,
+                                       NameOfTheTraiteur = (string)GetValue(sqlDataReader, "NameOfTheTraiteur"),
+                                       Adress = (string)GetValue(sqlDataReader, "Adress"),
+                                       ContactCommercial = (string)GetValue(sqlDataReader, "ContactCommercial"),
+                                       Dirigeant = (string)GetValue(sqlDataReader, "Dirigeant"),
+                                       EmailAddress = (string)GetValue(sqlDataReader, "EmailAddress"),
+                                       Fax = (string)GetValue(sqlDataReader, "Fax"),
+                                       TelephoneNumber = (string)GetValue(sqlDataReader, "TelephoneNumber")
+                                   }
+                              );
                             }
                         }
 
@@ -55,6 +55,12 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_01
             return peoples;
         }
 
+        public static object GetValue(SqlDataReader sqlDataReader, string index)
+        {
+            if (sqlDataReader[index] is DBNull) return null;
+            return sqlDataReader[index];
+        }
+
         public static List<People> GetPeopleUsingConnectionBuilder()
         {
             var peoples = new List<People>();
@@ -62,7 +68,12 @@ namespace ISTC.FourthStage.Database.ADO_NET.ADO_NET_01
             {
                 DataSource = @"(localdb)\MSSQLLocalDB",
                 InitialCatalog = "MyFirstDataBase",
-                IntegratedSecurity = true
+                IntegratedSecurity = false,
+                UserID = "",
+                Password = "",
+                ConnectTimeout = 90,
+                AttachDBFilename = @"",
+                
             };
             try
             {
