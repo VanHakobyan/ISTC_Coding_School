@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Getting Started With SQL", "Getting Started With SQL", "{C54A4CAF-4A7E-44B6-AD6A-242E0E1D808D}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FourthStage.Database.LinqToEntity.LinqToEntity_01", "ISTC.FourthStage.Database.LinqToEntity.LinqToEntity_01\ISTC.FourthStage.Database.LinqToEntity.LinqToEntity_01.csproj", "{0FA38288-8140-4E65-9A81-4D4F92FD0C0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST", "TEST\TEST.csproj", "{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FourthStage.Database.EF.DatabaseFirst2", "ISTC.FourthStage.Database.EF.DatabaseFirst2\ISTC.FourthStage.Database.EF.DatabaseFirst2.csproj", "{68AB6752-0160-45A1-9D72-A49DE255E98B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9DE797C-59A8-4C2C-B45F-24F04BF606F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68AB6752-0160-45A1-9D72-A49DE255E98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68AB6752-0160-45A1-9D72-A49DE255E98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68AB6752-0160-45A1-9D72-A49DE255E98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68AB6752-0160-45A1-9D72-A49DE255E98B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{808B8271-2CE0-459E-8B5E-6834107A4F1B} = {A8FE3F13-2A55-4230-8483-43963F544F5D}
 		{52053E51-21DE-4FB4-8F90-24C2669692BC} = {2D4494F7-D629-4FDB-95FF-FE920F022E18}
 		{0FA38288-8140-4E65-9A81-4D4F92FD0C0D} = {F0E9706F-C50A-4C0F-951D-20C6AA6D04B9}
+		{68AB6752-0160-45A1-9D72-A49DE255E98B} = {3DB2A018-D42B-484A-B1DD-D757D6C918FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {66F13108-ED0B-4C74-90FA-17E8BC260426}
