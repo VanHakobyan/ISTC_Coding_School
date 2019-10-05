@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModelFirst.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelFirstStoreContainer">
+    <EntitySet Name="Teams" EntityType="ModelFirst.Store.Teams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Players" EntityType="ModelFirst.Store.Players" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Brands" EntityType="ModelFirst.Store.Brands" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BrandPlayer" EntityType="ModelFirst.Store.BrandPlayer" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="TeamPlayer" Association="ModelFirst.Store.TeamPlayer">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="Player" EntitySet="Players" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BrandPlayer_Brand" Association="ModelFirst.Store.FK_BrandPlayer_Brand">
+      <End Role="Brand" EntitySet="Brands" />
+      <End Role="BrandPlayer" EntitySet="BrandPlayer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BrandPlayer_Player" Association="ModelFirst.Store.FK_BrandPlayer_Player">
+      <End Role="Player" EntitySet="Players" />
+      <End Role="BrandPlayer" EntitySet="BrandPlayer" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Teams">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreateinYear" Type="int" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Reputation" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Players">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Number" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Birthday" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Position" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Team_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Brands">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BrandPlayer">
+    <Key>
+      <PropertyRef Name="Brand_Id" />
+      <PropertyRef Name="Players_Id" />
+    </Key>
+    <Property Name="Brand_Id" Type="int" Nullable="false" />
+    <Property Name="Players_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="TeamPlayer">
+    <End Role="Team" Type="ModelFirst.Store.Teams" Multiplicity="1" />
+    <End Role="Player" Type="ModelFirst.Store.Players" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Player">
+        <PropertyRef Name="Team_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BrandPlayer_Brand">
+    <End Role="Brand" Type="ModelFirst.Store.Brands" Multiplicity="1" />
+    <End Role="BrandPlayer" Type="ModelFirst.Store.BrandPlayer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brand">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BrandPlayer">
+        <PropertyRef Name="Brand_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BrandPlayer_Player">
+    <End Role="BrandPlayer" Type="ModelFirst.Store.BrandPlayer" Multiplicity="*" />
+    <End Role="Player" Type="ModelFirst.Store.Players" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Player">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BrandPlayer">
+        <PropertyRef Name="Players_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelFirst" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ModelFirstContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Teams" EntityType="ModelFirst.Team" />
+          <EntitySet Name="Players" EntityType="ModelFirst.Player" />
+          <AssociationSet Name="TeamPlayer" Association="ModelFirst.TeamPlayer">
+            <End Role="Team" EntitySet="Teams" />
+            <End Role="Player" EntitySet="Players" />
+          </AssociationSet>
+          <EntitySet Name="Brands" EntityType="ModelFirst.Brand" />
+          <AssociationSet Name="BrandPlayer" Association="ModelFirst.BrandPlayer">
+            <End Role="Brand" EntitySet="Brands" />
+            <End Role="Player" EntitySet="Players" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Team">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="CreateinYear" Type="Int32" Nullable="false" />
+          <Property Name="Country" Type="String" Nullable="false" />
+          <Property Name="Reputation" Type="Int32" Nullable="true" />
+          <NavigationProperty Name="Players" Relationship="ModelFirst.TeamPlayer" FromRole="Team" ToRole="Player" />
+        </EntityType>
+        <EntityType Name="Player">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" />
+          <Property Name="LastName" Type="String" Nullable="false" />
+          <Property Name="Number" Type="String" Nullable="false" />
+          <Property Name="Birthday" Type="String" Nullable="false" />
+          <Property Name="Position" Type="String" Nullable="false" />
+          <Property Name="Country" Type="String" Nullable="false" />
+          <NavigationProperty Name="Team" Relationship="ModelFirst.TeamPlayer" FromRole="Player" ToRole="Team" />
+          <NavigationProperty Name="Brand" Relationship="ModelFirst.BrandPlayer" FromRole="Player" ToRole="Brand" />
+        </EntityType>
+        <Association Name="TeamPlayer">
+          <End Type="ModelFirst.Team" Role="Team" Multiplicity="1" />
+          <End Type="ModelFirst.Player" Role="Player" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Brand">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <NavigationProperty Name="Players" Relationship="ModelFirst.BrandPlayer" FromRole="Brand" ToRole="Player" />
+        </EntityType>
+        <Association Name="BrandPlayer">
+          <End Type="ModelFirst.Brand" Role="Brand" Multiplicity="*" />
+          <End Type="ModelFirst.Player" Role="Player" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelFirstStoreContainer" CdmEntityContainer="ModelFirstContainer">
+    <EntitySetMapping Name="Teams">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelFirst.Team)">
+        <MappingFragment StoreEntitySet="Teams">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreateinYear" ColumnName="CreateinYear" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Reputation" ColumnName="Reputation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Players">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelFirst.Player)">
+        <MappingFragment StoreEntitySet="Players">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelFirst.Brand)">
+        <MappingFragment StoreEntitySet="Brands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="TeamPlayer" TypeName="ModelFirst.TeamPlayer" StoreEntitySet="Players">
+      <EndProperty Name="Team">
+        <ScalarProperty Name="Id" ColumnName="Team_Id" />
+      </EndProperty>
+      <EndProperty Name="Player">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BrandPlayer" TypeName="ModelFirst.BrandPlayer" StoreEntitySet="BrandPlayer">
+      <EndProperty Name="Brand">
+        <ScalarProperty Name="Id" ColumnName="Brand_Id" />
+      </EndProperty>
+      <EndProperty Name="Player">
+        <ScalarProperty Name="Id" ColumnName="Players_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

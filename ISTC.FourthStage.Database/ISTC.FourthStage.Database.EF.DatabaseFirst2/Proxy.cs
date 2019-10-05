@@ -19,6 +19,5 @@ namespace ISTC.FourthStage.Database.EF.DatabaseFirst2
         public string Ip { get; set; }
         public string Port { get; set; }
         public string Type { get; set; }
-        public Nullable<int> Test { get; set; }
     }
 }

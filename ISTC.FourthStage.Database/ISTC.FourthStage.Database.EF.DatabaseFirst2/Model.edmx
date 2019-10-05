@@ -169,7 +169,6 @@
           <Property Name="Ip" Type="nvarchar(max)" />
           <Property Name="Port" Type="nvarchar(max)" />
           <Property Name="Type" Type="nvarchar(max)" />
-          <Property Name="Test" Type="int" />
         </EntityType>
         <EntityType Name="StaffSkill">
           <Key>
@@ -779,7 +778,6 @@
           <Property Name="Ip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Port" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Test" Type="Int32" />
         </EntityType>
         <EntityType Name="StaffSkill">
           <Key>
@@ -1148,7 +1146,6 @@
           <EntitySetMapping Name="Proxies">
             <EntityTypeMapping TypeName="MonitoringModel.Proxy">
               <MappingFragment StoreEntitySet="Proxy">
-                <ScalarProperty Name="Test" ColumnName="Test" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Country" ColumnName="Country" />
                 <ScalarProperty Name="Ip" ColumnName="Ip" />

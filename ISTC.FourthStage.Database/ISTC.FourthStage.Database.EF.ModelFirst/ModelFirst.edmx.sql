@@ -2,13 +2,13 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 02/18/2019 10:34:35
--- Generated from EDMX file: D:\Source\VanHakobyan\ISTC_Coding_School\ISTC.FourthStage.Database\ISTC.FourthStage.Database.EF.ModelFirst\ModelFirst.edmx
+-- Date Created: 10/05/2019 11:31:19
+-- Generated from EDMX file: E:\Source\repos\VanHakobyan\ISTC_Coding_School\ISTC.FourthStage.Database\ISTC.FourthStage.Database.EF.ModelFirst\ModelFirst.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
 GO
-USE [MyFirstDataBase];
+USE [ModelFirstContainer];
 GO
 IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
 GO
@@ -17,11 +17,20 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[FK_StudentFaculty]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Students] DROP CONSTRAINT [FK_StudentFaculty];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[Students]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Students];
+GO
+IF OBJECT_ID(N'[dbo].[Faculties]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Faculties];
+GO
 
 -- --------------------------------------------------
 -- Creating all tables
