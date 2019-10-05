@@ -11,5 +11,6 @@ namespace ISTC.FourthStage.Database.EF.CodeFirst
 
 
         public virtual DbSet<Person> Persons { get; set; }
+        public virtual DbSet<Car> Cars { get; set; }
     }
 }

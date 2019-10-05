@@ -18,6 +18,9 @@ namespace ISTC.FourthStage.Database.EF.CodeFirst
             {
                 Console.WriteLine($"{person.Id}:{person.FirstName} {person.LastName} {person.Age}");
             }
+            
+            context.Cars.Add(new Car { Name = "Kia", Person = persons.FirstOrDefault()});
+            context.SaveChanges();
         }
     }
 }
