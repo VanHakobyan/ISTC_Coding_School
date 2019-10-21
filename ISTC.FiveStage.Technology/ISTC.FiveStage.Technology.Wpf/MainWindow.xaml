@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISTC.FiveStage.Technology.Wpf"
         mc:Ignorable="d"
-        Title="ISTC" Height="450" Width="800">
+        Title="ISTC" Height="450" Width="700">
     <Grid>
-        <TextBox Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-        <Button Content="{Binding Name, Mode=TwoWay}" HorizontalAlignment="Left" Margin="322,378,0,0" Width="75" Click="Show_OnClick"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="580,263,0,0" VerticalAlignment="Top" 
-                  IsChecked="{Binding IsEnabled, Mode=TwoWay}"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="193,228,0,0" VerticalAlignment="Top" Width="100"/>
-<StackPanel Orientation="Vertical">
+        <Button Content="Button" Margin="376,121,340,278" Click="ButtonBase_OnClick"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="192,40,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="425,93,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="439,129,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="393,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="TextBlock"/><InlineUIContainer>
+                <TextBox Height="23" TextWrapping="Wrap" Text="jhvkjgyuih;&#xD;&#xA;" Width="179"/>
+            </InlineUIContainer></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="492,212,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Calendar HorizontalAlignment="Left" Margin="235,45,0,0" VerticalAlignment="Top"  />
+        <Image HorizontalAlignment="Left" Height="100" Margin="575,93,0,0" VerticalAlignment="Top" Width="100"/>
+        <ScrollBar HorizontalAlignment="Left" Margin="533,54,0,0" VerticalAlignment="Top"/>
+        <WebBrowser HorizontalAlignment="Left" Height="119" Margin="567,60,-2,0" VerticalAlignment="Top" Width="127"/>
 
-</StackPanel>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="229,223,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Calendar HorizontalAlignment="Left" Margin="396,216,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="147,278,0,0" VerticalAlignment="Top"/>
-        <Slider HorizontalAlignment="Left" Margin="86,341,0,0" VerticalAlignment="Top" Width="170"/>
     </Grid>
 </Window>

@@ -25,10 +25,10 @@ namespace ISTC.FiveStage.Technology.Wpf
             InitializeComponent();
             DataContext = new MainWindowViewModel();
         }
-
-        private void Show_OnClick(object sender, RoutedEventArgs e)
+        
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello WPF !!!");
+            MessageBox.Show("hello button");
         }
     }
 }
