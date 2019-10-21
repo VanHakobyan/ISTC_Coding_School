@@ -5,12 +5,13 @@ namespace ISTC.FourthStage.Database.EF.CodeFirst
     class MyContext : DbContext
     {
         public MyContext()
-            : base("name=MyContext")
+            : base("name = MyContext")
         {
         }
 
 
         public virtual DbSet<Person> Persons { get; set; }
         public virtual DbSet<Car> Cars { get; set; }
+        public virtual DbSet<Test> Tests { get; set; }
     }
 }

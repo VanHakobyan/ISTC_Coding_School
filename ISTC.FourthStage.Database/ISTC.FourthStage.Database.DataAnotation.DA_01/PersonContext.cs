@@ -14,6 +14,8 @@ namespace ISTC.FourthStage.Database.DataAnnotation.DA_01
 
      
         public virtual DbSet<People> Peoples { get; set; }
+        public virtual DbSet<Test1> Test1 { get; set; }
+        public virtual DbSet<Test2> Test2 { get; set; }
     }
 
   

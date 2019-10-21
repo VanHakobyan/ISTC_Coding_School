@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.FiveStage.Technology.WPFandService", "ISTC.FiveStage.Technology.WPFandService", "{9E6C71B6-8DF0-4F6B-817F-FA2AC440B16B}"
 EndProject
@@ -59,7 +59,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISTC.FiveStage.Technology.Publish", "ISTC.FiveStage.Technology.Publish", "{3888641F-EE56-4D3A-80CD-77EB92354920}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.Publish.Publish_01", "ISTC.FiveStage.Technology.Publish.Publish_01\ISTC.FiveStage.Technology.Publish.Publish_01.csproj", "{57425C74-956B-425B-8339-23163DD2D669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTC.FiveStage.Technology.Publish.Publish_01", "ISTC.FiveStage.Technology.Publish.Publish_01\ISTC.FiveStage.Technology.Publish.Publish_01.csproj", "{57425C74-956B-425B-8339-23163DD2D669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FiveStage.Technology.NTService", "ISTC.FiveStage.Technology.NTService\ISTC.FiveStage.Technology.NTService.csproj", "{716FB0DE-797B-40EC-AE75-A1A1C51A4ACA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +145,10 @@ Global
 		{57425C74-956B-425B-8339-23163DD2D669}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57425C74-956B-425B-8339-23163DD2D669}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57425C74-956B-425B-8339-23163DD2D669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716FB0DE-797B-40EC-AE75-A1A1C51A4ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716FB0DE-797B-40EC-AE75-A1A1C51A4ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716FB0DE-797B-40EC-AE75-A1A1C51A4ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716FB0DE-797B-40EC-AE75-A1A1C51A4ACA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +173,7 @@ Global
 		{961E517F-6F1E-4DC8-851C-1D4A685FA3DB} = {9A1059D8-3077-4A47-AB95-FC0EF86B288A}
 		{87F44678-3C6A-424D-B420-620DD6BBFBA4} = {9A1059D8-3077-4A47-AB95-FC0EF86B288A}
 		{57425C74-956B-425B-8339-23163DD2D669} = {3888641F-EE56-4D3A-80CD-77EB92354920}
+		{716FB0DE-797B-40EC-AE75-A1A1C51A4ACA} = {9E6C71B6-8DF0-4F6B-817F-FA2AC440B16B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C1DE84E0-1012-4B1B-BF37-394BC0C95866}

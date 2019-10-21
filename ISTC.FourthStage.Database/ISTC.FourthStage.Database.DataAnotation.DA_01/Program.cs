@@ -13,7 +13,8 @@ namespace ISTC.FourthStage.Database.DataAnnotation.DA_01
                     FirstName = "Armen",
                     LastName = "Ka",
                     BirthDate = DateTime.Now,
-                    Age = 25
+                    Age = 25,
+                    Email = "mgmom"
                 };
                 context.Peoples.Add(people);
                 context.SaveChanges();

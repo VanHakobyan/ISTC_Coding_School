@@ -52,30 +52,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201902221612227_InitialCreate.cs" />
-    <Compile Include="Migrations\201902221612227_InitialCreate.Designer.cs">
-      <DependentUpon>201902221612227_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201910071619587_Initial.cs" />
+    <Compile Include="Migrations\201910071619587_Initial.Designer.cs">
+      <DependentUpon>201910071619587_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902221618264_TypeMapping.cs" />
-    <Compile Include="Migrations\201902221618264_TypeMapping.Designer.cs">
-      <DependentUpon>201902221618264_TypeMapping.cs</DependentUpon>
+    <Compile Include="Migrations\201910071625185_Test1.cs" />
+    <Compile Include="Migrations\201910071625185_Test1.Designer.cs">
+      <DependentUpon>201910071625185_Test1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="People.cs" />
     <Compile Include="PersonContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test1.cs" />
+    <Compile Include="Test2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902221612227_InitialCreate.resx">
-      <DependentUpon>201902221612227_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910071619587_Initial.resx">
+      <DependentUpon>201910071619587_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902221618264_TypeMapping.resx">
-      <DependentUpon>201902221618264_TypeMapping.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910071625185_Test1.resx">
+      <DependentUpon>201910071625185_Test1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,13 +7,13 @@ namespace ISTC.FourthStage.Database.DataAnnotation.DA_01.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class Test1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Test1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201902221612227_InitialCreate"; }
+            get { return "201910071625185_Test1"; }
         }
         
         string IMigrationMetadata.Source

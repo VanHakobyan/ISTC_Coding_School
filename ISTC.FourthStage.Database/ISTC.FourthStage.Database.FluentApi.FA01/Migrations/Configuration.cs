@@ -1,18 +1,18 @@
-namespace ISTC.FourthStage.Database.EF.CodeFirst.Migrations
+namespace ISTC.FourthStage.Database.FluentApi.FA01.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ISTC.FourthStage.Database.EF.CodeFirst.MyContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ISTC.FourthStage.Database.FluentApi.FA01.MyContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(ISTC.FourthStage.Database.EF.CodeFirst.MyContext context)
+        protected override void Seed(ISTC.FourthStage.Database.FluentApi.FA01.MyContext context)
         {
             //  This method will be called after migrating to the latest version.
 

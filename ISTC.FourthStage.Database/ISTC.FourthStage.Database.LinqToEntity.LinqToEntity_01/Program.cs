@@ -18,17 +18,18 @@ namespace ISTC.FourthStage.Database.LinqToEntity.LinqToEntity_01
                 var Lqueryable = db.GithubProfiles.Select(x => x).Where(x => x.Company.ToLower() == "betconstruct")
                     .OrderByDescending(x => x.Name).ToList();
                 a = Lqueryable.First();
-                Console.WriteLine(db.ChangeTracker.HasChanges());
+                Console.WriteLine(db.ChangeTracker.HasChanges());//false
                 a.Name = "";
-                Console.WriteLine(db.ChangeTracker.HasChanges());
+                Console.WriteLine(db.ChangeTracker.HasChanges());//true
                 //db.Entry(a).State = EntityState.Modified;
-                Console.WriteLine(db.ChangeTracker.HasChanges());
+                Console.WriteLine(db.ChangeTracker.HasChanges());//true 
                 //db.SaveChanges();
             }
 
             using (MonitoringEntities db = new MonitoringEntities())
             {
                 db.Entry(a).State = EntityState.Modified;
+                Console.WriteLine(db.ChangeTracker.HasChanges());//true
                 db.SaveChanges();
             }
         }

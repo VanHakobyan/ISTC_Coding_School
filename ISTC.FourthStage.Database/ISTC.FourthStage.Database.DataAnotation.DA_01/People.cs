@@ -9,7 +9,7 @@ namespace ISTC.FourthStage.Database.DataAnnotation.DA_01
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        
+
         [Required, MaxLength(200, ErrorMessage = "Name max value is 200!!")]
         public string FirstName { get; set; }
 
@@ -24,7 +24,7 @@ namespace ISTC.FourthStage.Database.DataAnnotation.DA_01
         public int? Age { get; set; }
 
         [DataType(DataType.EmailAddress)]
-        [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail is not valid")]
+        [EmailAddress(ErrorMessage = "not valid email address ")]
         public string Email { get; set; }
     }
 }

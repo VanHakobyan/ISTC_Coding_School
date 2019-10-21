@@ -38,6 +38,6 @@ namespace ISTC.FourthStage.Database.LinqToEntity.LinqToEntity_01
         public virtual DbSet<LinkedinLanguage> LinkedinLanguages { get; set; }
         public virtual DbSet<LinkedinProfile> LinkedinProfiles { get; set; }
         public virtual DbSet<LinkedinSkill> LinkedinSkills { get; set; }
-        public virtual DbSet<Proxy> Proxies { get; set; }
+       // public virtual DbSet<Proxy> Proxies { get; set; }
     }
 }
