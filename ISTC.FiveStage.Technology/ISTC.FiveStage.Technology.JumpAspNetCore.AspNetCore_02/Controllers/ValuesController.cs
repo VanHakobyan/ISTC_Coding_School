@@ -32,19 +32,12 @@ namespace ISTC.FiveStage.Technology.JumpAspNetCore.AspNetCore_02.Controllers
             return new Random().Next(0, id).ToString();
         }
 
-        // POST api/values
+        // PUT api/values/5
         [HttpPost]
-        public ActionResult Post([FromQuery]People people)
+        public ActionResult PostPeople([FromBody] People people)
         {
             return Ok(people);
         }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
