@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ISTC.FiveStage.Technology.WebApi.API_01.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
