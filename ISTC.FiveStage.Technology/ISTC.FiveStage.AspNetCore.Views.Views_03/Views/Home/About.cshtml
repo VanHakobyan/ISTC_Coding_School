@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+@{
+    List<int> ids = (List<int>)ViewData["ids"];
+}
+<html>
+<head>
+    <title>ISTC C#</title>
+</head>
+<body>
+    <div>
+        <ul>
+          
+            @foreach (var id in ids)
+            {
+
+                //@:barev
+                <li>@(id * 5)</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

@@ -29,6 +29,11 @@ namespace ISTC.FiveStage.Technology.WebApi.API_00.Controllers
         [HttpGet, Route("weather")]
         public async Task<IActionResult> Weather(int first, int second = 5)
         {
+            if (!ModelState.IsValid || !User.Identity.IsAuthenticated)
+            {
+                return BadRequest("Model not valid!!!");
+            }
+
             var rng = new Random();
             var r = Enumerable.Range(first, second).Select(index => new WeatherForecast
             {

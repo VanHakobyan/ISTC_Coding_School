@@ -1,0 +1,32 @@
+﻿@using ISTC.FiveStage.AspNetCore.Views.Views_02.Models
+@model ISTC.FiveStage.AspNetCore.Views.Views_02.Models.People
+
+@{
+    Layout = "_Layout";
+    var contactViewModel = ViewData["ContactViewModel"] as ContactViewModel;
+}
+
+<br/>
+<div id="4">
+    <ul style="background: azure">
+        <p>@contactViewModel.FirstName</p>
+        <p>@contactViewModel.LastName</p>
+        <p><a href="@contactViewModel.Github" target="_blank">Github</a></p>
+        <p><a href="@contactViewModel.Linkedin" target="_blank">Linkedin</a></p>
+    </ul>
+    <script type="text/javascript">
+        var id = document.getElementById('4').outerHTML;
+        console.log(id);
+    </script>
+</div>
+@await Html.PartialAsync("PartialHome",Model)
+
+<script type="text/javascript">
+    function GetData() {
+        return <p>data</p>
+    }
+</script>
+
+<div>
+    
+</div>
