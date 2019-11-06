@@ -54,7 +54,7 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_02
         //    var singletonTwo = serviceProvider.GetService<IMySingletonService>();
 
         //    Console.WriteLine(singletonOne == singletonTwo);
-        //    Console.Write(singletonTwo.MyTransientService != singletonTwo.MyTransientService);
+        //    Console.Write(singletonTwo.MyTransientService != singletonOne.MyTransientService);
         //}
 
         public void ConfigureServices(IServiceCollection services)
@@ -83,13 +83,13 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_02
             }
 
 
-            Console.Write(scopedOne == scopedTwo);
-            Console.Write(scoped3 == scopedTwo);
+            Console.Write(scopedOne == scopedTwo);//true
+            Console.Write(scoped3 == scopedTwo);//false
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (env.EnvironmentName == "Development")
             {
                 app.UseDeveloperExceptionPage();
             }

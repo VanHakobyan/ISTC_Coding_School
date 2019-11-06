@@ -18,28 +18,18 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_01
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IFirstService, FirstService>();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //services.AddScoped<IFirstService, FirstService>();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseHsts();
-            }
+            var name = env.ApplicationName;
 
             app.UseHttpsRedirection();
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Hello}/{action=PostSayHello}/{id?}");
-            });
+            app.UseRouting();           
+            app.UseEndpoints((x) => x.MapControllers());
+            
         }
     }
 }

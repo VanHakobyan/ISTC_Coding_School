@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 
 namespace ISTC.FiveStage.Technology.DependencyInjection.DI_02.Services
 {
+    public interface IMyTransientService 
+    { 
+    }
     public interface IMySingletonService
     {
         IMyTransientService MyTransientService { get; }
     }
 
-    public interface IMyTransientService { }
 
     public class MySingletonService : IMySingletonService
     {
@@ -24,5 +26,9 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_02.Services
 
     public class MyTransientService : IMyTransientService
     {
+        public MyTransientService()
+        {
+
+        }
     }
 }

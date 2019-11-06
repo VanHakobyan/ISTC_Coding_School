@@ -28,6 +28,8 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_01.Controllers
         public IActionResult GetUserDetails()
         {
             var details = _configuration.GetSection("UserDetails").GetChildren().Select(x => new { x.Key, x.Value });
+            //int details = _configuration.GetSection("UserDetails").GetSection("Age").Get<int>();
+            //string details = _configuration.GetValue<string>("URL");
             return Ok(details);
         }
     }
