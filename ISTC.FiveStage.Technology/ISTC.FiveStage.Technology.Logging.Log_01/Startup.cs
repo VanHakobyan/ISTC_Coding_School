@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -21,8 +22,15 @@ namespace ISTC.FiveStage.Technology.Logging.Log_01
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddMvc(r => r.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+                .AddSessionStateTempDataProvider(); ;
             services.AddLogging();
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".AdventureWorks.Session";
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+            });
+            services.AddDistributedMemoryCache();
 
         }
 
@@ -38,18 +46,18 @@ namespace ISTC.FiveStage.Technology.Logging.Log_01
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-           
+
 #pragma warning disable 618
             loggerFactory.AddNLog();
 #pragma warning restore 618
             //env.ConfigureNLog("nlog.config");
 
-
+            app.UseCookiePolicy();
             app.UseRouting();
             app.UseHttpsRedirection();
-
+            app.UseMvc();
             app.UseAuthorization();
-            app.UseEndpoints((x) => x.MapControllers());
+            //app.UseEndpoints((x) => x.MapControllers());
         }
     }
 }

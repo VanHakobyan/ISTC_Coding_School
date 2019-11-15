@@ -7,6 +7,10 @@ using Microsoft.Extensions.Configuration;
 
 namespace ISTC.FiveStage.Technology.DependencyInjection.DI_01.Controllers
 {
+    class MyClass
+    {
+        public int I { get; set; }
+    }
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
@@ -28,6 +32,7 @@ namespace ISTC.FiveStage.Technology.DependencyInjection.DI_01.Controllers
         public IActionResult GetUserDetails()
         {
             var details = _configuration.GetSection("UserDetails").GetChildren().Select(x => new { x.Key, x.Value });
+           
             //int details = _configuration.GetSection("UserDetails").GetSection("Age").Get<int>();
             //string details = _configuration.GetValue<string>("URL");
             return Ok(details);
