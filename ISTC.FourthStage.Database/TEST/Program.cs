@@ -27,10 +27,6 @@ namespace TEST
         }
         // int x;
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="x"></param>
         public void AA(int x = 5)
         {
         }
