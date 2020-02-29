@@ -31,11 +31,6 @@ namespace TEST
         {
         }
 
-        //double AA()
-        //{
-        //    return 0;
-        //}
-
         void IA.M()
         {
             Console.WriteLine("AA");
