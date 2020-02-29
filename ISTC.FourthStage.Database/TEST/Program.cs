@@ -50,7 +50,6 @@ namespace TEST
         {
             return this == other;
 
-            // throw new NotImplementedException();
         }
 
         public override bool Equals(object obj)
