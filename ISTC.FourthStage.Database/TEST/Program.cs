@@ -27,18 +27,9 @@ namespace TEST
         }
         // int x;
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="x"></param>
         public void AA(int x = 5)
         {
         }
-
-        //double AA()
-        //{
-        //    return 0;
-        //}
 
         void IA.M()
         {
@@ -54,7 +45,6 @@ namespace TEST
         {
             return this == other;
 
-            // throw new NotImplementedException();
         }
 
         public override bool Equals(object obj)
