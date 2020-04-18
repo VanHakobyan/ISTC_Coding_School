@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ISTC.ThirdStage.Advance.Algorithms.Sorting.Sorting;
 
 namespace ISTC.ThirdStage.Advance.Algorithms.Sorting
 {
@@ -10,22 +11,23 @@ namespace ISTC.ThirdStage.Advance.Algorithms.Sorting
     {
         static void Main(string[] args)
         {
-            MyMethod();
+            var array = new int[] { 135, 864, 1368, 4134, 6, 9, 1 };
+            Merge.Mergesort(array);
+            Console.WriteLine(string.Join(",", array.ToList()));
         }
 
-        private static void MyMethod()
-        {
-            int N = new Random().Next(0, int.MaxValue);
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = 0; j < N; j++)
-                {
-                    Console.WriteLine(j);
-                }//O(N)
-                Console.WriteLine(i); //O(1)
-                string x = $"554";
-            }//O(N)
 
+        private static List<int> MyMethod()
+        {
+            var list = new List<int>();
+            for (int i = 0; i < 1000; i++)
+            {
+
+                int N = new Random().Next(0, int.MaxValue);
+                list.Add(N);
+            }
+
+            return list;
         }//O(N^2)
     }
 }

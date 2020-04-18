@@ -23,7 +23,6 @@ namespace ISTC.ThirdStage.Advance.Algorithms.Sorting.Sorting
             Mergesort(right);
 
             Merges(items, left, right);
-
         }
 
         private static void Merges(int[] items, int[] left, int[] right)
