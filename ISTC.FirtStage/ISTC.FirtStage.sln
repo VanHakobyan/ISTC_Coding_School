@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.705
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Types", "ISTC.FirtsStage.Types\ISTC.FirtsStage.Types.csproj", "{97BE2091-1B83-44F9-8511-1601B28959D7}"
 EndProject
@@ -46,6 +46,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.Ex04", "ISTC.FirstStage.Ex04\ISTC.FirstStage.Ex04.csproj", "{598A0E95-7981-44B4-A79F-1B8B2B36B452}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.Array", "ISTC.FirstStage.Array\ISTC.FirstStage.Array.csproj", "{E6AFEDAE-C772-48EF-992F-5609568E9A9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtStage.Console_01", "ISTC.FirtStage.Console_01\ISTC.FirtStage.Console_01.csproj", "{5B6B5999-9FCA-4978-A483-D2B20EA31A4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Variables_02", "ISTC.FirtsStage.Variables_02\ISTC.FirtsStage.Variables_02.csproj", "{F23C9D55-1629-46B5-AD93-6C12CA19501B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +145,14 @@ Global
 		{E6AFEDAE-C772-48EF-992F-5609568E9A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6AFEDAE-C772-48EF-992F-5609568E9A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6AFEDAE-C772-48EF-992F-5609568E9A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6B5999-9FCA-4978-A483-D2B20EA31A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6B5999-9FCA-4978-A483-D2B20EA31A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6B5999-9FCA-4978-A483-D2B20EA31A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6B5999-9FCA-4978-A483-D2B20EA31A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23C9D55-1629-46B5-AD93-6C12CA19501B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23C9D55-1629-46B5-AD93-6C12CA19501B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23C9D55-1629-46B5-AD93-6C12CA19501B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23C9D55-1629-46B5-AD93-6C12CA19501B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
