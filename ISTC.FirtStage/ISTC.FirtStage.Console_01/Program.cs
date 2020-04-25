@@ -7,14 +7,13 @@ namespace ISTC.FirtStage.Console_01
         //My first main method
         static void Main()
         {
-            //my code 
-
-            Console.WriteLine(1 + 2);
-            //Console.Wr]ite("Hello\n");
-            Console.Write("Hello\t");
             string text = Console.ReadLine();//read
-            Console.WriteLine(text);//write
-            
+            int number = Convert.ToInt32(text);//13
+            int lastDigit = number % 10;
+            int firstDigit = number / 10;
+
+            int sum = lastDigit + firstDigit;
+            Console.WriteLine($"Sum={sum}");
             Console.ReadKey();
         }
     }
