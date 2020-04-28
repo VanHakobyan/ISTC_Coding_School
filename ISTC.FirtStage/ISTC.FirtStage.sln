@@ -57,6 +57,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtStage.Conditional"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.LogicalStatements", "ISTC.FirstStage.LogicalStatements\ISTC.FirstStage.LogicalStatements.csproj", "{3A80ADB4-F0B6-41AE-B2C5-453F07483ABD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.LogicalStatements_02", "ISTC.FirstStage.LogicalStatements_02\ISTC.FirstStage.LogicalStatements_02.csproj", "{86359759-23C8-485B-AA41-7E477C98BA98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.LogicalStatements_03", "ISTC.FirstStage.LogicalStatements_03\ISTC.FirstStage.LogicalStatements_03.csproj", "{67907327-36D1-4F7A-A542-8B10992DCAD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +175,14 @@ Global
 		{3A80ADB4-F0B6-41AE-B2C5-453F07483ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A80ADB4-F0B6-41AE-B2C5-453F07483ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A80ADB4-F0B6-41AE-B2C5-453F07483ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86359759-23C8-485B-AA41-7E477C98BA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86359759-23C8-485B-AA41-7E477C98BA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86359759-23C8-485B-AA41-7E477C98BA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86359759-23C8-485B-AA41-7E477C98BA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67907327-36D1-4F7A-A542-8B10992DCAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67907327-36D1-4F7A-A542-8B10992DCAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67907327-36D1-4F7A-A542-8B10992DCAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67907327-36D1-4F7A-A542-8B10992DCAD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
