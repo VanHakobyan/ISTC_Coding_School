@@ -11,7 +11,6 @@ namespace LoopWhile
             //    Console.WriteLine("Learn programming");  
             //} while (true);
 
-            Console.ReadKey();
             int number = int.Parse(Console.ReadLine());
             int sum = 0;
             while (number != 0)
@@ -25,7 +24,7 @@ namespace LoopWhile
                 sum += number % 10;
                 number /= 10;
 
-                //if (number % 10 == 1) break;
+                if (number % 10 == 1) break;
             }
 
 

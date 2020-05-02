@@ -14,7 +14,7 @@ namespace ISTC.FirtStage.Loop.GoTo
             sum += digit;
             number = number / 10;   //cut last digit 
 
-            if (number < int.MaxValue)
+            if (number > 0)
             {
                 goto L;
             }

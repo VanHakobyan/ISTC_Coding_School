@@ -12,7 +12,7 @@ namespace LoopFor
         {
             int sum = 0;
 
-            for (int i = 2; sum < 1000; i += 2)
+            for (int i = 2; i < 1000; i += 2)
             {
                 sum += i;
             }
@@ -26,6 +26,7 @@ namespace LoopFor
 
             for (int i = 0; i < count * count; i += 2)
             {
+                if (i == 2) continue;
                 Console.WriteLine($"i={i}");
                 Console.WriteLine($"i*i={i * i}");
                 if (i == 4) break;

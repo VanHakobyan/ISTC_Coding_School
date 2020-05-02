@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.LogicalStat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.LogicalStatements_03", "ISTC.FirstStage.LogicalStatements_03\ISTC.FirstStage.LogicalStatements_03.csproj", "{67907327-36D1-4F7A-A542-8B10992DCAD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.Array_02", "ISTC.FirstStage.Array_02\ISTC.FirstStage.Array_02.csproj", "{B6EC0EC0-3669-469B-B186-D7D4265EF91B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.DoubleNumber", "ISTC.FirstStage.DoubleNumber\ISTC.FirstStage.DoubleNumber.csproj", "{45873C0D-9EEC-48E9-BF3D-8D029C6B2082}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,14 @@ Global
 		{67907327-36D1-4F7A-A542-8B10992DCAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67907327-36D1-4F7A-A542-8B10992DCAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67907327-36D1-4F7A-A542-8B10992DCAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EC0EC0-3669-469B-B186-D7D4265EF91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EC0EC0-3669-469B-B186-D7D4265EF91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EC0EC0-3669-469B-B186-D7D4265EF91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EC0EC0-3669-469B-B186-D7D4265EF91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45873C0D-9EEC-48E9-BF3D-8D029C6B2082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45873C0D-9EEC-48E9-BF3D-8D029C6B2082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45873C0D-9EEC-48E9-BF3D-8D029C6B2082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45873C0D-9EEC-48E9-BF3D-8D029C6B2082}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
