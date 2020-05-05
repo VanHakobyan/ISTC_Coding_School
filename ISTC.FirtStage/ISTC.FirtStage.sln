@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.Array_02", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.DoubleNumber", "ISTC.FirstStage.DoubleNumber\ISTC.FirstStage.DoubleNumber.csproj", "{45873C0D-9EEC-48E9-BF3D-8D029C6B2082}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Methods_03", "ISTC.FirtsStage.Methods_03\ISTC.FirtsStage.Methods_03.csproj", "{364D0332-7C07-44E4-A8A0-0944147E27E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{45873C0D-9EEC-48E9-BF3D-8D029C6B2082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45873C0D-9EEC-48E9-BF3D-8D029C6B2082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45873C0D-9EEC-48E9-BF3D-8D029C6B2082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{364D0332-7C07-44E4-A8A0-0944147E27E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{364D0332-7C07-44E4-A8A0-0944147E27E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{364D0332-7C07-44E4-A8A0-0944147E27E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{364D0332-7C07-44E4-A8A0-0944147E27E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -44,17 +44,17 @@ namespace ISTC.FirstStage.Array
         }
         static void Main(string[] args)
         {
-            ParamsMethod(1, 5, 5);
-            int[][] jagged = new int[4][];
-            jagged[0] = new int[46];
-            jagged[1] = new int[2];
-            jagged[2] = new int[23];
-            jagged[3] = new int[26];
-            jagged[0][45] = Int32.MaxValue;
+            ParamsMethod(1, 5, 5,6,8,8,9,0);
 
-            jagged[3][14] = Int32.MinValue;
-
-            PrintMatrix(jagged);
+            //int[][] jagged = new int[4][];
+            //jagged[0] = new int[46];
+            //jagged[1] = new int[2];
+            //jagged[2] = new int[23];
+            //jagged[3] = new int[26];
+            //jagged[0][45] = Int32.MaxValue;
+            //jagged[3][14] = Int32.MinValue;
+            //PrintMatrix(jagged);
+            
             int[,] matrix = new int[3, 3]
             {
                 //0  1  2
@@ -77,10 +77,10 @@ namespace ISTC.FirstStage.Array
 
             Console.WriteLine(sum);
 
-            //Console.WriteLine(matrix);
-            //PrintMatrix(matrix);
-            //string s = "Robert Kocharyany nstav";
-            //char[] charArray = s.ToCharArray();
+            Console.WriteLine(matrix);
+            PrintMatrix(matrix);
+            string s = "Robert Kocharyany nstav";
+            char[] charArray = s.ToCharArray();
 
             //PrintArray(charArray);
             //int sLength = charArray.Length;
