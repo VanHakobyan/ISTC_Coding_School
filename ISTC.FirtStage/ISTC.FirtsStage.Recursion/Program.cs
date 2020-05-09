@@ -27,13 +27,15 @@ namespace Recursion
 
         static long Fib(long index)
         {
-            if (index <= 1) return 1;
+            if (index <= 1)
+                return 1; //բազիս
+            
             return Fib(index - 1) + Fib(index - 2);
         }
 
         static void Main(string[] args)
         {
-            int number = Number(2,2);
+            int number = Number(2, 2);
             Console.WriteLine(number);
             Console.ReadKey();
             while (true)
@@ -79,7 +81,7 @@ namespace Recursion
             return true;
         }
 
-        static long SumOfDigitsRec(long number)
+        static long SumOfDigitsRec(long number)//25
         {
             if (number / 10 == 0) return number;//բազիս
             return number % 10 + SumOfDigitsRec(number / 10);

@@ -60,6 +60,7 @@ namespace ISTC.FirtsStage.Methods_03
 
         static double ArithmeticMean(int[] array)
         {
+            ArithmeticMean(array);
             int sumDigits = SumDigits(array);
             double ar = sumDigits / (double)array.Length;
 

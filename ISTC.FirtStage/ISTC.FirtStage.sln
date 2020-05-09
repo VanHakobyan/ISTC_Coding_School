@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.DoubleNumbe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirtsStage.Methods_03", "ISTC.FirtsStage.Methods_03\ISTC.FirtsStage.Methods_03.csproj", "{364D0332-7C07-44E4-A8A0-0944147E27E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTC.FirstStage.Rec_02", "ISTC.FirstStage.Rec_02\ISTC.FirstStage.Rec_02.csproj", "{8E58FDE1-0286-4E7D-9B58-0AC484DB50ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{364D0332-7C07-44E4-A8A0-0944147E27E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{364D0332-7C07-44E4-A8A0-0944147E27E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{364D0332-7C07-44E4-A8A0-0944147E27E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E58FDE1-0286-4E7D-9B58-0AC484DB50ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E58FDE1-0286-4E7D-9B58-0AC484DB50ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E58FDE1-0286-4E7D-9B58-0AC484DB50ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E58FDE1-0286-4E7D-9B58-0AC484DB50ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
